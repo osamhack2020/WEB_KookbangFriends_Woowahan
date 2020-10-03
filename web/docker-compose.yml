@@ -1,0 +1,19 @@
+version: "3"
+services:
+  kookbang-friends-osam-client:
+    restart: always
+    container_name: kookbang-friends-osam-client
+    image: kookbang-friends-osam-client
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
+    volumes:
+      - ./client/:/app
+    ports:
+      - "7061:3000"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

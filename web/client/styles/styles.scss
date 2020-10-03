@@ -1,0 +1,210 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+* {
+  font-family: "NanumSquare", serif, Arial;
+  word-break: keep-all;
+  line-height: 1.6em;
+}
+
+/* global box-sizing */
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  transition: opacity 1s;
+  height: 100%;
+  background: #fff;
+  max-width: 1920px;
+}
+
+/* clear */
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+pre {
+  word-wrap: break-word;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.parents {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: #ffd000;
+  color: #232323;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-up {
+  position: relative;
+  animation-duration: 1.2s;
+  animation-name: textUp;
+  animation-timing-function: ease;
+}
+
+@keyframes textUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.zoom-in {
+  position: relative;
+  animation-duration: 1.2s;
+  animation-name: zoomIn;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateY(-2px) translateX(-1px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(1px) translateX(0px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(-2px) translateX(-1px) rotate(2deg);
+  }
+}
+
+#content {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.2s;
+  margin: 0 auto;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+
+#content.fade {
+  opacity: 0;
+}
+
+#content.lock {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
