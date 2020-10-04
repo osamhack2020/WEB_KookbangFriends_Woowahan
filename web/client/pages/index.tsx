@@ -1,20 +1,9 @@
-import React, { useEffect } from "react";
-import Lee from "../lib/Lee";
+import React from "react";
 import Head from "next/head";
 
 import "../styles/pages/index.scss";
 
-import HomeIntro from "../components/Home/HomeIntro/HomeIntro";
-import HomeNotice from "../components/Home/HomeNotice/HomeNotice";
-import HomeMenu from "../components/Home/HomeMenu/HomeMenu";
-import HomeTimeLine from "../components/Home/HomeTimeLine/HomeTimeLine";
-import HomeCard from "../components/Home/HomeCard/HomeCard";
-
 const Index = () => {
-  useEffect(() => {
-    Lee.loadingFinish();
-  });
-
   return (
     <div id="Home">
       <Head>
@@ -29,11 +18,6 @@ const Index = () => {
               산출물이며 서비스를 정식 시행하고 있지 않음을 밝힙니다.
             </div>
           </div>
-          <HomeIntro />
-          <HomeNotice />
-          <HomeMenu />
-          <HomeCard />
-          <HomeTimeLine />
         </div>
       </div>
     </div>
