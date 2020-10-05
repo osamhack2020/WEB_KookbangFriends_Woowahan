@@ -19,7 +19,7 @@ if (!isBrowser) {
 
 function create(initialState: any) {
   const httpLink = createUploadLink({
-    uri: "https://api.kookbang.kr/graphql",
+    uri: "https://osam.kookbang.kr/graphql",
     credentials: "include",
   });
 
