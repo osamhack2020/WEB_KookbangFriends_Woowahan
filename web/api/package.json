@@ -13,13 +13,14 @@
   "dependencies": {
     "strapi": "3.0.6",
     "strapi-admin": "3.0.6",
-    "strapi-utils": "3.0.6",
-    "strapi-plugin-content-type-builder": "3.0.6",
+    "strapi-connector-mongoose": "3.0.6",
     "strapi-plugin-content-manager": "3.0.6",
-    "strapi-plugin-users-permissions": "3.0.6",
+    "strapi-plugin-content-type-builder": "3.0.6",
     "strapi-plugin-email": "3.0.6",
+    "strapi-plugin-graphql": "3.0.6",
     "strapi-plugin-upload": "3.0.6",
-    "strapi-connector-mongoose": "3.0.6"
+    "strapi-plugin-users-permissions": "3.0.6",
+    "strapi-utils": "3.0.6"
   },
   "author": {
     "name": "A Strapi developer"
