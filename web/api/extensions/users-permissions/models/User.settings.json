@@ -65,6 +65,14 @@
     "feeds": {
       "collection": "feed",
       "via": "user"
+    },
+    "avatar": {
+      "type": "string",
+      "default": "/static/characters/basic/g20.png"
+    },
+    "supports": {
+      "collection": "support",
+      "via": "user"
     }
   }
 }

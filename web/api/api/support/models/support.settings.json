@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supports",
+  "info": {
+    "name": "support"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "supports",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
