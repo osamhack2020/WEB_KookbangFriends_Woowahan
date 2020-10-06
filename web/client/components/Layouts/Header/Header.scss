@@ -1,0 +1,79 @@
+.header__area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  height: 63px;
+  border-bottom: 1px solid #eee;
+
+  &__contents {
+    max-width: 1440px;
+    padding: 15px 30px;
+    margin: 0 auto;
+
+    &__logo {
+      cursor: pointer;
+      position: relative;
+      border-radius: 1000px;
+      color: #000;
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      -webkit-text-stroke: 0.01em;
+      float: left;
+
+      img {
+        position: relative;
+        float: left;
+        width: 30px;
+        height: 30px;
+        top: 2.5px;
+        margin-right: 10px;
+      }
+    }
+
+    &__menus {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      float: left;
+      top: 6px;
+      margin-left: 50px;
+
+      li {
+        font-family: "Noto Sans KR", serif, Arial;
+        cursor: pointer;
+        float: left;
+        font-size: 14px;
+        color: #232323;
+        margin-right: 30px;
+        font-weight: 700;
+      }
+    }
+
+    &__logins {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-left: 50px;
+      float: right;
+      top: 6px;
+
+      li {
+        font-family: "Noto Sans KR", serif, Arial;
+        cursor: pointer;
+        float: left;
+        font-size: 14px;
+        color: #232323;
+        margin-left: 30px;
+        font-weight: 700;
+      }
+    }
+  }
+}
