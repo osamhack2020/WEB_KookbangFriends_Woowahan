@@ -1,0 +1,79 @@
+.footer__area {
+  background: #eee;
+  border-top: 1px solid #eee;
+  z-index: 3;
+
+  &__contents {
+    max-width: 1440px;
+    padding: 30px;
+    margin: 0 auto;
+
+    &__menus {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      top: 6px;
+
+      li {
+        font-family: "Noto Sans KR", serif, Arial;
+        cursor: pointer;
+        float: left;
+        font-size: 14px;
+        color: #555;
+        margin-right: 30px;
+        font-weight: 700;
+      }
+    }
+
+    &__copyright {
+      font-family: "Noto Sans KR", serif, Arial;
+      position: relative;
+      font-size: 14px;
+      color: #555;
+      font-weight: 400;
+      margin-top: 65px;
+    }
+
+    &__thank {
+      position: absolute;
+      right: 30px;
+      top: 36px;
+      height: 30px;
+    }
+
+    &__select {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      select {
+        font-family: "Noto Sans KR", serif, Arial;
+        float: left;
+        border: 1px solid #fff;
+        width: 148px;
+        background: #fff;
+        color: #1c2231;
+        padding: 5px 4px 7px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      &__go {
+        cursor: pointer;
+        width: 34px;
+        height: 34px;
+        background: #305f5d;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-left: 3px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+    }
+  }
+}
