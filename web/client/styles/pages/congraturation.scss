@@ -1,0 +1,317 @@
+.congraturation__area {
+  text-align: center;
+  background: #fff;
+  padding-bottom: 150px;
+
+  &__contents {
+    padding: 300px 30px;
+    padding-bottom: 150px;
+    width: 1440px;
+    margin: 0 auto;
+
+    &__cannon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      $color-violet: #492684;
+      $color-purple: #bea4ff;
+      $color-yellow: #feb535;
+      $color-red: #ff6e83;
+      $color-cyan: #58cafe;
+      $animation-duration: 4s;
+
+      /* debug */
+      $debug-animation-count: infinite; // infinite | 1
+
+      /* Cannon */
+      .cannon {
+        height: 70vh;
+        width: 1px;
+        position: relative;
+        transform-origin: 50% 100%;
+
+        @keyframes cannon-explosion1 {
+          0% {
+            transform: rotate(57deg) scale(0);
+          }
+          20% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            transform: rotate(57deg) scale(1.8);
+          }
+        }
+
+        @keyframes cannon-explosion2 {
+          0% {
+            transform: rotate(-57deg) scale(0);
+          }
+          20% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            transform: rotate(-57deg) scale(1.8);
+          }
+        }
+
+        /* Paths */
+        &__path {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          transform-origin: 50% 100%;
+          padding-bottom: 30%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-around;
+          align-items: center;
+
+          &--lg {
+            height: 100%;
+          }
+
+          &--md {
+            height: 95%;
+          }
+
+          &--sm {
+            height: 90%;
+          }
+
+          &--angle {
+            &-2 {
+              transform: rotate(-15deg);
+            }
+
+            &-1 {
+              transform: rotate(-7.5deg);
+            }
+
+            &1 {
+              transform: rotate(7.5deg);
+            }
+
+            &2 {
+              transform: rotate(15deg);
+            }
+          }
+        }
+
+        /* Confettis */
+        &__confetti {
+          flex: 0 1 auto;
+          animation-duration: $animation-duration;
+          animation-timing-function: ease-out;
+          animation-fill-mode: both;
+          animation-iteration-count: $debug-animation-count;
+
+          &:nth-child(even) {
+            animation-name: confetti-rotate-l;
+
+            @keyframes confetti-rotate-l {
+              0% {
+                transform: rotate(0) scaleY(1);
+              }
+              50% {
+                transform: rotate(2turn) scaleY(1.5);
+              }
+              100% {
+                transform: rotate(2.05turn) scaleY(1);
+              }
+            }
+          }
+
+          &:nth-child(odd) {
+            animation-name: confetti-rotate-r;
+
+            @keyframes confetti-rotate-r {
+              0% {
+                transform: rotate(0) scaleY(1);
+              }
+              50% {
+                transform: rotate(-2turn) scaleY(1.5);
+              }
+              100% {
+                transform: rotate(-2.05turn) scaleY(1);
+              }
+            }
+          }
+
+          /* Types */
+          &--ribbon {
+            height: 1em;
+            width: 0.5em;
+            border-radius: 0.1em;
+          }
+
+          &--flake {
+            height: 0.5em;
+            width: 0.5em;
+            border-radius: 50%;
+          }
+
+          /* Colors */
+          &--color-1 {
+            background-color: $color-yellow;
+          }
+
+          &--color-2 {
+            background-color: $color-purple;
+          }
+
+          &--color-3 {
+            background-color: $color-red;
+          }
+
+          &--color-4 {
+            background-color: $color-cyan;
+          }
+        }
+      }
+
+      /* Demo styles */
+      html {
+        background-color: $color-violet;
+      }
+
+      .party-popper {
+        position: absolute;
+        left: 50%;
+        bottom: 5vh;
+        font-size: 2em;
+      }
+
+      .cannon.first {
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        animation: cannon-explosion1 $animation-duration
+          cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+
+        // debug
+        animation-iteration-count: $debug-animation-count;
+      }
+      .cannon.second {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+        animation: cannon-explosion2 $animation-duration
+          cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+
+        // debug
+        animation-iteration-count: $debug-animation-count;
+      }
+    }
+
+    &__title {
+      position: relative;
+      font-size: 72px;
+      color: #232323;
+      z-index: 2;
+      font-weight: 900;
+    }
+
+    &__mission {
+      position: relative;
+      font-size: 24px;
+      color: #232323;
+      margin-top: 100px;
+      z-index: 2;
+      font-weight: 900;
+    }
+
+    &__address {
+      position: relative;
+      font-size: 24px;
+      color: #232323;
+      margin: 0 auto;
+      margin-top: 30px;
+      z-index: 2;
+      font-weight: 700;
+      display: inline-block;
+      color: #000;
+    }
+
+    &__tip {
+      position: relative;
+      font-size: 14px;
+      color: #000;
+      margin-top: 100px;
+    }
+
+    &__login {
+      position: relative;
+      cursor: pointer;
+      font-size: 19px;
+      padding: 15px 30px;
+      display: inline-block;
+      background: #305f5d;
+      border-radius: 1000px;
+      margin: 0 auto;
+      margin-top: 50px;
+      color: #fff;
+      z-index: 2;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .congraturation__area {
+    &__contents {
+      width: 100%;
+      padding: 100px 15px;
+      padding-bottom: 50px;
+
+      &__title {
+        font-size: 30px;
+      }
+
+      &__mission {
+        font-size: 12px;
+        margin-top: 70px;
+      }
+
+      &__address {
+        font-size: 17px;
+        margin-top: 15px;
+        width: 100%;
+      }
+
+      &__tip {
+        position: relative;
+        font-size: 12px;
+        color: #000;
+        margin-top: 150px;
+        text-align: left;
+        padding-top: 30px;
+        border-top: 1px solid lightgray;
+      }
+
+      &__login {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-top: 50px;
+      }
+
+      .cannon.first {
+        position: absolute;
+        bottom: 0px;
+        left: -30px;
+      }
+      .cannon.second {
+        position: absolute;
+        bottom: 0px;
+        right: -30px;
+      }
+    }
+  }
+}

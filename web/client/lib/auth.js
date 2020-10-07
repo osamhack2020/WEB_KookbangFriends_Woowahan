@@ -5,7 +5,7 @@ import Lee from "./Lee";
 
 import Router from "next/router";
 
-const apiUrl = process.env.API_URL || "https://osam.kookbang.kr";
+const apiUrl = process.env.API_URL || "https://osam2.kookbang.kr";
 const strapi = new Strapi(apiUrl);
 
 export const strapiRegister = (username, email, password, thumbnail) => {

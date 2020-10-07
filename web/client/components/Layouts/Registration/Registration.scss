@@ -1,0 +1,313 @@
+#Registration.active {
+  .registration__area {
+    visibility: visible;
+    opacity: 1;
+
+    &__contents {
+      top: 50%;
+    }
+  }
+}
+
+.registration__area {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+
+  &__fade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #232323;
+    opacity: 0.7;
+  }
+
+  &__contents {
+    position: absolute;
+    width: 460px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 30px;
+    border-radius: 15px;
+    background: #232323;
+    z-index: 2;
+    transition: top 0.8s ease-in-out;
+
+    &__logo {
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: 0.03em;
+      font-weight: 900;
+
+      img {
+        position: relative;
+        float: left;
+        width: 30px;
+        height: 30px;
+        top: 2.5px;
+        margin-right: 10px;
+      }
+    }
+
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 32px;
+      height: 32px;
+      border-radius: 1000px;
+      border: 2px solid #eee;
+      padding: 5px;
+    }
+
+    &__title {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1;
+      margin-top: 15px;
+    }
+
+    &__form {
+      margin-top: 20px;
+
+      &__thumbnail {
+        display: table;
+        background: #232323;
+        border-radius: 1000px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 45px;
+
+        &__edit {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          opacity: 0;
+
+          input {
+            display: none;
+            + label {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              margin-bottom: 0;
+              border-radius: 100%;
+              background: #ffffff;
+              border: 1px solid transparent;
+              box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+              cursor: pointer;
+              font-weight: normal;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                background: #f1f1f1;
+                border-color: #d6d6d6;
+              }
+              &:after {
+                content: "\f040";
+                font-family: "FontAwesome";
+                color: #757575;
+                position: absolute;
+                top: 10px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin: auto;
+              }
+            }
+          }
+        }
+
+        &__img {
+          cursor: pointer;
+          position: relative;
+          width: 180px;
+          height: 180px;
+          background: #232323;
+          border-radius: 1000px;
+          overflow: hidden;
+          margin: 0 auto;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      &__context {
+        margin-top: 15px;
+
+        &__label {
+          font-size: 17px;
+          font-weight: 700;
+        }
+
+        &__input {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 17px;
+          padding: 10px 15px;
+          border-radius: 15px;
+          margin-top: 0px;
+          width: 100%;
+          background: #fff;
+          border: none;
+          box-shadow: none;
+          font-weight: 600;
+        }
+      }
+
+      &__buttons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &__button {
+          cursor: pointer;
+          font-family: "Noto Sans KR", serif, Arial;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 700;
+          color: #fff;
+          background: #3274a2;
+          text-align: center;
+          padding: 15px 30px;
+          border-radius: 1000px;
+          margin-top: 30px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  #Login.active {
+    .registration__area {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .registration__area {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+    &__fade {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: #555;
+      opacity: 0.7;
+    }
+
+    &__contents {
+      position: absolute;
+      width: 290px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      padding: 20px 15px;
+      border-radius: 15px;
+      background: #232323;
+      z-index: 2;
+
+      &__logo {
+        font-size: 24px;
+        color: #fff;
+        font-family: "Coolvetica", "NanumSquare", serif, Arial;
+        letter-spacing: 0.03em;
+      }
+
+      &__close {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        height: 26px;
+        border-radius: 1000px;
+        border: 2px solid #eee;
+        padding: 4px;
+      }
+
+      &__title {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 900;
+        line-height: 1s;
+        font-style: italic;
+        margin-top: 5px;
+      }
+
+      &__form {
+        margin-top: 20px;
+
+        &__context {
+          margin-top: 10px;
+          &__label {
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          &__input {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 14px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            margin-top: 0px;
+            width: 100%;
+            background: #fff;
+            border: none;
+            box-shadow: none;
+            font-weight: 600;
+          }
+        }
+
+        &__buttons {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          &__button {
+            cursor: pointer;
+            font-family: "Noto Sans KR", serif, Arial;
+            width: 100%;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            background: #3274a2;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 1000px;
+            margin-top: 30px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

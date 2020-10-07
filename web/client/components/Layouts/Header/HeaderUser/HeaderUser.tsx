@@ -1,5 +1,6 @@
 import React from "react";
 import Lee from "../../../../lib/Lee";
+import DelayLink from "../../../../lib/DelayLink";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import Router from "next/router";
@@ -57,19 +58,27 @@ const HeaderUser = () => {
     <div id="HeaderUser">
       <div className="header-user__area">
         <div className="header-user__area__contents">
-          <li>
-            <div className="header-user__area__contents__thumbnail">
-              {me.user.thumbnail ? (
-                <img
-                  src={`https://api.kookbang.kr${me.user.thumbnail.url}`}
-                  alt="thumbnail"
-                />
-              ) : (
-                <img src={me.user.avatar} alt="thumbnail" />
-              )}
-            </div>
-            <span>{me.user.username}님</span>
-          </li>
+          <DelayLink
+            to="mypage"
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li>
+              <div className="header-user__area__contents__thumbnail">
+                {me.user.thumbnail ? (
+                  <img
+                    src={`https://osam2.kookbang.kr${me.user.thumbnail.url}`}
+                    alt="thumbnail"
+                  />
+                ) : (
+                  <img src={me.user.avatar} alt="thumbnail" />
+                )}
+              </div>
+              <span>{me.user.username}님</span>
+            </li>
+          </DelayLink>
           <li onClick={logout}>로그아웃</li>
         </div>
       </div>

@@ -73,6 +73,45 @@ const loadingFinish = () => {
   }, 400);
 };
 
+// login library
+let loginAnimationIndex = 0;
+
+const openLogin = () => {
+  const login = get("Login");
+
+  if (loginAnimationIndex === 0) {
+    loginAnimationIndex = 1;
+    addClass(login, "active");
+    setTimeout(() => {
+      loginAnimationIndex = 0;
+    }, 1000);
+  }
+};
+
+const openRegistration = () => {
+  const registration = get("Registration");
+
+  if (loginAnimationIndex === 0) {
+    loginAnimationIndex = 1;
+    addClass(registration, "active");
+    setTimeout(() => {
+      loginAnimationIndex = 0;
+    }, 1000);
+  }
+};
+
+const openRegistrationCharacter = () => {
+  const registrationCharacter = get("RegistrationCharacter");
+
+  if (loginAnimationIndex === 0) {
+    loginAnimationIndex = 1;
+    addClass(registrationCharacter, "active");
+    setTimeout(() => {
+      loginAnimationIndex = 0;
+    }, 1000);
+  }
+};
+
 module.exports = {
   addClass,
   removeClass,
@@ -83,4 +122,7 @@ module.exports = {
   gets,
   loadingStart,
   loadingFinish,
+  openLogin,
+  openRegistration,
+  openRegistrationCharacter,
 };

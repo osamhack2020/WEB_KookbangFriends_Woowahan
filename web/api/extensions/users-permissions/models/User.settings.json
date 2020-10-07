@@ -73,6 +73,10 @@
     "supports": {
       "collection": "support",
       "via": "user"
+    },
+    "support_comments": {
+      "collection": "support-comment",
+      "via": "user"
     }
   }
 }
