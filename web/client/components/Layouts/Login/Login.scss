@@ -1,0 +1,265 @@
+#Login.active {
+  .login__area {
+    visibility: visible;
+    opacity: 1;
+
+    &__contents {
+      top: 50%;
+    }
+  }
+}
+
+.login__area {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+
+  &__fade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #232323;
+    opacity: 0.7;
+  }
+
+  &__contents {
+    position: absolute;
+    width: 460px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 30px;
+    border-radius: 15px;
+    background: #232323;
+    z-index: 2;
+    transition: top 0.8s ease-in-out;
+
+    &__logo {
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: 0.03em;
+      font-weight: 900;
+
+      img {
+        position: relative;
+        float: left;
+        width: 30px;
+        height: 30px;
+        top: 2.5px;
+        margin-right: 10px;
+      }
+    }
+
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 32px;
+      height: 32px;
+      border-radius: 1000px;
+      border: 2px solid #eee;
+      padding: 5px;
+    }
+
+    &__title {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1;
+      margin-top: 15px;
+    }
+
+    &__form {
+      margin-top: 20px;
+
+      &__context {
+        margin-top: 15px;
+        &__label {
+          font-size: 17px;
+          font-weight: 700;
+        }
+
+        &__input {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 17px;
+          padding: 10px 15px;
+          border-radius: 15px;
+          margin-top: 0px;
+          width: 100%;
+          background: #fff;
+          border: none;
+          box-shadow: none;
+          font-weight: 600;
+        }
+      }
+
+      &__buttons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &__button {
+          cursor: pointer;
+          font-family: "Noto Sans KR", serif, Arial;
+          width: calc(50% - 7.5px);
+          margin-right: 15px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #fff;
+          background: #007e62;
+          text-align: center;
+          padding: 15px 30px;
+          border-radius: 1000px;
+          float: left;
+          margin-top: 30px;
+
+          &.login {
+            border: none;
+          }
+
+          &.regist {
+            background: #3274a2;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  #Login.active {
+    .login__area {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .login__area {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+    &__fade {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: #555;
+      opacity: 0.7;
+    }
+
+    &__contents {
+      position: absolute;
+      width: 290px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      padding: 20px 15px;
+      border-radius: 15px;
+      background: #232323;
+      z-index: 2;
+
+      &__logo {
+        font-size: 24px;
+        color: #fff;
+        font-family: "Coolvetica", "NanumSquare", serif, Arial;
+        letter-spacing: 0.03em;
+      }
+
+      &__close {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        height: 26px;
+        border-radius: 1000px;
+        border: 2px solid #eee;
+        padding: 4px;
+      }
+
+      &__title {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 900;
+        line-height: 1s;
+        font-style: italic;
+        margin-top: 5px;
+      }
+
+      &__form {
+        margin-top: 20px;
+
+        &__context {
+          margin-top: 10px;
+          &__label {
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          &__input {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 14px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            margin-top: 0px;
+            width: 100%;
+            background: #fff;
+            border: none;
+            box-shadow: none;
+            font-weight: 600;
+          }
+        }
+
+        &__buttons {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          &__button {
+            cursor: pointer;
+            font-family: "Noto Sans KR", serif, Arial;
+            width: calc(50% - 7.5px);
+            margin-right: 15px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            background: #555;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 1000px;
+            float: left;
+            margin-top: 30px;
+
+            &.login {
+              border: none;
+            }
+
+            &.api {
+              background: rgb(0, 126, 255);
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
