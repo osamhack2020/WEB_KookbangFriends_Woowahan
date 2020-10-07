@@ -40,6 +40,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "support_comments": {
+      "via": "support",
+      "collection": "support-comment"
     }
   }
 }

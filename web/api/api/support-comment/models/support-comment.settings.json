@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "support_comments",
+  "info": {
+    "name": "support-comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "support": {
+      "model": "feed",
+      "via": "support_comments"
+    },
+    "user": {
+      "via": "support_comments",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
