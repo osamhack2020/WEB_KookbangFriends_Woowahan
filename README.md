@@ -1,8 +1,8 @@
-# ![](kookbang_logo_big.png)
-(URL 제공 예정)<br><br>
+
+# ![enter image description here](https://osam.kookbang.kr/static/images/kookbang-friends-cover.jpg)
 
 ## 팀소개 및 프로젝트 설명 영상
-[]
+(제공 예정)<br><br>
 
 ## 프로젝트 설명
 ![](국방프렌즈.png)
@@ -29,21 +29,62 @@
     
  * 마이페이지 기능<br>
    - 로그인/회원가입<br>
+   - 상담 내역 확인<br>
+   - 관심 커뮤니티 피드 확인<br>
    - 헬스(체력검정) 관리<br><br>
     
  * 24시간 AI 챗봇 서비스<br>
    - 헬프데스크 지원<br>
    - 서비스 가이드라인 제공<br><br>
+   
+ * 카카오톡 챗봇 서비스<br>
+   - 헬프데스크 지원<br>
+   - 웹사이트 연동 정보 제공<br><br>
+   
+ (기능은 개발 과정에 따라 추가/삭제될 수 있음)<br><br>  
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
  * .
 ## 기술 스택 (Technique Used)
-### Server(back-end)
- - .
+### Basic
+ - Git
+ - Docker
  
-### front-end
- - .
+### Back-end
+ - Node.js
+ - Express
+ - Javascript
+ - Strapi
+ - Linux (Ubuntu)
+ - Nginx
+ - JWT (Json Web Token)
+ - SSL (Secure Sockets Layer)
+ - CORS(Cross-Origin Resource Sharing)
+  
+### Front-end
+ - React.js (Hooks)
+ - Next.js
+ - Typescript (Javascript)
+ - HTML5
+ - SCSS
+ - Apollo
+ - GraphQL
+ - Babel
+ - Webpack
+ 
+ ### Database
+ - MongoDB
+ 
+ ### Skills
+ - 반응형 웹 (Responsive Web)
+ - 크로스 브라우징 (Cross Browsing)
+ - 웹 표준 (Web Standards)
+ - SEO 검색엔진최적화 (Search Engine Optimization)
+ - SSR (Server Side Rendering)
+ - CSR (Client Side Rendering)
+ - PWA (Progressive Web Apps)
  
 ## 프로젝트 사용법 (Getting Started)
+(제공 예정)<br><br>
 
 ## 팀 정보 (Team Information)
  * 이무열 (팀장) / muyeol95@gmail.com / https://github.com/dsvp<br>
