@@ -1,0 +1,117 @@
+.home-notice__area {
+  position: relative;
+  margin-top: 30px;
+  z-index: 2;
+
+  &__contents {
+    max-width: 1440px;
+    padding: 30px;
+    margin: 0 auto;
+
+    &__latest {
+      width: calc(66.66% - 15px);
+      float: left;
+      margin-right: 50px;
+
+      &__subject {
+        display: table;
+
+        a {
+          font-size: 21px;
+          font-weight: 900;
+          color: #555;
+        }
+      }
+
+      &__title {
+        display: table;
+        cursor: pointer;
+        margin-top: 20px;
+
+        a {
+          font-size: 32px;
+          font-weight: 900;
+          color: #555;
+          line-height: 1;
+          transition: color 0.2s;
+        }
+
+        &:hover {
+          a {
+            color: #000;
+          }
+        }
+
+        &-new {
+          position: relative;
+          font-weight: 900;
+          color: #fff;
+          font-size: 12px;
+          font-style: italic;
+          padding: 6px 10px;
+          padding-left: 7px;
+          background: #e20505;
+          border-radius: 1000px;
+          text-align: center;
+          top: -6px;
+          left: 10px;
+        }
+      }
+
+      &__date {
+        display: table;
+        margin-top: 15px;
+
+        a {
+          span {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 14px;
+            color: rgb(121, 121, 121);
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+    &__more {
+      &__lists {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        margin-top: 5px;
+
+        li {
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            .home-notice__area__contents__more__lists__title {
+              color: #000;
+            }
+          }
+        }
+
+        &__title {
+          font-size: 19px;
+          font-weight: 900;
+          height: 27px;
+          overflow: hidden;
+          color: #555;
+          transition: color 0.2s;
+        }
+
+        &__date {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 14px;
+          color: rgb(121, 121, 121);
+          font-weight: 900;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
