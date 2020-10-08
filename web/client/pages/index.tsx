@@ -3,6 +3,8 @@ import Head from "next/head";
 
 import "../styles/pages/index.scss";
 
+import HomeIntro from "../components/Home/HomeIntro/HomeIntro";
+
 const Index = () => {
   return (
     <div id="Home">
@@ -18,6 +20,7 @@ const Index = () => {
               산출물이며 서비스를 정식 시행하고 있지 않음을 밝힙니다.
             </div>
           </div>
+          <HomeIntro />
         </div>
       </div>
     </div>
