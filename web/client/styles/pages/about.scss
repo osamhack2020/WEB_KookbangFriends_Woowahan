@@ -1,0 +1,527 @@
+.about__area {
+  margin-top: 63px;
+  padding-bottom: 150px;
+
+  &__video {
+    height: calc(66vh);
+    min-height: 600px;
+
+    video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    &__fade {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    &__contents {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+
+      height: calc(66vh);
+      min-height: 600px;
+      max-width: 1440px;
+      padding: 0 30px;
+      margin: 0 auto;
+      z-index: 3;
+
+      &__title {
+        position: absolute;
+        font-size: 42px;
+        font-weight: 900;
+        color: #fff;
+        left: 30px;
+        bottom: 100px;
+        z-index: 3;
+
+        span {
+          position: relative;
+          font-size: 17px;
+          font-weight: 700;
+          color: #fff;
+          top: -29px;
+          left: 55px;
+          padding: 12px 15px;
+          background: #305f5d;
+          border-radius: 5px;
+        }
+      }
+
+      &__bi {
+        position: absolute;
+        left: 30px;
+        bottom: 270px;
+        height: 38px;
+        animation: 0.5s infinite bi-up;
+        transform: scaleX(-1);
+
+        @keyframes bi-up {
+          0% {
+            bottom: 270px;
+          }
+          50% {
+            bottom: 273px;
+          }
+          100% {
+            bottom: 270px;
+          }
+        }
+      }
+    }
+  }
+
+  &__contents {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 900;
+      color: #555;
+    }
+
+    &__slogan {
+      font-size: 32px;
+      font-weight: 900;
+      margin-top: 50px;
+      color: #000;
+      -webkit-text-stroke: 0.01em;
+      width: 60%;
+    }
+
+    &__consult {
+      margin-top: 200px;
+
+      &__title {
+        font-size: 24px;
+        color: #555;
+        font-weight: 900;
+      }
+
+      &__thumbnail {
+        position: relative;
+        margin-top: 50px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &__box {
+        margin-top: 50px;
+
+        &__left {
+          width: 50%;
+          float: left;
+          padding: 50px;
+          border-radius: 15px;
+          background: #f5f5f5;
+
+          &__title {
+            font-size: 42px;
+            font-weight: 900;
+            color: #232323;
+            line-height: 1.4em;
+            -webkit-text-stroke: 0.01em;
+          }
+
+          &__subject {
+            font-size: 17px;
+            font-weight: 900;
+            color: #fff;
+            margin-top: 30px;
+            display: table;
+            padding: 8px 15px;
+            background: rgb(42, 49, 67);
+            border-radius: 5px;
+          }
+
+          &__paragraph {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 50px;
+            color: #555;
+          }
+
+          &__button {
+            cursor: pointer;
+            padding: 10px 22px;
+            padding-bottom: 8px;
+            background: #305f5d;
+            display: table;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 900;
+            margin-top: 50px;
+            border-radius: 1000px;
+          }
+        }
+
+        &__right {
+          width: 50%;
+          float: left;
+          padding: 50px;
+          padding-left: 100px;
+
+          @keyframes unlock-circle {
+            0% {
+              bottom: 200px;
+            }
+            25% {
+              bottom: 200px;
+            }
+            50% {
+              bottom: 150px;
+            }
+            75% {
+              bottom: 150px;
+            }
+            100% {
+              bottom: 200px;
+            }
+          }
+
+          @keyframes unlock-box {
+            0% {
+              bottom: 280px;
+            }
+            25% {
+              bottom: 280px;
+            }
+            50% {
+              bottom: 230px;
+            }
+            75% {
+              bottom: 230px;
+            }
+            100% {
+              bottom: 280px;
+            }
+          }
+
+          body {
+            margin: 0px;
+            background-color: #e74c3c;
+          }
+
+          .wrapper {
+            position: relative;
+            transform: scale(0.4);
+            transform-origin: left top;
+            width: 200px;
+            height: 140px;
+          }
+
+          .base {
+            background-color: #ecf0f1;
+            width: 200px;
+            height: 170px;
+            border-radius: 30px;
+            margin: 0 auto;
+            position: relative;
+            top: 100px;
+            z-index: 100;
+          }
+
+          .base-bottom {
+            background-color: #bdc3c7;
+            width: 200px;
+            height: 85px;
+            border-radius: 0 0 30px 30px;
+            top: 85px;
+            position: relative;
+            opacity: 0.4;
+          }
+
+          .lock-cirlce {
+            height: 180px;
+            width: 110px;
+            border-radius: 45px;
+            z-index: 10;
+            background-color: #bdc3c7;
+            position: relative;
+            margin: 0 auto;
+            bottom: 150px;
+            animation-name: unlock-circle;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+          }
+
+          .lock-circle-inside {
+            height: 180px;
+            width: 50px;
+            border-radius: 30px;
+            z-index: 20;
+            background-color: #fff;
+            position: relative;
+            margin: 0 auto;
+            top: 25px;
+          }
+
+          .lock-box {
+            animation-name: unlock-box;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-color: #fff;
+            bottom: 230px;
+            left: 170px;
+            z-index: 80;
+          }
+
+          .lock-inside-top {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: black;
+            z-index: 300;
+            position: relative;
+            bottom: 45px;
+            left: 75px;
+          }
+
+          .lock-inside-bottom {
+            width: 30px;
+            height: 80px;
+            background-color: black;
+            z-index: 300;
+            position: relative;
+            bottom: 85px;
+            left: 85px;
+          }
+
+          &__title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #232323;
+            line-height: 1.4em;
+            -webkit-text-stroke: 0.01em;
+
+            span {
+              position: relative;
+              background: #000;
+              color: #305f5d;
+              animation-name: info-hide;
+              animation-duration: 6s;
+              animation-iteration-count: infinite;
+              padding: 5px 10px;
+              border-radius: 5px;
+
+              @keyframes info-hide {
+                0% {
+                  background: #eee;
+                }
+                25% {
+                  background: #eee;
+                }
+                50% {
+                  background: #305f5d;
+                }
+                75% {
+                  background: #305f5d;
+                }
+                100% {
+                  background: #eee;
+                }
+              }
+            }
+          }
+
+          &__subject {
+            font-size: 19px;
+            font-weight: 900;
+            color: #555;
+            margin-top: 30px;
+          }
+
+          &__paragraph {
+            font-size: 19px;
+            font-weight: 700;
+            margin-top: 50px;
+            color: #555;
+
+            span {
+              color: #232323;
+              font-weight: 900;
+            }
+          }
+
+          &__button {
+            cursor: pointer;
+            padding: 10px 22px;
+            padding-bottom: 8px;
+            background: #305f5d;
+            display: table;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 900;
+            margin-top: 50px;
+            border-radius: 1000px;
+          }
+        }
+      }
+    }
+
+    &__community {
+      margin-top: 200px;
+
+      &__title {
+        font-size: 24px;
+        color: #555;
+        font-weight: 900;
+      }
+
+      &__slogan {
+        width: 60%;
+        font-size: 32px;
+        font-weight: 900;
+        color: #232323;
+        line-height: 1.4em;
+        -webkit-text-stroke: 0.01em;
+        margin-top: 50px;
+      }
+
+      &__box {
+        margin-top: 50px;
+
+        &__left {
+          width: 50%;
+          float: left;
+          padding: 50px;
+          border-radius: 15px;
+          background: #f5f5f5;
+
+          &__title {
+            font-size: 42px;
+            font-weight: 900;
+            color: #232323;
+            line-height: 1.4em;
+            -webkit-text-stroke: 0.01em;
+          }
+
+          &__subject {
+            font-size: 17px;
+            font-weight: 900;
+            color: #fff;
+            margin-top: 30px;
+            display: table;
+            padding: 8px 15px;
+            background: rgb(42, 49, 67);
+            border-radius: 5px;
+          }
+
+          &__paragraph {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 50px;
+            color: #555;
+          }
+
+          &__button {
+            cursor: pointer;
+            padding: 10px 22px;
+            padding-bottom: 8px;
+            background: #305f5d;
+            display: table;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 900;
+            margin-top: 50px;
+            border-radius: 1000px;
+          }
+        }
+
+        &__right {
+          float: right;
+
+          img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: calc(50% - 50px);
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+
+    &__goal {
+      margin-top: 200px;
+
+      &__title {
+        font-size: 24px;
+        color: #555;
+        font-weight: 900;
+      }
+
+      &__slogan {
+        width: 60%;
+        font-size: 32px;
+        font-weight: 900;
+        color: #232323;
+        line-height: 1.4em;
+        -webkit-text-stroke: 0.01em;
+        margin-top: 50px;
+        float: left;
+      }
+
+      &__hands {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        height: 100%;
+        width: 40%;
+        float: left;
+        text-align: center;
+        padding: 0 100px;
+        animation: hand-up 1s infinite;
+
+        img {
+          height: 100%;
+        }
+
+        @keyframes hand-up {
+          0% {
+            top: 10px;
+          }
+
+          50% {
+            top: 20px;
+          }
+
+          100% {
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
