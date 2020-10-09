@@ -1,0 +1,99 @@
+.support-board__area {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 75px;
+
+  &__contents {
+    &__title {
+      position: relative;
+      font-size: 32px;
+      font-weight: 900;
+      color: #232323;
+      line-height: 1;
+      padding-bottom: 12px;
+      float: left;
+    }
+
+    &__post {
+      float: right;
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      line-height: 1;
+      cursor: pointer;
+      margin-top: 0;
+      padding: 11px 14px;
+      padding-top: 10px;
+      border-radius: 5px;
+      transition: border 0.2s ease 0s, background 0.2s ease 0s;
+      background: rgb(48, 76, 95);
+      text-align: center;
+    }
+
+    &__top {
+      border-bottom: 3px solid #eee;
+      padding-bottom: 30px;
+
+      &__paragraph {
+        overflow: hidden;
+        width: calc(100% - 288px);
+        float: left;
+        font-size: 17px;
+        font-weight: 700;
+        color: #232323;
+        margin-top: 30px;
+      }
+
+      &__search {
+        position: relative;
+        width: 235px;
+        float: right;
+        margin-left: 50px;
+        top: 25px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        input {
+          font-family: "Noto Sans KR", serif, Arial;
+          width: 200px;
+          background: #f5f5f5;
+          color: #555;
+          font-weight: 700;
+          font-size: 16px;
+          padding: 5px 10px;
+          border: none;
+          float: left;
+
+          &::placeholder {
+            color: rgb(150, 150, 150);
+          }
+        }
+
+        img {
+          cursor: pointer;
+          width: 35px;
+          height: 35px;
+          padding: 8px;
+          background: rgb(48, 95, 93);
+          float: left;
+        }
+      }
+    }
+
+    &__board {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      list-style: none;
+    }
+
+    &__board-nothing {
+      padding: 100px 0;
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.support__area {
+  margin-top: 63px;
+  padding-bottom: 150px;
+  min-height: 90vh;
+
+  &__contents {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    padding-top: 50px;
+
+    &__nav {
+      width: 100%;
+
+      &__contents {
+        &__lists {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          overflow: hidden;
+
+          li {
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 900;
+            line-height: 1;
+            float: left;
+            margin-right: 30px;
+            color: #555;
+
+            &.selected {
+              color: #000 !important;
+            }
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
