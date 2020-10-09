@@ -1,8 +1,24 @@
 .home__area {
+  display: table;
+  min-height: 100vh;
+  background: #fff;
+
   &__contents {
+    margin-top: 63px;
+
     &__top {
+      position: relative;
+      padding: 10px 30px;
+      background-color: #305f5d;
+
       &__text {
-        font-size: 17px;
+        position: relative;
+        max-width: 1440px;
+        color: #fff;
+        font-weight: 700;
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 0 30px;
       }
     }
   }

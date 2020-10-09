@@ -6,6 +6,7 @@ import "../styles/pages/index.scss";
 
 import HomeIntro from "../components/Home/HomeIntro/HomeIntro";
 import HomeNotice from "../components/Home/HomeNotice/HomeNotice";
+import HomeMenu from "../components/Home/HomeMenu/HomeMenu";
 import HomeCard from "../components/Home/HomeCard/HomeCard";
 
 const Index = () => {
@@ -29,6 +30,7 @@ const Index = () => {
           </div>
           <HomeIntro />
           <HomeNotice />
+          <HomeMenu />
           <HomeCard />
         </div>
       </div>

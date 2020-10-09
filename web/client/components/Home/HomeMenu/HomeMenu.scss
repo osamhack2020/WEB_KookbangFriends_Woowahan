@@ -1,0 +1,25 @@
+.home-menu__area {
+  margin-top: 50px;
+
+  &__contents {
+    max-width: 1440px;
+    padding: 30px;
+    margin: 0 auto;
+
+    &__menus {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        width: calc(33.33% - 33.33px);
+        margin-right: 50px;
+        float: left;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
