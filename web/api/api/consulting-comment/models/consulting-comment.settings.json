@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consulting_comments",
+  "info": {
+    "name": "consulting-comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "consultings": {
+      "collection": "consulting",
+      "via": "consulting_comment"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "consulting_comments"
+    }
+  }
+}

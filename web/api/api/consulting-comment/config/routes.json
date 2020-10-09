@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/consulting-comments",
+      "handler": "consulting-comment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/consulting-comments/count",
+      "handler": "consulting-comment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/consulting-comments/:id",
+      "handler": "consulting-comment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/consulting-comments",
+      "handler": "consulting-comment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/consulting-comments/:id",
+      "handler": "consulting-comment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/consulting-comments/:id",
+      "handler": "consulting-comment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

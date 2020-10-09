@@ -77,6 +77,10 @@
     "support_comments": {
       "collection": "support-comment",
       "via": "user"
+    },
+    "consulting_comments": {
+      "via": "user",
+      "collection": "consulting-comment"
     }
   }
 }
