@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultings",
+  "info": {
+    "name": "consulting"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "consulting_comment": {
+      "via": "consultings",
+      "model": "consulting-comment"
+    }
+  }
+}
