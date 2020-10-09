@@ -33,7 +33,7 @@ function CardListBox(props) {
         <div className="card-list-box__area__contents">
           <div className="card-list-box__area__contents__thumbnail">
             <img
-              src={`https://api.kookbang.kr${props.thumbnail.url}`}
+              src={`https://osam2.kookbang.kr${props.thumbnail.url}`}
               alt="thumbnail"
             />
           </div>
