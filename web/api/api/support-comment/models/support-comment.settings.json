@@ -14,13 +14,13 @@
       "required": true
     },
     "support": {
-      "model": "feed",
+      "model": "support",
       "via": "support_comments"
     },
     "user": {
-      "via": "support_comments",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "support_comments"
     }
   }
 }

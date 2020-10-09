@@ -1,0 +1,30 @@
+.view-support-menu__area {
+  width: 100%;
+
+  &__contents {
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+
+      li {
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 900;
+        line-height: 1;
+        float: left;
+        margin-right: 30px;
+        color: #555;
+
+        &.selected {
+          color: #000 !important;
+        }
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}

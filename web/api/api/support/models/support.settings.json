@@ -28,6 +28,10 @@
       "via": "supports",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "support_comments": {
+      "via": "support",
+      "collection": "support-comment"
     }
   }
 }

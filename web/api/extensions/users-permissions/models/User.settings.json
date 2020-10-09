@@ -75,8 +75,8 @@
       "via": "user"
     },
     "support_comments": {
-      "collection": "support-comment",
-      "via": "user"
+      "via": "user",
+      "collection": "support-comment"
     },
     "consulting_comments": {
       "via": "user",
