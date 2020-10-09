@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Lee from "../lib/Lee";
 import Head from "next/head";
 
 import "../styles/pages/index.scss";
@@ -8,6 +9,10 @@ import HomeNotice from "../components/Home/HomeNotice/HomeNotice";
 import HomeCard from "../components/Home/HomeCard/HomeCard";
 
 const Index = () => {
+  useEffect(() => {
+    Lee.loadingFinish();
+  });
+
   return (
     <div id="Home">
       <Head>

@@ -1,0 +1,125 @@
+.card__area {
+  margin-top: 63px;
+  padding-bottom: 150px;
+  min-height: 90vh;
+  background: #f5f5f5;
+
+  &__video {
+    height: calc(66vh);
+    min-height: 600px;
+
+    video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    &__fade {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.1;
+      z-index: 2;
+    }
+
+    &__contents {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+
+      height: calc(66vh);
+      min-height: 600px;
+      max-width: 1440px;
+      padding: 0 30px;
+      margin: 0 auto;
+      z-index: 3;
+
+      &__title {
+        position: absolute;
+        font-size: 42px;
+        font-weight: 900;
+        color: #fff;
+        left: 30px;
+        bottom: 100px;
+        z-index: 3;
+
+        span {
+          position: relative;
+          font-size: 17px;
+          font-weight: 700;
+          color: #fff;
+          top: -29px;
+          left: 55px;
+          padding: 12px 15px;
+          background: #305f5d;
+          border-radius: 5px;
+        }
+      }
+
+      &__bi {
+        position: absolute;
+        left: 30px;
+        bottom: 270px;
+        height: 38px;
+        animation: 0.5s infinite bi-up;
+        transform: scaleX(-1);
+
+        @keyframes bi-up {
+          0% {
+            bottom: 270px;
+          }
+          50% {
+            bottom: 273px;
+          }
+          100% {
+            bottom: 270px;
+          }
+        }
+      }
+    }
+  }
+
+  &__contents {
+    z-index: 2;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    padding-top: 50px;
+
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        cursor: pointer;
+        width: calc(25% - 37.5px);
+        margin-right: 50px;
+        margin-top: 50px;
+        float: left;
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        transition: top 0.2s;
+        top: 0;
+
+        &:hover {
+          top: -10px;
+        }
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

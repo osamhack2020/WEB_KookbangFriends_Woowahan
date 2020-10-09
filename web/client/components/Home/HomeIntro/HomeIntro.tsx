@@ -11,7 +11,8 @@ const HomeIntro = () => {
         <div className="home-intro__area__background parents">
           {/* <img src="/static/images/preview-background.jpg" alt="background" /> */}
           <video autoPlay loop muted playsInline>
-            <source src="/static/test.mp4" type="video/mp4" />
+            <source src="/static/videos/home-video.webm" type="video/webm" />
+            <source src="/static/videos/home-video.mp4" type="video/mp4" />
           </video>
           <div className="home-intro__area__fade" />
         </div>
