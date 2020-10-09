@@ -81,6 +81,14 @@
     "consulting_comments": {
       "via": "user",
       "collection": "consulting-comment"
+    },
+    "consultings_rec": {
+      "via": "recipient",
+      "collection": "consulting"
+    },
+    "consultings_pro": {
+      "via": "professional",
+      "collection": "consulting"
     }
   }
 }

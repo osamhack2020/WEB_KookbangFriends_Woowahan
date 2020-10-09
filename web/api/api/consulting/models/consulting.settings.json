@@ -22,8 +22,29 @@
       "required": true
     },
     "consulting_comment": {
-      "via": "consultings",
-      "model": "consulting-comment"
+      "model": "consulting-comment",
+      "via": "consultings"
+    },
+    "recipient": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "consultings_rec"
+    },
+    "professional": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "consultings_pro"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "accepting",
+        "confirmed",
+        "progressing",
+        "solved"
+      ],
+      "default": "accepting",
+      "required": true
     }
   }
 }

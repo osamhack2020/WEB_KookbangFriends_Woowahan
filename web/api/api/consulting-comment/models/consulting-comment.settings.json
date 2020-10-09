@@ -14,8 +14,8 @@
       "required": true
     },
     "consultings": {
-      "collection": "consulting",
-      "via": "consulting_comment"
+      "via": "consulting_comment",
+      "collection": "consulting"
     },
     "user": {
       "plugin": "users-permissions",
