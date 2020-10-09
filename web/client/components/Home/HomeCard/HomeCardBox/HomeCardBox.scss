@@ -1,0 +1,61 @@
+.home-card-box__area {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  transition: top 0.2s;
+
+  &:hover {
+    top: -10px;
+  }
+
+  &__contents {
+    &__thumbnail {
+      margin-top: 15px;
+      position: relative;
+      padding-top: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.2s;
+      }
+    }
+
+    &__type {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 12px;
+      color: #fff;
+      margin-top: 30px;
+      display: table;
+      padding: 5px 10px;
+      background: rgb(24, 109, 207);
+      border-radius: 1000px;
+      font-weight: 700;
+
+      &.youtube {
+        background: rgb(233, 81, 81);
+      }
+    }
+
+    &__date {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 12px;
+      font-weight: 400;
+      color: #555;
+      margin-top: 15px;
+    }
+
+    &__title {
+      font-size: 17px;
+      font-weight: 900;
+      color: #232323;
+      margin-top: 5px;
+    }
+  }
+}

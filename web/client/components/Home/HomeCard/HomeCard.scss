@@ -1,0 +1,21 @@
+.home-card__area {
+  margin-top: 50px;
+
+  &__contents {
+    max-width: 1440px;
+    padding: 30px;
+    margin: 0 auto;
+
+    &__subject {
+      span {
+        font-size: 21px;
+        font-weight: 900;
+        color: #555;
+      }
+    }
+
+    &__lists {
+      margin-top: 30px;
+    }
+  }
+}
