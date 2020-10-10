@@ -1,0 +1,143 @@
+.my-page-view-consulting-status__area {
+  padding: 30px;
+  background: #f5f5f5;
+  border-radius: 0 0 15px 15px;
+  border: 2px solid #eee;
+  border-top: none;
+
+  &__contents {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    float: left;
+    border: 2px solid #eee;
+    border-radius: 15px;
+
+    &__subject {
+      font-size: 17px;
+      font-weight: 900;
+      color: #555;
+    }
+
+    &__now {
+      font-size: 24px;
+      font-weight: 900;
+      margin-top: 15px;
+
+      &.accepting {
+        color: rgb(144, 169, 204);
+      }
+
+      &.confirmed {
+        color: rgb(86, 113, 150);
+      }
+
+      &.progressing {
+        color: rgb(62, 87, 119);
+      }
+
+      &.solved {
+        color: rgb(13, 30, 54);
+      }
+    }
+
+    &__paragraph {
+      font-family: "Noto Sans KR", serif, Arial;
+      position: absolute;
+      right: 30px;
+      top: 85px;
+      font-size: 14px;
+      color: #555;
+      font-weight: 700;
+    }
+
+    &__graph {
+      position: relative;
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+      overflow: hidden;
+      border: 2px solid #eee;
+      border-radius: 15px;
+
+      li {
+        position: relative;
+        width: 25%;
+        float: left;
+        height: 10px;
+        background: #eee;
+      }
+
+      &__box {
+        &__full {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.1;
+
+          &.accepting {
+            background: rgb(144, 169, 204);
+          }
+
+          &.confirmed {
+            background: rgb(86, 113, 150);
+          }
+
+          &.progressing {
+            background: rgb(62, 87, 119);
+          }
+
+          &.solved {
+            background: rgb(13, 30, 54);
+          }
+        }
+      }
+    }
+  }
+
+  &.accepting {
+    .my-page-view-consulting-status__area__contents__graph__box__full.accepting {
+      opacity: 1;
+    }
+  }
+
+  &.confirmed {
+    .my-page-view-consulting-status__area__contents__graph__box__full.accepting {
+      opacity: 1;
+    }
+    .my-page-view-consulting-status__area__contents__graph__box__full.confirmed {
+      opacity: 1;
+    }
+  }
+
+  &.progressing {
+    .my-page-view-consulting-status__area__contents__graph__box__full.accepting {
+      opacity: 1;
+    }
+    .my-page-view-consulting-status__area__contents__graph__box__full.confirmed {
+      opacity: 1;
+    }
+    .my-page-view-consulting-status__area__contents__graph__box__full.progressing {
+      opacity: 1;
+    }
+  }
+
+  &.solved {
+    .my-page-view-consulting-status__area__contents__graph__box__full.accepting {
+      opacity: 1;
+    }
+    .my-page-view-consulting-status__area__contents__graph__box__full.confirmed {
+      opacity: 1;
+    }
+    .my-page-view-consulting-status__area__contents__graph__box__full.progressing {
+      opacity: 1;
+    }
+    .my-page-view-consulting-status__area__contents__graph__box__full.solved {
+      opacity: 1;
+    }
+  }
+}

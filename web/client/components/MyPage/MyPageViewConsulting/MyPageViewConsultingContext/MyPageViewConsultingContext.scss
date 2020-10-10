@@ -1,0 +1,55 @@
+.my-page-view-consulting-context__area {
+  margin-top: 50px;
+
+  &__subject {
+    font-weight: 900;
+    font-size: 21px;
+    color: #232323;
+  }
+
+  &__contents {
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #eee;
+
+    &__subject {
+      font-size: 17px;
+      font-weight: 900;
+      color: #555;
+    }
+
+    &__date {
+      font-size: 19px;
+      font-weight: 900;
+      color: #232323;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+
+    &__type {
+      font-size: 19px;
+      font-weight: 900;
+      color: #232323;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 24px;
+      font-weight: 900;
+      color: #232323;
+      margin-top: 30px;
+    }
+
+    &__description {
+      margin-top: 50px;
+
+      span {
+        font-size: 17px;
+        font-weight: 700;
+        color: #555;
+      }
+    }
+  }
+}

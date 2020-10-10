@@ -10,6 +10,7 @@ import "../styles/pages/myPage.scss";
 
 import MyPageInfo from "../components/MyPage/MyPageInfo/MyPageInfo";
 import MyPageConsulting from "../components/MyPage/MyPageConsulting/MyPageConsulting";
+import MyPageViewConsulting from "../components/MyPage/MyPageViewConsulting/MyPageViewConsulting";
 
 const USER_QUERY = gql`
   query {
@@ -70,6 +71,9 @@ function MyPage({ query }) {
             <MyPageInfo user={me.user} />
             {query.type === "consulting" && (
               <MyPageConsulting id={me.user.id} />
+            )}
+            {query.type === "viewConsulting" && (
+              <MyPageViewConsulting id={query.id} ver={query.ver} />
             )}
           </div>
         </div>
