@@ -13,9 +13,9 @@
       "type": "text",
       "required": true
     },
-    "consultings": {
-      "via": "consulting_comment",
-      "collection": "consulting"
+    "consulting": {
+      "model": "consulting",
+      "via": "consulting_comments"
     },
     "user": {
       "plugin": "users-permissions",

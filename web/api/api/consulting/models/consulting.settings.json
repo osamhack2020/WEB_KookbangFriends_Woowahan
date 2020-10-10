@@ -21,10 +21,6 @@
       "type": "string",
       "required": true
     },
-    "consulting_comment": {
-      "model": "consulting-comment",
-      "via": "consultings"
-    },
     "recipient": {
       "plugin": "users-permissions",
       "model": "user",
@@ -45,6 +41,10 @@
       ],
       "default": "accepting",
       "required": true
+    },
+    "consulting_comments": {
+      "via": "consulting",
+      "collection": "consulting-comment"
     }
   }
 }
