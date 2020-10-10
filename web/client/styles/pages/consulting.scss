@@ -1,0 +1,31 @@
+.consulting__area {
+  margin-top: 63px;
+  padding-bottom: 150px;
+
+  &__contents {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+
+    &__title {
+      font-size: 19px;
+      font-weight: 900;
+      color: #555;
+      padding-left: 2px;
+    }
+
+    &__type {
+      font-size: 42px;
+      font-weight: 900;
+      color: #000;
+      -webkit-text-stroke: 0.02em;
+    }
+
+    &__paragraph {
+      font-size: 19px;
+      font-weight: 900;
+      color: #555;
+      margin-top: 30px;
+    }
+  }
+}

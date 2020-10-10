@@ -1,0 +1,79 @@
+.consulting-person-box__area {
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  opacity: 0.5;
+  transition: opacity 0.2s, top 0.2s;
+  top: 0;
+
+  &:hover {
+    opacity: 0.7;
+    top: -7.5px;
+  }
+
+  &.selected {
+    opacity: 1;
+    top: -15px;
+
+    .consulting-person-box__area__check {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__check {
+    visibility: hidden;
+    font-family: "Noto Sans KR", serif, Arial;
+    position: absolute;
+    padding: 8px 9px;
+    padding-top: 10px;
+    border-radius: 1000px;
+    background: linear-gradient(-45deg, #305f5d, #30435f, #305a5f, #305f5d);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__contents {
+    &__thumbnail {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      background: #f5f5f5;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      text-align: center;
+      margin-top: 15px;
+
+      &__name {
+        font-size: 24px;
+        font-weight: 900;
+        margin-top: 15px;
+
+        span {
+          font-size: 17px;
+          color: #555;
+        }
+      }
+    }
+  }
+}
