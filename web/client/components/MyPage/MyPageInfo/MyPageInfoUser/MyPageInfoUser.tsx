@@ -10,7 +10,7 @@ const MyPageInfoUser = (props) => {
           <div className="my-page-info-user__area__contents__thumbnail">
             {props.thumbnail ? (
               <img
-                src={`https://api.kookbang.kr${props.thumbnail.url}`}
+                src={`https://osam2.kookbang.kr${props.thumbnail.url}`}
                 alt="thumbnail"
               />
             ) : (

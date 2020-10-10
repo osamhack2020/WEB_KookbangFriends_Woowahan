@@ -18,15 +18,27 @@ const MyPageInfo = (props) => {
             avatar={props.user.avatar}
           />
           <ul className="my-page-info__area__contents__menu">
-            <DelayLink
-              to="mypage?type=consulting"
-              delay={200}
-              onDelayStart={function () {
-                Lee.loadingStart();
-              }}
-            >
-              <li className="selected">나의 상담내역</li>
-            </DelayLink>
+            {props.ver === "professional" ? (
+              <DelayLink
+                to={`mypage?type=consulting&ver=professional`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li className="selected">나의 상담내역</li>
+              </DelayLink>
+            ) : (
+              <DelayLink
+                to="mypage?type=consulting"
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li className="selected">나의 상담내역</li>
+              </DelayLink>
+            )}
             <li>좋아요 피드</li>
             <li>체력검정기록</li>
           </ul>

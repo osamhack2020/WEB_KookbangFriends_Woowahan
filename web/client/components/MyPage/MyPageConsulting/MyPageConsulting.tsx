@@ -6,31 +6,59 @@ import Lee from "../../../lib/Lee";
 
 import "./MyPageConsulting.scss";
 
-const CONSULTING_QUERY = gql`
-  query {
-    me {
-      user {
-        consultings_rec {
-          id
-          title
-          type
-          createdAt
-          status
-          professional {
-            username
-            thumbnail {
-              url
+import MyPageConsultingBox from "./MyPageConsultingBox/MyPageConsultingBox";
+
+const MyPageConsulting = (props) => {
+  let CONSULTING_QUERY;
+
+  if (props.ver === "professional") {
+    CONSULTING_QUERY = gql`
+      query {
+        me {
+          user {
+            consultings_pro {
+              id
+              title
+              type
+              createdAt
+              status
+              recipient {
+                username
+                thumbnail {
+                  url
+                }
+                avatar
+              }
             }
           }
         }
       }
-    }
+    `;
+  } else {
+    CONSULTING_QUERY = gql`
+      query {
+        me {
+          user {
+            consultings_rec {
+              id
+              title
+              type
+              createdAt
+              status
+              professional {
+                username
+                thumbnail {
+                  url
+                }
+                avatar
+              }
+            }
+          }
+        }
+      }
+    `;
   }
-`;
 
-import MyPageConsultingBox from "./MyPageConsultingBox/MyPageConsultingBox";
-
-const MyPageConsulting = (props) => {
   let consultings;
 
   const { data, loading, error } = useQuery(CONSULTING_QUERY, {
@@ -50,7 +78,11 @@ const MyPageConsulting = (props) => {
   }
 
   if (data) {
-    consultings = data.me.user.consultings_rec;
+    if (props.ver === "professional") {
+      consultings = data.me.user.consultings_pro;
+    } else {
+      consultings = data.me.user.consultings_rec;
+    }
   }
 
   return (
@@ -58,7 +90,7 @@ const MyPageConsulting = (props) => {
       <div className="my-page-consulting__area parents">
         <div className="my-page-consulting__area__contents parents">
           <div className="my-page-consulting__area__contents__title">
-            나의 상담내역
+            {props.ver === "professional" ? "담당 상담내역" : "나의 상담내역"}
           </div>
           <DelayLink
             to={`consultingList`}
@@ -67,25 +99,42 @@ const MyPageConsulting = (props) => {
               Lee.loadingStart();
             }}
           >
-            <div className="my-page-consulting__area__contents__button">
-              상담하기
-            </div>
+            {props.ver !== "professional" && (
+              <div className="my-page-consulting__area__contents__button">
+                상담하기
+              </div>
+            )}
           </DelayLink>
           {consultings.length > 0 ? (
             <ul className="my-page-consulting__area__contents__lists">
-              {consultings.map((consulting, index) => {
-                return (
-                  <MyPageConsultingBox
-                    key={`consulting-${index}`}
-                    id={consulting.id}
-                    title={consulting.title}
-                    type={consulting.type}
-                    status={consulting.status}
-                    date={consulting.createdAt}
-                    pro={consulting.professional}
-                  />
-                );
-              })}
+              {props.ver === "professional"
+                ? consultings.map((consulting, index) => {
+                    return (
+                      <MyPageConsultingBox
+                        key={`consulting-${index}`}
+                        id={consulting.id}
+                        title={consulting.title}
+                        type={consulting.type}
+                        status={consulting.status}
+                        date={consulting.createdAt}
+                        rec={consulting.recipient}
+                        ver={props.ver}
+                      />
+                    );
+                  })
+                : consultings.map((consulting, index) => {
+                    return (
+                      <MyPageConsultingBox
+                        key={`consulting-${index}`}
+                        id={consulting.id}
+                        title={consulting.title}
+                        type={consulting.type}
+                        status={consulting.status}
+                        date={consulting.createdAt}
+                        pro={consulting.professional}
+                      />
+                    );
+                  })}
             </ul>
           ) : (
             <div className="my-page-consulting__area__contents__none">

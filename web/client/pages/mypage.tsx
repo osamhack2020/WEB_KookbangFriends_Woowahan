@@ -16,6 +16,9 @@ const USER_QUERY = gql`
   query {
     me {
       user {
+        role {
+          name
+        }
         username
         thumbnail {
           url
@@ -32,7 +35,6 @@ function MyPage({ query }) {
   useEffect(() => {
     if (Cookies.get("username") && Cookies.get("jwt")) {
       setLogin(true);
-      Lee.loadingFinish();
     } else {
       Router.push(`/`);
     }
@@ -57,7 +59,17 @@ function MyPage({ query }) {
   }
 
   if (data) {
-    me = data.me;
+    if (data.me.user.role.name !== "Professional") {
+      if (query.ver === "professional") {
+        Router.push(`/`);
+      } else {
+        me = data.me;
+        Lee.loadingFinish();
+      }
+    } else {
+      me = data.me;
+      Lee.loadingFinish();
+    }
   }
 
   return (
@@ -65,12 +77,12 @@ function MyPage({ query }) {
       <Head>
         <title>국방프렌즈 - 마이페이지</title>
       </Head>
-      {login && (
+      {login && me && (
         <div className="my-page__area parents">
           <div className="my-page__area__contents parents">
-            <MyPageInfo user={me.user} />
+            <MyPageInfo user={me.user} ver={query.ver} />
             {query.type === "consulting" && (
-              <MyPageConsulting id={me.user.id} />
+              <MyPageConsulting id={me.user.id} ver={query.ver} />
             )}
             {query.type === "viewConsulting" && (
               <MyPageViewConsulting id={query.id} ver={query.ver} />
