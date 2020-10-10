@@ -5,45 +5,84 @@ import gql from "graphql-tag";
 import "./MyPageViewConsulting.scss";
 
 import MyPageViewConsultingProfessional from "./MyPageViewConsultingProfessional/MyPageViewConsultingProfessional";
+import MyPageViewConsultingRecipient from "./MyPageViewConsultingRecipient/MyPageViewConsultingRecipient";
 import MyPageViewConsultingStatus from "./MyPageViewConsultingStatus/MyPageViewConsultingStatus";
 import MyPageViewConsultingContext from "./MyPageViewConsultingContext/MyPageViewConsultingContext";
 import MyPageViewConsultingComment from "./MyPageViewConsultingComment/MyPageViewConsultingComment";
 
-const CONSULTING_QUERY = gql`
-  query($id: ID!) {
-    me {
-      user {
-        consultings_rec(where: { id: $id }) {
-          title
-          type
-          createdAt
-          status
-          description
-          professional {
-            username
-            thumbnail {
-              url
-            }
-            avatar
-          }
-          consulting_comments {
-            description
-            createdAt
-            user {
-              username
-              thumbnail {
-                url
+const MyPageViewConsulting = (props) => {
+  let CONSULTING_QUERY;
+
+  if (props.ver === "professional") {
+    CONSULTING_QUERY = gql`
+      query($id: ID!) {
+        me {
+          user {
+            consultings_pro(where: { id: $id }) {
+              title
+              type
+              createdAt
+              status
+              description
+              recipient {
+                username
+                thumbnail {
+                  url
+                }
+                avatar
               }
-              avatar
+              consulting_comments {
+                description
+                createdAt
+                user {
+                  username
+                  thumbnail {
+                    url
+                  }
+                  avatar
+                }
+              }
             }
           }
         }
       }
-    }
+    `;
+  } else {
+    CONSULTING_QUERY = gql`
+      query($id: ID!) {
+        me {
+          user {
+            consultings_rec(where: { id: $id }) {
+              title
+              type
+              createdAt
+              status
+              description
+              professional {
+                username
+                thumbnail {
+                  url
+                }
+                avatar
+              }
+              consulting_comments {
+                description
+                createdAt
+                user {
+                  username
+                  thumbnail {
+                    url
+                  }
+                  avatar
+                }
+              }
+            }
+          }
+        }
+      }
+    `;
   }
-`;
 
-const MyPageViewConsulting = (props) => {
   let consulting;
 
   const { data, loading, error } = useQuery(CONSULTING_QUERY, {
@@ -66,16 +105,28 @@ const MyPageViewConsulting = (props) => {
   }
 
   if (data) {
-    consulting = data.me.user.consultings_rec[0];
+    if (props.ver === "professional") {
+      consulting = data.me.user.consultings_pro[0];
+    } else {
+      consulting = data.me.user.consultings_rec[0];
+    }
   }
 
   return (
     <div id="MyPageViewConsulting">
       <div className="my-page-view-consulting__area parents">
         <div className="my-page-view-consulting__area__contents parents">
-          <MyPageViewConsultingProfessional
-            professional={consulting.professional}
-          />
+          {props.ver === "professional" ? (
+            <MyPageViewConsultingRecipient
+              recipient={consulting.recipient}
+              id={props.id}
+              status={consulting.status}
+            />
+          ) : (
+            <MyPageViewConsultingProfessional
+              professional={consulting.professional}
+            />
+          )}
           <MyPageViewConsultingStatus status={consulting.status} />
           <MyPageViewConsultingContext
             title={consulting.title}

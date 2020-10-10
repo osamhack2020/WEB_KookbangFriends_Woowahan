@@ -43,7 +43,7 @@ function MyPageViewConsultingCommentBox(props) {
               alt="thumbnail"
             />
           ) : (
-            <img src={props.user.avatar} alt="thumbnail" />
+            <img src={props.user.avatar} alt="avatar" />
           )}
         </div>
         <div className="my-page-view-consulting-comment-box__area__contents__info">
