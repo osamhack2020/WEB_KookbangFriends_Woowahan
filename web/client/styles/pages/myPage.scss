@@ -1,0 +1,30 @@
+.my-page__area {
+  margin-top: 63px;
+  padding-bottom: 150px;
+  min-height: 90vh;
+  background: #fff;
+
+  &__contents {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    padding-top: 50px;
+
+    &__thumbnail {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      overflow: hidden;
+      float: left;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

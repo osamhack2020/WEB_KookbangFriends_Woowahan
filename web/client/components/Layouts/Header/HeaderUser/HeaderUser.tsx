@@ -59,7 +59,7 @@ const HeaderUser = () => {
       <div className="header-user__area">
         <div className="header-user__area__contents">
           <DelayLink
-            to="mypage"
+            to="mypage?type=consulting"
             delay={200}
             onDelayStart={function () {
               Lee.loadingStart();
