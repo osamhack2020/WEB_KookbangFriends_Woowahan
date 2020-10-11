@@ -1,0 +1,57 @@
+.community-nav__area {
+  position: fixed;
+  left: 50%;
+  margin-left: -690px;
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  padding: 115px 30px;
+  border-right: 2px solid #ececec;
+  background: #eee;
+
+  &__contents {
+    &__category {
+      &__title {
+        font-size: 17px;
+        font-weight: 900;
+      }
+
+      &__lists {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        list-style: none;
+        overflow: hidden;
+
+        li {
+          cursor: pointer;
+          font-size: 17px;
+          font-weight: 900;
+          line-height: 1;
+          color: #555;
+          margin-top: 15px;
+          overflow: hidden;
+
+          img {
+            float: left;
+            width: 36px;
+            height: 36px;
+            background: rgb(48, 67, 95);
+            padding: 7px;
+            border-radius: 5px;
+          }
+
+          span {
+            position: relative;
+            left: 10px;
+            top: 6px;
+          }
+
+          &.selected {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

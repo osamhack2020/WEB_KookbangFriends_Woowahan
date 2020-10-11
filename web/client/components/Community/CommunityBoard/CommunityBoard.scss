@@ -1,0 +1,96 @@
+.community-board__area {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  float: right;
+  min-height: 100vh;
+
+  &__contents {
+    &__title {
+      position: relative;
+      font-size: 42px;
+      font-weight: 900;
+      color: #232323;
+      line-height: 1;
+      padding: 12px 0px;
+      float: left;
+    }
+
+    &__top {
+      border-bottom: 3px solid #eee;
+      padding-bottom: 30px;
+
+      &__paragraph {
+        overflow: hidden;
+        width: calc(100% - 288px);
+        float: left;
+        font-size: 17px;
+        font-weight: 700;
+        color: #232323;
+        margin-top: 30px;
+      }
+      &__search {
+        position: relative;
+        width: 238px;
+        float: right;
+        margin-left: 50px;
+        top: 25px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        input {
+          width: 200px;
+          background: #fff;
+          color: #000;
+          font-weight: 700;
+          font-size: 17px;
+          padding: 5px 10px;
+          border: none;
+          float: left;
+        }
+
+        img {
+          cursor: pointer;
+          width: 37px;
+          height: 37px;
+          padding: 10px;
+          background: rgb(48, 95, 93);
+          float: left;
+        }
+      }
+    }
+
+    &__board-top {
+      margin: 0;
+      overflow: hidden;
+      background: #f5f5f5;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 15px;
+
+      &__title {
+        font-size: 17px;
+        font-weight: 900;
+        padding: 15px 20px;
+        line-height: 1;
+        color: #fff;
+        background: #305f5d;
+        display: table;
+        border-radius: 1000px;
+      }
+    }
+
+    &__board {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    &__board-nothing {
+      padding-top: calc(50vh - 100px);
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
