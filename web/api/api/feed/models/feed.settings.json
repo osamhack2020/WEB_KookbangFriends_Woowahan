@@ -14,9 +14,9 @@
       "required": true
     },
     "user": {
-      "via": "feeds",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "feeds"
     },
     "date": {
       "type": "string",
@@ -42,8 +42,14 @@
       "required": false
     },
     "support_comments": {
-      "via": "support",
-      "collection": "support-comment"
+      "collection": "support-comment",
+      "via": "support"
+    },
+    "user_likes": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "feed_likes",
+      "dominant": true
     }
   }
 }

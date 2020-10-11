@@ -63,8 +63,8 @@
       "required": false
     },
     "feeds": {
-      "collection": "feed",
-      "via": "user"
+      "via": "user",
+      "collection": "feed"
     },
     "avatar": {
       "type": "string",
@@ -89,6 +89,10 @@
     "consultings_pro": {
       "via": "professional",
       "collection": "consulting"
+    },
+    "feed_likes": {
+      "via": "user_likes",
+      "collection": "feed"
     }
   }
 }
