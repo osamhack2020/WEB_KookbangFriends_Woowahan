@@ -1,12 +1,28 @@
+#Footer.community {
+  display: none;
+  .footer__area {
+    max-width: calc(100% - 600px);
+    margin: 0 auto;
+    background: #f5f5f5;
+
+    &__contents {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 .footer__area {
   background: #eee;
   border-top: 1px solid #eee;
   z-index: 3;
+  transition: max-width 0.4s, margin 0.4s, background 0.4s;
 
   &__contents {
     max-width: 1440px;
     padding: 30px;
     margin: 0 auto;
+    transition: max-width 0.4s;
 
     &__menus {
       position: relative;
