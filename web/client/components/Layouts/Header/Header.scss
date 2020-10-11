@@ -1,3 +1,33 @@
+#Header.community {
+  .header__area {
+    border-bottom: 0px solid #eee;
+    background: rgb(48, 67, 95);
+
+    &__contents {
+      &__logo {
+        color: #fff;
+      }
+
+      &__menus {
+        li {
+          color: #fff;
+        }
+      }
+
+      &__logins {
+        li {
+          color: #fff;
+
+          &.community {
+            background: #fff;
+            color: #30435f;
+          }
+        }
+      }
+    }
+  }
+}
+
 .header__area {
   position: fixed;
   left: 0;
@@ -7,11 +37,13 @@
   background: #fff;
   height: 63px;
   border-bottom: 1px solid #eee;
+  transition: background 0.4s;
 
   &__contents {
     max-width: 1440px;
     padding: 15px 30px;
     margin: 0 auto;
+    transition: padding 0.4s, max-width 0.4s;
 
     &__logo {
       cursor: pointer;
@@ -23,6 +55,7 @@
       letter-spacing: 0.05em;
       -webkit-text-stroke: 0.01em;
       float: left;
+      transition: color 0.4s;
 
       img {
         position: relative;
@@ -43,6 +76,7 @@
       float: left;
       top: 6px;
       margin-left: 50px;
+      transition: color 0.4s;
 
       li {
         font-family: "Noto Sans KR", serif, Arial;
@@ -73,6 +107,16 @@
         color: #232323;
         margin-left: 30px;
         font-weight: 700;
+        transition: color 0.4s, background 0.4s;
+
+        &.community {
+          padding: 6px 12px;
+          background: #30435f;
+          margin-top: -4px;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 12px;
+        }
       }
     }
   }

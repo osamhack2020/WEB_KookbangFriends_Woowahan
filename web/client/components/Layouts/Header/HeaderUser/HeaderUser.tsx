@@ -107,6 +107,15 @@ const HeaderUser = () => {
             </DelayLink>
           )}
           <li onClick={logout}>로그아웃</li>
+          <DelayLink
+            to="community?type=전체게시글"
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li className="community">커뮤니티</li>
+          </DelayLink>
         </div>
       </div>
     </div>

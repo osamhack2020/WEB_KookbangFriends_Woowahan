@@ -20,10 +20,21 @@ const Header = () => {
   let [login, setLogin] = useState(false);
 
   useEffect(() => {
+    const header = Lee.get("Header");
+    const footer = Lee.get("Footer");
+
     if (Cookies.get("username") && Cookies.get("jwt")) {
       setLogin(true);
     } else {
       setLogin(false);
+    }
+
+    if (location.pathname === "/community") {
+      Lee.addClass(header, "community");
+      Lee.addClass(footer, "community");
+    } else {
+      Lee.removeClass(header, "community");
+      Lee.removeClass(footer, "community");
     }
   });
 
@@ -65,15 +76,6 @@ const Header = () => {
               <li>상담 서비스</li>
             </DelayLink>
             <DelayLink
-              to="community?type=자유게시판"
-              delay={200}
-              onDelayStart={function () {
-                Lee.loadingStart();
-              }}
-            >
-              <li>커뮤니티</li>
-            </DelayLink>
-            <DelayLink
               to="card"
               delay={200}
               onDelayStart={function () {
@@ -99,6 +101,15 @@ const Header = () => {
               <>
                 <li onClick={Lee.openLogin}>로그인</li>
                 <li onClick={Lee.openRegistration}>회원가입</li>
+                <DelayLink
+                  to="community?type=전체게시글"
+                  delay={200}
+                  onDelayStart={function () {
+                    Lee.loadingStart();
+                  }}
+                >
+                  <li className="community">커뮤니티</li>
+                </DelayLink>
               </>
             )}
           </ul>
