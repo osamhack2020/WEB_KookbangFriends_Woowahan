@@ -93,6 +93,10 @@
     "feed_likes": {
       "via": "user_likes",
       "collection": "feed"
+    },
+    "feed_comments": {
+      "via": "user",
+      "collection": "feed-comment"
     }
   }
 }

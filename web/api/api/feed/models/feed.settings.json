@@ -50,6 +50,10 @@
       "collection": "user",
       "via": "feed_likes",
       "dominant": true
+    },
+    "feed_comments": {
+      "via": "feed",
+      "collection": "feed-comment"
     }
   }
 }
