@@ -1,0 +1,84 @@
+.community-view-feed__area {
+  background: #fff;
+  border: 2px solid #ececec;
+  border-radius: 15px;
+
+  &__contents {
+    padding: 30px;
+
+    &__user {
+      &__thumbnail {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 1000px;
+        float: left;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &__info {
+        width: calc(100% - 86px);
+        float: left;
+        margin-left: 30px;
+        margin-top: 3px;
+
+        &__username {
+          font-size: 19px;
+          font-weight: 900;
+          color: #232323;
+        }
+
+        &__date {
+          font-weight: 700;
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 14px;
+          color: #555;
+        }
+      }
+    }
+
+    &__thumbnail {
+      margin-top: 30px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__category {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 12px;
+      color: #fff;
+      margin-top: 50px;
+      display: table;
+      padding: 6px 12px;
+      background: #186dcf;
+      border-radius: 1000px;
+      font-weight: 700;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 900;
+      margin-top: 20px;
+      color: #232323;
+    }
+
+    &__description {
+      font-size: 17px;
+      font-weight: 700;
+      color: #555;
+      margin-top: 30px;
+    }
+  }
+}
