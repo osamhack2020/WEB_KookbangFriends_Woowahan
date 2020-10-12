@@ -114,7 +114,7 @@ function CommunityViewFeed(props) {
           <div className="community-view-feed__area__contents__user__thumbnail">
             {feed.user.thumbnail ? (
               <img
-                src={`https://api.kookbang.kr${feed.user.thumbnail.url}`}
+                src={`https://osam2.kookbang.kr${feed.user.thumbnail.url}`}
                 alt="thumbnail"
               />
             ) : (
@@ -133,7 +133,7 @@ function CommunityViewFeed(props) {
         <div className="community-view-feed__area__contents__thumbnail">
           {feed.thumbnail && (
             <img
-              src={`https://api.kookbang.kr${feed.thumbnail.url}`}
+              src={`https://osam2.kookbang.kr${feed.thumbnail.url}`}
               alt="thumbnail"
             />
           )}

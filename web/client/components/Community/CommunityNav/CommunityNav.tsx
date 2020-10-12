@@ -13,13 +13,13 @@ function CommunityNav(props) {
           </div>
           <ul className="community-nav__area__contents__category__lists">
             <DelayLink
-              to="community?type=전체게시글"
+              to={`community?type=list&category=전체게시글`}
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
               }}
             >
-              {props.type === "전체게시글" ? (
+              {props.category === "전체게시글" ? (
                 <li className="selected">
                   <img src="/static/icons/chat.png" alt="icon" />
                   <span>전체게시글</span>
@@ -32,13 +32,13 @@ function CommunityNav(props) {
               )}
             </DelayLink>
             <DelayLink
-              to="community?type=자유게시판"
+              to={`community?type=list&category=자유게시판`}
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
               }}
             >
-              {props.type === "자유게시판" ? (
+              {props.category === "자유게시판" ? (
                 <li className="selected">
                   <img src="/static/icons/communication.png" alt="icon" />
                   <span>자유게시판</span>
@@ -51,13 +51,13 @@ function CommunityNav(props) {
               )}
             </DelayLink>
             <DelayLink
-              to="community?type=병영노하우"
+              to={`community?type=list&category=병영노하우`}
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
               }}
             >
-              {props.type === "병영노하우" ? (
+              {props.category === "병영노하우" ? (
                 <li className="selected">
                   <img src="/static/icons/tips.png" alt="icon" />
                   <span>병영노하우</span>
@@ -70,13 +70,13 @@ function CommunityNav(props) {
               )}
             </DelayLink>
             <DelayLink
-              to="community?type=동아리모집"
+              to={`community?type=list&category=동아리모집`}
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
               }}
             >
-              {props.type === "동아리모집" ? (
+              {props.category === "동아리모집" ? (
                 <li className="selected">
                   <img src="/static/icons/color-circle.png" alt="icon" />
                   <span>동아리모집</span>
@@ -89,13 +89,13 @@ function CommunityNav(props) {
               )}
             </DelayLink>
             <DelayLink
-              to="community?type=고민나누기"
+              to={`community?type=list&category=고민나누기`}
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
               }}
             >
-              {props.type === "고민나누기" ? (
+              {props.category === "고민나누기" ? (
                 <li className="selected">
                   <img src="/static/icons/hope.png" alt="icon" />
                   <span>고민나누기</span>
@@ -108,13 +108,13 @@ function CommunityNav(props) {
               )}
             </DelayLink>
             <DelayLink
-              to="community?type=국방 유튜브"
+              to={`community?type=list&category=국방유튜브`}
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
               }}
             >
-              {props.type === "국방유튜브" ? (
+              {props.category === "국방유튜브" ? (
                 <li className="selected">
                   <img src="/static/icons/youtube.png" alt="icon" />
                   <span>국방유튜브</span>

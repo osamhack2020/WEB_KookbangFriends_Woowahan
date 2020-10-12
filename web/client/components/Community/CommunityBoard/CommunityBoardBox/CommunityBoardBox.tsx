@@ -1,4 +1,6 @@
 import React from "react";
+import Lee from "../../../../lib/Lee";
+import DelayLink from "../../../../lib/DelayLink";
 
 import "./CommunityBoardBox.scss";
 
@@ -39,7 +41,7 @@ function CommunityBoardBox(props) {
         <div className="community-board-box__area__contents__user parents">
           <div className="community-board-box__area__contents__user__thumbnail">
             <img
-              src={`https://api.kookbang.kr${props.user.thumbnail.url}`}
+              src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
               alt="thumbnail"
             />
           </div>
@@ -53,26 +55,39 @@ function CommunityBoardBox(props) {
             </div>
           </div>
         </div>
-        {props.thumbnail && (
-          <div className="community-board-box__area__contents__thumbnail">
-            <img
-              src={`https://api.kookbang.kr${props.thumbnail.url}`}
-              alt="thumbnail"
-            />
+        <DelayLink
+          to={`community?type=view&category=${props.type}&id=${props.id}`}
+          delay={200}
+          onDelayStart={function () {
+            Lee.loadingStart();
+          }}
+        >
+          {props.thumbnail && (
+            <div className="community-board-box__area__contents__thumbnail">
+              <img
+                src={`https://osam2.kookbang.kr${props.thumbnail.url}`}
+                alt="thumbnail"
+              />
+            </div>
+          )}
+          <div className="community-board-box__area__contents__info">
+            <div className="community-board-box__area__contents__info__title">
+              {props.title}
+            </div>
+            <div className="community-board-box__area__contents__info__paragraph">
+              {props.paragraph}
+            </div>
           </div>
-        )}
-        <div className="community-board-box__area__contents__info">
-          <div className="community-board-box__area__contents__info__title">
-            {props.title}
+          <div className="community-board-box__area__contents__view">
+            <span>자세히 보기</span>
+            <img src="/static/icons/right-arrow.png" alt="view" />
           </div>
-          <div className="community-board-box__area__contents__info__paragraph">
-            {props.paragraph}
+          <div className="community-board-box__area__contents__likes">
+            <img src="/static/icons/heart-fill.png" alt="like" />
+            <br />
+            {props.likes}
           </div>
-        </div>
-        <div className="community-board-box__area__contents__view">
-          <span>자세히 보기</span>
-          <img src="/static/icons/right-arrow.png" alt="view" />
-        </div>
+        </DelayLink>
       </div>
     </li>
   );

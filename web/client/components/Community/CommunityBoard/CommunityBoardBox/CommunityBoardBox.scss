@@ -138,5 +138,19 @@
         margin-left: 5px;
       }
     }
+
+    &__likes {
+      position: absolute;
+      right: 35px;
+      top: 30px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 900;
+      color: #555;
+
+      img {
+        width: 20px;
+      }
+    }
   }
 }

@@ -14,6 +14,7 @@ const FEED_QUERY = gql`
         thumbnail {
           url
         }
+        avatar
       }
     }
   }
@@ -58,7 +59,8 @@ function CommunityFriends(props) {
       if (!check) {
         friends.push({
           username: friend.user.username,
-          thumbnail: friend.user.thumbnail.url,
+          thumbnail: friend.user.thumbnail,
+          avatar: friend.user.avatar,
           count: 1,
         });
       }
@@ -80,10 +82,14 @@ function CommunityFriends(props) {
                 return (
                   <li key={index}>
                     <div className="community-friends__area__contents__friends__lists__thumbnail">
-                      <img
-                        src={`https://api.kookbang.kr${friend.thumbnail}`}
-                        alt="thumbnail"
-                      />
+                      {friend.thumbnail ? (
+                        <img
+                          src={`https://osam2.kookbang.kr${friend.thumbnail.url}`}
+                          alt="thumbnail"
+                        />
+                      ) : (
+                        <img src={`${friend.avatar}`} alt="thumbnail" />
+                      )}
                     </div>
                     <div className="community-friends__area__contents__friends__lists__user">
                       <div className="community-friends__area__contents__friends__lists__user__username">

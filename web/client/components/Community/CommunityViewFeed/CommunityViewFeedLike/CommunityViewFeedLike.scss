@@ -3,11 +3,11 @@
     cursor: pointer;
     position: relative;
     display: table;
-    width: 100px;
+    width: 80px;
     margin: 0 auto;
     margin-top: 100px;
-    padding: 15px 15px;
-    border: 3px solid #eee;
+    padding: 10px;
+    border: 2px solid #eee;
     text-align: center;
     padding-bottom: 5px;
     border-radius: 15px;
@@ -15,11 +15,11 @@
     transition: opacity 0.2s;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
     span {
-      font-size: 24px;
+      font-size: 19px;
       font-weight: 900;
       color: #555;
     }
