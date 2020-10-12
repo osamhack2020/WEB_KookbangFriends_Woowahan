@@ -30,7 +30,7 @@ const HomeMenu = () => {
             </li>
             <li>
               <DelayLink
-                to="community?type=자유게시판"
+                to={`community?type=list&category=전체게시글`}
                 delay={200}
                 onDelayStart={function () {
                   Lee.loadingStart();
@@ -45,12 +45,20 @@ const HomeMenu = () => {
               </DelayLink>
             </li>
             <li>
-              <HomeMenuBox
-                title="대한민국 국군의 소식을 빠르게 만나보세요!"
-                paragraph="국민과 함께 만드는 강한 국방, 강한 힘으로 무장된 대한민국 국군의 소식을 알립니다."
-                thumbnail="/static/images/home-youtube.jpg"
-                type="국방 유튜브"
-              />
+              <DelayLink
+                to={`community?type=list&category=국방유튜브`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <HomeMenuBox
+                  title="대한민국 국군의 소식을 빠르게 만나보세요!"
+                  paragraph="국민과 함께 만드는 강한 국방, 강한 힘으로 무장된 대한민국 국군의 소식을 알립니다."
+                  thumbnail="/static/images/home-youtube.jpg"
+                  type="국방유튜브"
+                />
+              </DelayLink>
             </li>
           </ul>
         </div>

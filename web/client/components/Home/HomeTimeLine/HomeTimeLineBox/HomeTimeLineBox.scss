@@ -1,0 +1,125 @@
+.home-time-line-box__area {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  transition: top 0.2s;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background: #fff;
+
+  &:hover {
+    top: -10px;
+  }
+
+  &__contents {
+    &__thumbnail {
+      position: relative;
+      padding-top: 57%;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+    }
+
+    &__type {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 12px;
+      color: #fff;
+      margin-top: 30px;
+      margin-left: 30px;
+      display: table;
+      padding: 5px 10px;
+      background: rgb(24, 109, 207);
+      border-radius: 1000px;
+      font-weight: 700;
+
+      &.youtube {
+        background: rgb(233, 81, 81);
+      }
+    }
+
+    &__title {
+      padding: 0 30px;
+      font-size: 17px;
+      font-weight: 900;
+      color: #232323;
+      margin-top: 15px;
+      height: 54px;
+    }
+
+    &__paragraph {
+      padding: 0 30px;
+      font-family: "Noto Sans KR", serif, Arial;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #555;
+      height: 66px;
+      overflow: hidden;
+    }
+
+    &__user {
+      margin-top: 30px;
+      padding: 15px 30px;
+      border-top: 1px solid #eee;
+
+      &__thumbnail {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border-radius: 1000px;
+        overflow: hidden;
+        background: #eee;
+        float: left;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s;
+        }
+      }
+
+      &__info {
+        float: left;
+        margin-left: 15px;
+        margin-top: 1px;
+
+        &__nickname {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 14px;
+          font-weight: 700;
+          color: #555;
+        }
+
+        &__date {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 12px;
+        }
+      }
+    }
+    &__likes {
+      position: absolute;
+      right: 30px;
+      bottom: 15px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 900;
+      color: #555;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
