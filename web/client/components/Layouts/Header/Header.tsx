@@ -102,7 +102,7 @@ const Header = () => {
                 <li onClick={Lee.openLogin}>로그인</li>
                 <li onClick={Lee.openRegistration}>회원가입</li>
                 <DelayLink
-                  to="community?type=전체게시글"
+                  to={`community?type=list&category=전체게시글`}
                   delay={200}
                   onDelayStart={function () {
                     Lee.loadingStart();

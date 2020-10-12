@@ -8,6 +8,7 @@ import HomeIntro from "../components/Home/HomeIntro/HomeIntro";
 import HomeNotice from "../components/Home/HomeNotice/HomeNotice";
 import HomeMenu from "../components/Home/HomeMenu/HomeMenu";
 import HomeCard from "../components/Home/HomeCard/HomeCard";
+import HomeTimeLine from "../components/Home/HomeTimeLine/HomeTimeLine";
 
 const Index = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const Index = () => {
           <HomeNotice />
           <HomeMenu />
           <HomeCard />
+          <HomeTimeLine />
         </div>
       </div>
     </div>
