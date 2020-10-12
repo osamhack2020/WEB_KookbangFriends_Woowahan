@@ -17,8 +17,8 @@ const MyPageInfo = (props) => {
             thumbnail={props.user.thumbnail}
             avatar={props.user.avatar}
           />
-          <ul className="my-page-info__area__contents__menu">
-            {props.ver === "professional" ? (
+          {props.ver === "professional" ? (
+            <ul className="my-page-info__area__contents__menu">
               <DelayLink
                 to={`mypage?type=consulting&ver=professional`}
                 delay={200}
@@ -26,22 +26,40 @@ const MyPageInfo = (props) => {
                   Lee.loadingStart();
                 }}
               >
-                <li className="selected">나의 상담내역</li>
+                <li>나의 상담내역</li>
               </DelayLink>
-            ) : (
               <DelayLink
-                to="mypage?type=consulting"
+                to={`mypage?type=feed&ver=professional`}
                 delay={200}
                 onDelayStart={function () {
                   Lee.loadingStart();
                 }}
               >
-                <li className="selected">나의 상담내역</li>
+                <li>좋아요 피드</li>
               </DelayLink>
-            )}
-            <li>좋아요 피드</li>
-            <li>체력검정기록</li>
-          </ul>
+            </ul>
+          ) : (
+            <ul className="my-page-info__area__contents__menu">
+              <DelayLink
+                to={`mypage?type=consulting`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>나의 상담내역</li>
+              </DelayLink>
+              <DelayLink
+                to={`mypage?type=feed`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>좋아요 피드</li>
+              </DelayLink>
+            </ul>
+          )}
         </div>
       </div>
     </div>
