@@ -14,8 +14,8 @@
       "required": true
     },
     "support": {
-      "via": "support_comments",
-      "model": "feed"
+      "model": "support",
+      "via": "support_comments"
     },
     "user": {
       "plugin": "users-permissions",
