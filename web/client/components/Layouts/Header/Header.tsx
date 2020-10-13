@@ -32,8 +32,13 @@ const Header = () => {
     if (location.pathname === "/community") {
       Lee.addClass(header, "community");
       Lee.addClass(footer, "community");
+      Lee.removeClass(header, "mypage");
+    } else if (location.pathname === "/mypage") {
+      Lee.addClass(header, "mypage");
+      Lee.removeClass(header, "community");
     } else {
       Lee.removeClass(header, "community");
+      Lee.removeClass(header, "mypage");
       Lee.removeClass(footer, "community");
     }
   });

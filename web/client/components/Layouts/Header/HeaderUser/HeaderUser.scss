@@ -7,6 +7,17 @@
     }
   }
 }
+
+#Header.mypage {
+  .header-user__area {
+    &__contents {
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
 .header-user__area {
   &__contents {
     &__thumbnail {

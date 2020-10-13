@@ -28,6 +28,31 @@
   }
 }
 
+#Header.mypage {
+  .header__area {
+    border-bottom: 0px solid #eee;
+    background: #244644;
+
+    &__contents {
+      &__logo {
+        color: #fff;
+      }
+
+      &__menus {
+        li {
+          color: #fff;
+        }
+      }
+
+      &__logins {
+        li {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 .header__area {
   position: fixed;
   left: 0;
