@@ -35,11 +35,12 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "author": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "정책홍보담당관"
     }
   }
 }

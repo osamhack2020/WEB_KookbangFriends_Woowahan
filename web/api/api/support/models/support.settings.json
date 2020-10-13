@@ -18,20 +18,21 @@
       "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "type": {
       "type": "string",
       "required": true
     },
     "user": {
-      "via": "supports",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "supports"
     },
     "support_comments": {
-      "via": "support",
-      "collection": "support-comment"
+      "collection": "support-comment",
+      "via": "support"
     }
   }
 }

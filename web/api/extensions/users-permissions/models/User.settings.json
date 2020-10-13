@@ -71,8 +71,8 @@
       "default": "/static/characters/basic/g20.png"
     },
     "supports": {
-      "collection": "support",
-      "via": "user"
+      "via": "user",
+      "collection": "support"
     },
     "support_comments": {
       "via": "user",
