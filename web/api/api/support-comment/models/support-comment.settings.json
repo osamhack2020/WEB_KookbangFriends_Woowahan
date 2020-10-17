@@ -13,14 +13,14 @@
       "type": "text",
       "required": true
     },
-    "support": {
-      "via": "support_comments",
-      "model": "support"
-    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "support_comments"
+    },
+    "support": {
+      "via": "support_comments",
+      "model": "support"
     }
   }
 }

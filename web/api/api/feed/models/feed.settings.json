@@ -26,10 +26,6 @@
       "type": "string",
       "required": true
     },
-    "paragraph": {
-      "type": "string",
-      "required": true
-    },
     "thumbnail": {
       "model": "file",
       "via": "related",
@@ -41,10 +37,6 @@
       "plugin": "upload",
       "required": false
     },
-    "support_comments": {
-      "collection": "support-comment",
-      "via": "support"
-    },
     "user_likes": {
       "plugin": "users-permissions",
       "collection": "user",
@@ -52,8 +44,12 @@
       "dominant": true
     },
     "feed_comments": {
-      "via": "feed",
-      "collection": "feed-comment"
+      "collection": "feed-comment",
+      "via": "feed"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }

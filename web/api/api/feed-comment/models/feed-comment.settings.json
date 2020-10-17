@@ -13,8 +13,8 @@
       "type": "text"
     },
     "feed": {
-      "model": "feed",
-      "via": "feed_comments"
+      "via": "feed_comments",
+      "model": "feed"
     },
     "user": {
       "plugin": "users-permissions",
