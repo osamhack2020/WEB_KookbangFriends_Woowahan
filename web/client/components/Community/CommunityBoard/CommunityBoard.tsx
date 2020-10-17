@@ -3,6 +3,10 @@ import Masonry from "react-masonry-css";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import "./CommunityBoard.scss";
+import DelayLink from "../../../lib/DelayLink";
+import Lee from "../../../lib/Lee";
+import Cookies from "js-cookie";
+import Router from "next/router";
 
 import CommunityBoardBest from "./CommunityBoardBest/CommunityBoardBest";
 import CommunityBoardBox from "./CommunityBoardBox/CommunityBoardBox";
@@ -13,7 +17,7 @@ function CommunityBoard(props) {
   if (props.category === "전체게시글") {
     FEED_QUERY = gql`
       query {
-        feeds {
+        feeds(sort: "date:desc") {
           id
           title
           thumbnail {
@@ -28,7 +32,7 @@ function CommunityBoard(props) {
             avatar
           }
           type
-          paragraph
+          description
           user_likes {
             username
           }
@@ -38,7 +42,7 @@ function CommunityBoard(props) {
   } else {
     FEED_QUERY = gql`
       query($type: String!) {
-        feeds(where: { type: $type }) {
+        feeds(where: { type: $type }, sort: "date:desc") {
           id
           title
           thumbnail {
@@ -53,7 +57,7 @@ function CommunityBoard(props) {
             avatar
           }
           type
-          paragraph
+          description
           user_likes {
             username
           }
@@ -85,6 +89,17 @@ function CommunityBoard(props) {
     feeds = data.feeds;
   }
 
+  function auth(target) {
+    if (Cookies.get("jwt")) {
+      Lee.loadingStart();
+      setTimeout(() => {
+        Router.push(`community?type=add&category=${props.category}`);
+      }, 400);
+    } else {
+      Lee.openLogin();
+    }
+  }
+
   return (
     <div id="CommunityBoard">
       <div className="community-board__area parents">
@@ -95,10 +110,15 @@ function CommunityBoard(props) {
                 새로운 피드를 추가해보세요!
               </div>
               <div className="community-board__area__contents__add__info parents">
-                <div className="community-board__area__contents__add__info__paragraph">
+                <div className="community-board__area__contents__add__info__description">
                   {props.category} 피드를 추가하시겠어요?
                 </div>
-                <div className="community-board__area__contents__add__info__button">
+                <div
+                  className="community-board__area__contents__add__info__button"
+                  onClick={function () {
+                    auth(props.category);
+                  }}
+                >
                   등록하기
                 </div>
               </div>
@@ -122,7 +142,7 @@ function CommunityBoard(props) {
                       date={feed.date}
                       user={feed.user}
                       type={feed.type}
-                      paragraph={feed.paragraph}
+                      description={feed.description}
                       likes={feed.user_likes.length}
                     />
                   );

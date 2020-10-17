@@ -48,6 +48,8 @@
 
     &__thumbnail {
       margin-top: 30px;
+      border-radius: 15px;
+      overflow: hidden;
 
       img {
         width: 100%;
@@ -57,7 +59,7 @@
 
     &__category {
       font-family: "Noto Sans KR", serif, Arial;
-      font-size: 12px;
+      font-size: 14px;
       color: #fff;
       margin-top: 50px;
       display: table;

@@ -121,8 +121,6 @@ function PostSupportBoard(props) {
             [
               "undo",
               "redo",
-              "fontSize",
-              "formatBlock",
               "underline",
               "italic",
               "strike",
@@ -133,8 +131,6 @@ function PostSupportBoard(props) {
               "link",
               "image",
               "video",
-              "showBlocks",
-              "codeView",
             ],
           ],
         }}

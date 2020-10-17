@@ -14,7 +14,7 @@ const TIMELINE_QUERY = gql`
     feeds(sort: "date:desc", limit: 8) {
       id
       title
-      paragraph
+      description
       date
       type
       thumbnail {
@@ -89,7 +89,7 @@ const HomeTimeLine = () => {
                     thumbnail={feed.thumbnail}
                     date={feed.date}
                     user={feed.user}
-                    paragraph={feed.paragraph}
+                    description={feed.description}
                     type={feed.type}
                     likes={feed.user_likes.length}
                   />

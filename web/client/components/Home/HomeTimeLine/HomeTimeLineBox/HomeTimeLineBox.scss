@@ -55,15 +55,22 @@
       overflow: hidden;
     }
 
-    &__paragraph {
+    &__description {
       padding: 0 30px;
-      font-family: "Noto Sans KR", serif, Arial;
       margin-top: 10px;
-      font-size: 14px;
-      font-weight: 400;
-      color: #555;
-      height: 66px;
+      height: 70px;
       overflow: hidden;
+
+      * {
+        font-family: "Noto Sans KR", serif, Arial;
+        font-size: 14px !important;
+        color: #555;
+        font-weight: 700;
+      }
+
+      img {
+        display: none !important;
+      }
     }
 
     &__user {

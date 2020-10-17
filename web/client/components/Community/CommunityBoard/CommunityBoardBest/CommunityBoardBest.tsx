@@ -30,7 +30,7 @@ function CommunityBoardBest(props) {
                     date={feed.date}
                     user={feed.user}
                     type={feed.type}
-                    paragraph={feed.paragraph}
+                    description={feed.description}
                     likes={feed.user_likes.length}
                   />
                 );

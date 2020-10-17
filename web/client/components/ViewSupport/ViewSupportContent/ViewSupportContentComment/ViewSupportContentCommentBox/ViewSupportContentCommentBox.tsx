@@ -87,7 +87,7 @@ function ViewSupportContentCommentBox(props) {
         <div className="view-support-content-comment-box__area__contents__thumbnail">
           {props.user.thumbnail ? (
             <img
-              src={`https://api.kookbang.kr${props.user.thumbnail.url}`}
+              src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
               alt="thumbnail"
             />
           ) : (

@@ -26,7 +26,7 @@
       &__info {
         padding: 15px 30px;
 
-        &__paragraph {
+        &__description {
           width: calc(100% - 100px);
           font-size: 17px;
           font-weight: 900;
@@ -35,6 +35,7 @@
         }
 
         &__button {
+          cursor: pointer;
           font-family: "Noto Sans KR", serif, Arial;
           padding: 6px 12px;
           background: #305f5d;

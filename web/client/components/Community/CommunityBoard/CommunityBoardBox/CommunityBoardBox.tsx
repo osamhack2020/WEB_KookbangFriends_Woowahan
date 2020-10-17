@@ -78,8 +78,15 @@ function CommunityBoardBox(props) {
             <div className="community-board-box__area__contents__info__title">
               {props.title}
             </div>
-            <div className="community-board-box__area__contents__info__paragraph">
-              {props.paragraph}
+            <div className="community-board-box__area__contents__info__description">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: props.description.replace(
+                    /(?:\r\n|\r|\n)/g,
+                    "<br />"
+                  ),
+                }}
+              ></span>
             </div>
           </div>
           <div className="community-board-box__area__contents__view">

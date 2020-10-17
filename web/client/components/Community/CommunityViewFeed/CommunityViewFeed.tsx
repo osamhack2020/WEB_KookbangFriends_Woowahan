@@ -18,7 +18,7 @@ const FEED_QUERY = gql`
         url
       }
       type
-      paragraph
+      description
       date
       user {
         username
@@ -147,7 +147,7 @@ function CommunityViewFeed(props) {
         <div className="community-view-feed__area__contents__description parents">
           <span
             dangerouslySetInnerHTML={{
-              __html: feed.paragraph.replace(/(?:\r\n|\r|\n)/g, "<br />"),
+              __html: feed.description.replace(/(?:\r\n|\r|\n)/g, "<br />"),
             }}
           ></span>
         </div>

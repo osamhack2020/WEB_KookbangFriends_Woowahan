@@ -52,8 +52,15 @@ const HomeTimeLineBox = (props) => {
             <div className="home-time-line-box__area__contents__title">
               {props.title}
             </div>
-            <div className="home-time-line-box__area__contents__paragraph">
-              {props.paragraph}
+            <div className="home-time-line-box__area__contents__description">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: props.description.replace(
+                    /(?:\r\n|\r|\n)/g,
+                    "<br />"
+                  ),
+                }}
+              ></span>
             </div>
             <div className="home-time-line-box__area__contents__user parents">
               <div className="home-time-line-box__area__contents__user__thumbnail">

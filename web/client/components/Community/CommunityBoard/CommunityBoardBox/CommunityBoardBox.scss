@@ -113,12 +113,19 @@
         line-height: 1.4em;
       }
 
-      &__paragraph {
-        font-family: "Noto Sans KR", serif, Arial;
-        font-size: 14px;
+      &__description {
         margin-top: 20px;
         height: 44px;
         overflow: hidden;
+
+        * {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 14px !important;
+        }
+
+        img {
+          display: none !important;
+        }
       }
     }
 
