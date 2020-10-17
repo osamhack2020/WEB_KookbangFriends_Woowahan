@@ -1,0 +1,35 @@
+.community-board-best__area {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  float: right;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid #eee;
+
+  &__contents {
+    padding: 30px;
+    background: #fff;
+
+    &__title {
+      font-size: 17px;
+      font-weight: 900;
+      color: #232323;
+    }
+
+    &__lists {
+      padding: 0;
+      padding-top: 15px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    &__lists-nothing {
+      padding-top: calc(50vh - 240px);
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}

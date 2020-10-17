@@ -6,88 +6,57 @@
   min-height: 100vh;
 
   &__contents {
-    &__title {
-      position: relative;
-      font-size: 42px;
-      font-weight: 900;
-      color: #232323;
-      line-height: 1;
-      padding: 12px 0px;
-      float: left;
-    }
-
-    &__top {
-      border-bottom: 3px solid #eee;
-      padding-bottom: 30px;
-
-      &__paragraph {
-        overflow: hidden;
-        width: calc(100% - 288px);
-        float: left;
-        font-size: 17px;
-        font-weight: 700;
-        color: #232323;
-        margin-top: 30px;
-      }
-      &__search {
-        position: relative;
-        width: 238px;
-        float: right;
-        margin-left: 50px;
-        top: 25px;
-        border-radius: 5px;
-        overflow: hidden;
-
-        input {
-          width: 200px;
-          background: #fff;
-          color: #000;
-          font-weight: 700;
-          font-size: 17px;
-          padding: 5px 10px;
-          border: none;
-          float: left;
-        }
-
-        img {
-          cursor: pointer;
-          width: 37px;
-          height: 37px;
-          padding: 10px;
-          background: rgb(48, 95, 93);
-          float: left;
-        }
-      }
-    }
-
-    &__board-top {
-      margin: 0;
-      overflow: hidden;
-      background: #f5f5f5;
-      padding: 30px;
-      margin-top: 30px;
-      border-radius: 15px;
+    &__add {
+      background: #fff;
+      margin-bottom: 30px;
+      border: 2px solid #eee;
+      border-radius: 5px;
 
       &__title {
         font-size: 17px;
         font-weight: 900;
-        padding: 15px 20px;
+        padding: 15px 30px;
+        border-bottom: 2px solid #eee;
         line-height: 1;
-        color: #fff;
-        background: #305f5d;
-        display: table;
-        border-radius: 1000px;
+        padding-top: 18px;
+        background: #ececec;
+        color: #232323;
+      }
+
+      &__info {
+        padding: 15px 30px;
+
+        &__paragraph {
+          width: calc(100% - 100px);
+          font-size: 17px;
+          font-weight: 900;
+          color: #555;
+          float: left;
+        }
+
+        &__button {
+          font-family: "Noto Sans KR", serif, Arial;
+          padding: 6px 12px;
+          background: #305f5d;
+          margin-top: -2px;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 700;
+          float: right;
+        }
       }
     }
 
     &__board {
       padding: 0;
+      padding-top: 5px;
       margin: 0;
       overflow: hidden;
     }
 
     &__board-nothing {
-      padding-top: calc(50vh - 100px);
+      padding-top: calc(50vh - 240px);
       font-size: 17px;
       font-weight: 700;
       text-align: center;

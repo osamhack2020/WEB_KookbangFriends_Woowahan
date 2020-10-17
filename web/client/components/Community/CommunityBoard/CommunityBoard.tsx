@@ -4,6 +4,7 @@ import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import "./CommunityBoard.scss";
 
+import CommunityBoardBest from "./CommunityBoardBest/CommunityBoardBest";
 import CommunityBoardBox from "./CommunityBoardBox/CommunityBoardBox";
 
 function CommunityBoard(props) {
@@ -24,6 +25,7 @@ function CommunityBoard(props) {
             thumbnail {
               url
             }
+            avatar
           }
           type
           paragraph
@@ -48,6 +50,7 @@ function CommunityBoard(props) {
             thumbnail {
               url
             }
+            avatar
           }
           type
           paragraph
@@ -86,6 +89,22 @@ function CommunityBoard(props) {
     <div id="CommunityBoard">
       <div className="community-board__area parents">
         <div className="community-board__area__contents parents">
+          {props.category !== "전체게시글" && (
+            <div className="community-board__area__contents__add parents">
+              <div className="community-board__area__contents__add__title">
+                새로운 피드를 추가해보세요!
+              </div>
+              <div className="community-board__area__contents__add__info parents">
+                <div className="community-board__area__contents__add__info__paragraph">
+                  {props.category} 피드를 추가하시겠어요?
+                </div>
+                <div className="community-board__area__contents__add__info__button">
+                  등록하기
+                </div>
+              </div>
+            </div>
+          )}
+          <CommunityBoardBest category={props.category} feeds={feeds} />
           {feeds.length > 0 ? (
             <ul className="community-board__area__contents__board parents">
               <Masonry

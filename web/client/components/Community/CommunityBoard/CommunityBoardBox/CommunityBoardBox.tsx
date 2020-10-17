@@ -40,10 +40,14 @@ function CommunityBoardBox(props) {
       <div className="community-board-box__area__contents parents">
         <div className="community-board-box__area__contents__user parents">
           <div className="community-board-box__area__contents__user__thumbnail">
-            <img
-              src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
-              alt="thumbnail"
-            />
+            {props.user.thumbnail ? (
+              <img
+                src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
+                alt="thumbnail"
+              />
+            ) : (
+              <img src={`${props.user.avatar}`} alt="avatar" />
+            )}
           </div>
           <div className="community-board-box__area__contents__user__info">
             <div className="community-board-box__area__contents__user__info__nickname">
