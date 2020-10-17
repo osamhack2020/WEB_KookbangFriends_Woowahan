@@ -8,6 +8,7 @@ import CommunityNav from "../components/Community/CommunityNav/CommunityNav";
 import CommunityBoard from "../components/Community/CommunityBoard/CommunityBoard";
 import CommunityFriends from "../components/Community/CommunityFriends/CommunityFriends";
 import CommunityViewFeed from "../components/Community/CommunityViewFeed/CommunityViewFeed";
+import CommunityAddFeed from "../components/Community/CommunityAddFeed/CommunityAddFeed";
 
 function Community({ query }) {
   useEffect(() => {
@@ -26,6 +27,9 @@ function Community({ query }) {
             <CommunityBoard category={query.category} />
           )}
           {query.type === "view" && <CommunityViewFeed id={query.id} />}
+          {query.type === "add" && (
+            <CommunityAddFeed category={query.category} />
+          )}
           <CommunityFriends />
         </div>
       </div>
