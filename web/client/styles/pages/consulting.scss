@@ -29,3 +29,30 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .consulting__area {
+    margin-top: 63px;
+    padding-bottom: 50px;
+
+    &__contents {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 50px 15px;
+
+      &__title {
+        font-size: 17px;
+        padding-left: 0;
+      }
+
+      &__type {
+        font-size: 24px;
+        margin-top: 15px;
+      }
+
+      &__paragraph {
+        font-size: 14px;
+      }
+    }
+  }
+}

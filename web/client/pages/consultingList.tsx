@@ -36,13 +36,23 @@ function ConsultingList() {
       </Head>
       <div className="consulting-list__area parents">
         <div className="consulting-list__area__video parents">
-          <video autoPlay loop muted playsInline>
+          <video autoPlay loop muted playsInline className="pc">
             <source
               src="/static/videos/consulting-background.webm"
               type="video/webm"
             />
             <source
               src="/static/videos/consulting-background.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video autoPlay loop muted playsInline className="mobile">
+            <source
+              src="/static/videos/consulting-background-mobile.webm"
+              type="video/webm"
+            />
+            <source
+              src="/static/videos/consulting-background-mobile.mp4"
               type="video/mp4"
             />
           </video>
@@ -77,25 +87,6 @@ function ConsultingList() {
                   className="consulting-list__area__contents__lists__categories__button"
                   onClick={function () {
                     auth("병영생활 고충상담");
-                  }}
-                >
-                  상담하기
-                </div>
-              </li>
-              <li>
-                <div className="consulting-list__area__contents__lists__categories__thumbnail">
-                  <img src="/static/icons/faq.png" alt="thumbnail" />
-                </div>
-                <div className="consulting-list__area__contents__lists__categories__title">
-                  기타 문의
-                  <div className="consulting-list__area__contents__lists__categories__title__paragraph">
-                    상담 관련 문의사항이 있으시면 언제든지 말씀해주세요.
-                  </div>
-                </div>
-                <div
-                  className="consulting-list__area__contents__lists__categories__button"
-                  onClick={function () {
-                    auth("기타 문의");
                   }}
                 >
                   상담하기
@@ -178,6 +169,25 @@ function ConsultingList() {
                   className="consulting-list__area__contents__lists__categories__button"
                   onClick={function () {
                     auth("양성평등 신고상담");
+                  }}
+                >
+                  상담하기
+                </div>
+              </li>
+              <li>
+                <div className="consulting-list__area__contents__lists__categories__thumbnail">
+                  <img src="/static/icons/faq.png" alt="thumbnail" />
+                </div>
+                <div className="consulting-list__area__contents__lists__categories__title">
+                  기타 문의
+                  <div className="consulting-list__area__contents__lists__categories__title__paragraph">
+                    상담 관련 문의사항이 있으시면 언제든지 말씀해주세요.
+                  </div>
+                </div>
+                <div
+                  className="consulting-list__area__contents__lists__categories__button"
+                  onClick={function () {
+                    auth("기타 문의");
                   }}
                 >
                   상담하기

@@ -115,7 +115,7 @@
           bottom: 30px;
           z-index: 3;
           cursor: pointer;
-          padding: 12px 17px;
+          padding: 14px 17px;
           padding-bottom: 10px;
           background: #305f5d;
           line-height: 1;
@@ -123,7 +123,7 @@
           color: #fff;
           font-weight: 700;
           margin-top: 30px;
-          border-radius: 1000px;
+          border-radius: 10px;
         }
       }
     }
@@ -149,6 +149,154 @@
         margin-top: 50px;
         color: #000;
         -webkit-text-stroke: 0.01em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .consulting-list__area {
+    margin-top: 49px;
+    padding-bottom: 50px;
+
+    &__video {
+      height: 300px;
+      min-height: 0;
+    }
+
+    &__contents {
+      &__title {
+        font-size: 21px;
+      }
+
+      &__slogan {
+        font-size: 28px;
+        width: 90%;
+      }
+
+      &__lists {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 21px;
+          color: #555;
+          font-weight: 900;
+        }
+
+        &__categories {
+          li {
+            width: 100%;
+            height: 260px;
+            margin-right: 0;
+            margin-top: 30px;
+          }
+        }
+      }
+
+      &__help {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 21px;
+        }
+
+        &__slogan {
+          width: 90%;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .consulting-list__area {
+    padding-bottom: 50px;
+
+    &__contents {
+      padding: 50px 15px;
+
+      &__title {
+        font-size: 17px;
+      }
+
+      &__slogan {
+        font-size: 19px;
+        width: 90%;
+        margin-top: 30px;
+      }
+
+      &__lists {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 17px;
+        }
+
+        &__categories {
+          margin-top: 15px;
+          li {
+            width: 100%;
+            height: 220px;
+            border-radius: 5px;
+            margin-right: 0;
+            margin-top: 15px;
+          }
+
+          &__thumbnail {
+            position: relative;
+            width: 90px;
+            height: 130px;
+            top: 90px;
+            float: right;
+            right: 15px;
+          }
+
+          &__title {
+            width: calc(100% - 130px);
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            font-size: 17px;
+            font-weight: 900;
+            z-index: 2;
+
+            &__paragraph {
+              margin-top: 15px;
+              font-size: 14px;
+              font-weight: 700;
+            }
+          }
+
+          &__button {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            padding: 12px 15px;
+            font-size: 12px;
+            margin-top: 0;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      &__help {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 17px;
+        }
+
+        img {
+          border-radius: 5px;
+          margin-top: 30px;
+        }
+
+        &__slogan {
+          width: 90%;
+          font-size: 19px;
+          margin-top: 30px;
+        }
       }
     }
   }
