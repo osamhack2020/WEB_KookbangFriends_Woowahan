@@ -1,11 +1,11 @@
 
-# ![enter image description here](https://osam.kookbang.kr/static/images/kookbang-friends-cover.jpg)
+# ![enter image description here](/image/LOGO_README.jpg)
 
 ## 팀소개 및 프로젝트 설명 영상
 (제공 예정)<br><br>
 
 ## 프로젝트 설명
-![](국방프렌즈.png)
+![](/image/LOGO.png)
  * '국방프렌즈'는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.<br><br>
 
 ## 기능 설계
