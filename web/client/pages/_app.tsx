@@ -14,6 +14,10 @@ const Footer = dynamic(import("../components/Layouts/Footer/Footer"), {
   ssr: false,
 });
 
+const Right = dynamic(import("../components/Layouts/Right/Right"), {
+  ssr: false,
+});
+
 class App extends NextApp<any> {
   render() {
     const { Component, pageProps, apolloClient } = this.props;
@@ -24,6 +28,7 @@ class App extends NextApp<any> {
         <div id="content">
           <Component {...pageProps} />
         </div>
+        <Right />
         <Footer />
       </ApolloProvider>
     );
