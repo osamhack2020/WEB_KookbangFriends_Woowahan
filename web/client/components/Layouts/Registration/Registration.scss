@@ -195,32 +195,9 @@
   }
 }
 
-@media (max-width: 880px) {
-  #Login.active {
-    .registration__area {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
+@media (max-width: 768px) {
   .registration__area {
-    visibility: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-
     &__fade {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
       background: #555;
       opacity: 0.7;
     }
@@ -237,34 +214,45 @@
       z-index: 2;
 
       &__logo {
-        font-size: 24px;
-        color: #fff;
-        font-family: "Coolvetica", "NanumSquare", serif, Arial;
-        letter-spacing: 0.03em;
+        font-size: 17px;
+
+        img {
+          width: 22px;
+          height: 22px;
+          margin-top: -1px;
+        }
       }
 
       &__close {
-        cursor: pointer;
-        position: absolute;
         right: 15px;
-        top: 25px;
-        height: 26px;
+        top: 22px;
+        height: 22px;
         border-radius: 1000px;
         border: 2px solid #eee;
-        padding: 4px;
+        padding: 2px;
       }
 
       &__title {
         font-size: 12px;
-        color: #fff;
-        font-weight: 900;
-        line-height: 1s;
-        font-style: italic;
-        margin-top: 5px;
+        margin-top: 15px;
       }
 
       &__form {
         margin-top: 20px;
+
+        &__thumbnail {
+          display: table;
+          background: #232323;
+          border-radius: 1000px;
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-bottom: 25px;
+
+          &__img {
+            width: 140px;
+            height: 140px;
+          }
+        }
 
         &__context {
           margin-top: 10px;
@@ -274,37 +262,17 @@
           }
 
           &__input {
-            font-family: "Noto Sans KR", serif, Arial;
             font-size: 14px;
-            padding: 10px 15px;
+            padding: 9px 15px;
             border-radius: 15px;
-            margin-top: 0px;
-            width: 100%;
-            background: #fff;
-            border: none;
-            box-shadow: none;
-            font-weight: 600;
           }
         }
 
         &__buttons {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-
           &__button {
-            cursor: pointer;
-            font-family: "Noto Sans KR", serif, Arial;
-            width: 100%;
             font-size: 12px;
-            font-weight: 700;
-            color: #fff;
-            background: #3274a2;
-            text-align: center;
             padding: 10px 20px;
-            border-radius: 1000px;
-            margin-top: 30px;
-            border: none;
+            border-radius: 5px;
           }
         }
       }

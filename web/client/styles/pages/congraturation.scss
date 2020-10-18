@@ -266,17 +266,22 @@
 
 @media (max-width: 880px) {
   .congraturation__area {
+    display: table;
+    height: 100vh;
+    padding-bottom: 0;
+
     &__contents {
+      display: table-cell;
+      vertical-align: middle;
       width: 100%;
       padding: 100px 15px;
-      padding-bottom: 50px;
 
       &__title {
         font-size: 30px;
       }
 
       &__mission {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 70px;
       }
 
@@ -297,20 +302,27 @@
       }
 
       &__login {
-        font-size: 14px;
-        padding: 8px 12px;
-        margin-top: 50px;
+        font-size: 12px;
+        padding: 10px 15px;
+        margin-top: 30px;
+        border-radius: 5px;
+        font-weight: 900;
+      }
+
+      &__cannon {
+        top: unset;
+        bottom: 100px;
       }
 
       .cannon.first {
         position: absolute;
         bottom: 0px;
-        left: -30px;
+        left: -70px;
       }
       .cannon.second {
         position: absolute;
         bottom: 0px;
-        right: -30px;
+        right: -70px;
       }
     }
   }
