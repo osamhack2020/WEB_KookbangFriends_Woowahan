@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Lee from "../lib/Lee";
+import DelayLink from "../lib/DelayLink";
 
 import "../styles/pages/about.scss";
 
@@ -16,9 +17,19 @@ function About() {
       </Head>
       <div className="about__area parents">
         <div className="about__area__video parents">
-          <video autoPlay loop muted playsInline>
+          <video autoPlay loop muted playsInline className="pc">
             <source src="/static/videos/about-video.webm" type="video/webm" />
             <source src="/static/videos/about-video.mp4" type="video/mp4" />
+          </video>
+          <video autoPlay loop muted playsInline className="mobile">
+            <source
+              src="/static/videos/about-video-mobile.webm"
+              type="video/webm"
+            />
+            <source
+              src="/static/videos/about-video-mobile.mp4"
+              type="video/mp4"
+            />
           </video>
           <div className="about__area__video__fade"></div>
           <div className="about__area__video__contents">
@@ -34,6 +45,10 @@ function About() {
               alt="bi"
               className="about__area__video__contents__bi"
             />
+            <div className="about__area__video__contents__scroll mobile">
+              <img src="/static/icons/bottom-arrow.png" alt="scroll" /> 스크롤
+              해서 더 알아보세요!
+            </div>
           </div>
         </div>
         <div className="about__area__contents parents">
@@ -64,9 +79,17 @@ function About() {
                   <br />
                   우리의 비밀이야기니까
                 </div>
-                <div className="about__area__contents__consult__box__left__subject">
-                  비대면 상담 서비스
-                </div>
+                <DelayLink
+                  to="consultingList"
+                  delay={200}
+                  onDelayStart={function () {
+                    Lee.loadingStart();
+                  }}
+                >
+                  <div className="about__area__contents__consult__box__left__subject">
+                    비대면 상담 서비스
+                  </div>
+                </DelayLink>
                 <div className="about__area__contents__consult__box__left__paragraph">
                   꼭 말해주세요, 당신의 말 못할 고민들을.
                   <br />
@@ -81,9 +104,17 @@ function About() {
                   <br />
                   그리고 사회로 돌아가야 할 임무가 있습니다.
                 </div>
-                <div className="about__area__contents__consult__box__left__button">
-                  바로가기
-                </div>
+                <DelayLink
+                  to="consultingList"
+                  delay={200}
+                  onDelayStart={function () {
+                    Lee.loadingStart();
+                  }}
+                >
+                  <div className="about__area__contents__consult__box__left__button">
+                    바로가기
+                  </div>
+                </DelayLink>
               </div>
               <div className="about__area__contents__consult__box__right">
                 <div className="wrapper">
@@ -118,10 +149,16 @@ function About() {
             <div className="about__area__contents__community__title">
               우리 함께 지내요!
             </div>
-            <div className="about__area__contents__community__slogan">
+            <div className="about__area__contents__community__slogan pc">
               다른 군 장병 및 군무원분들과 병영생활 중 얻는 다양한 팁과 정보들을
               공유합니다. 그리고 취미가 같은 군 장병 및 군무원과 동아리를 만들고
               비대면 동아리 활동을 즐겨보세요!
+            </div>
+            <div className="about__area__contents__community__thumbnail mobile">
+              <img
+                src="https://t1.kakaocdn.net/kakaocorp/admin/co/main-content/4518.jpg"
+                alt="background"
+              />
             </div>
             <div className="about__area__contents__community__box parents">
               <div className="about__area__contents__community__box__left">
@@ -130,9 +167,17 @@ function About() {
                   <br />
                   이거 진짜 맛있습니다!
                 </div>
-                <div className="about__area__contents__community__box__left__subject">
-                  커뮤니티
-                </div>
+                <DelayLink
+                  to={`community?type=list&category=전체게시글`}
+                  delay={200}
+                  onDelayStart={function () {
+                    Lee.loadingStart();
+                  }}
+                >
+                  <div className="about__area__contents__community__box__left__subject">
+                    커뮤니티
+                  </div>
+                </DelayLink>
                 <div className="about__area__contents__community__box__left__paragraph">
                   당신이 모르는, 당신이 몰랐던 병영생활 꿀팁?
                   <br />
@@ -146,9 +191,17 @@ function About() {
                   다양한 정보를 나누며 새로운 병영생활의 즐거움을 얻을 수
                   있습니다.
                 </div>
-                <div className="about__area__contents__community__box__left__button">
-                  바로가기
-                </div>
+                <DelayLink
+                  to={`community?type=list&category=전체게시글`}
+                  delay={200}
+                  onDelayStart={function () {
+                    Lee.loadingStart();
+                  }}
+                >
+                  <div className="about__area__contents__community__box__left__button">
+                    바로가기
+                  </div>
+                </DelayLink>
               </div>
               <div className="about__area__contents__community__box__right">
                 <img src="/static/images/about-community.jpg" alt="community" />

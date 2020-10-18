@@ -157,7 +157,7 @@
             display: table;
             padding: 8px 15px;
             background: rgb(42, 49, 67);
-            border-radius: 5px;
+            border-radius: 1000px;
           }
 
           &__paragraph {
@@ -177,7 +177,7 @@
             color: #fff;
             font-weight: 900;
             margin-top: 50px;
-            border-radius: 1000px;
+            border-radius: 15px;
           }
         }
 
@@ -320,7 +320,7 @@
             font-size: 32px;
             font-weight: 900;
             color: #232323;
-            line-height: 1.4em;
+            line-height: 1.8em;
             -webkit-text-stroke: 0.01em;
 
             span {
@@ -397,6 +397,23 @@
         font-weight: 900;
       }
 
+      &__thumbnail {
+        position: relative;
+        margin-top: 50px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
       &__slogan {
         width: 60%;
         font-size: 32px;
@@ -433,7 +450,7 @@
             display: table;
             padding: 8px 15px;
             background: rgb(42, 49, 67);
-            border-radius: 5px;
+            border-radius: 1000px;
           }
 
           &__paragraph {
@@ -453,7 +470,7 @@
             color: #fff;
             font-weight: 900;
             margin-top: 50px;
-            border-radius: 1000px;
+            border-radius: 15px;
           }
         }
 
@@ -519,6 +536,414 @@
 
           100% {
             top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .about__area {
+    &__video {
+      &__contents {
+        &__title {
+          font-size: 32px;
+        }
+
+        &__bi {
+          position: absolute;
+          left: 30px;
+          bottom: 234px;
+          height: 38px;
+          animation: 0.5s infinite bi-up;
+          transform: scaleX(-1);
+
+          @keyframes bi-up {
+            0% {
+              bottom: 234px;
+            }
+            50% {
+              bottom: 237px;
+            }
+            100% {
+              bottom: 234px;
+            }
+          }
+        }
+      }
+    }
+
+    &__contents {
+      &__title {
+        font-size: 21px;
+        font-weight: 900;
+        color: #555;
+      }
+
+      &__slogan {
+        font-size: 28px;
+        width: 90%;
+      }
+
+      &__consult {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 21px;
+        }
+
+        &__thumbnail {
+          height: 300px;
+        }
+
+        &__box {
+          margin-top: 30px;
+
+          &__left {
+            width: 100%;
+            padding: 30px;
+
+            &__title {
+              font-size: 42px;
+            }
+          }
+
+          &__right {
+            width: 100%;
+            float: left;
+            padding: 0;
+            padding-left: 0;
+            margin-top: 50px;
+
+            .wrapper {
+              display: none;
+            }
+
+            &__title {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      &__community {
+        margin-top: 150px;
+
+        &__title {
+          font-size: 21px;
+        }
+
+        &__slogan {
+          width: 90%;
+          font-size: 28px;
+        }
+
+        &__box {
+          margin-top: 50px;
+
+          &__left {
+            width: 100%;
+            padding: 30px;
+
+            &__title {
+              font-size: 42px;
+            }
+          }
+
+          &__right {
+            display: none;
+          }
+        }
+      }
+
+      &__goal {
+        margin-top: 150px;
+
+        &__title {
+          font-size: 21px;
+        }
+
+        &__slogan {
+          width: calc(90% - 100px);
+          font-size: 28px;
+          position: relative;
+          z-index: 2;
+        }
+
+        &__hands {
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          height: 100%;
+          width: 200px;
+          float: left;
+          padding: 0;
+          opacity: 0.5;
+
+          img {
+            width: 200px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about__area {
+    margin-top: 49px;
+    padding-bottom: 50px;
+
+    &__video {
+      height: calc(100vh - 100px);
+      min-height: 0;
+
+      &__fade {
+        opacity: 0.3;
+      }
+
+      &__contents {
+        height: calc(100vh - 100px);
+        min-height: 0;
+        padding: 0 15px;
+
+        &__title {
+          width: 90%;
+          font-size: 24px;
+          left: 15px;
+          bottom: unset;
+          top: 100px;
+
+          span {
+            font-size: 12px;
+            padding: 10px 14px;
+            top: -17px;
+            left: 40px;
+          }
+        }
+
+        &__bi {
+          left: 15px;
+          bottom: 194px;
+          height: 30px;
+
+          @keyframes bi-up {
+            0% {
+              top: 88px;
+            }
+            50% {
+              top: 91px;
+            }
+            100% {
+              top: 88px;
+            }
+          }
+        }
+
+        &__scroll {
+          position: absolute;
+          left: 15px;
+          bottom: 100px;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+
+          img {
+            height: 15px;
+            float: left;
+            position: relative;
+            margin-right: 10px;
+            top: 2px;
+          }
+        }
+      }
+    }
+
+    &__contents {
+      padding: 50px 15px;
+
+      &__title {
+        font-size: 17px;
+      }
+
+      &__slogan {
+        font-size: 19px;
+        width: 90%;
+        margin-top: 30px;
+      }
+
+      &__consult {
+        margin-top: 80px;
+
+        &__title {
+          font-size: 17px;
+        }
+
+        &__thumbnail {
+          height: 210px;
+          margin-top: 30px;
+          border-radius: 0;
+        }
+
+        &__box {
+          margin-top: -30px;
+
+          &__left {
+            width: 100%;
+            padding: 15px;
+
+            &__title {
+              text-align: center;
+              font-size: 24px;
+              margin-top: 15px;
+            }
+
+            &__subject {
+              font-size: 12px;
+              padding: 8px 15px;
+              margin: 0 auto;
+              margin-top: 30px;
+              background: #fff;
+              color: #232323;
+              border: 1px solid #eee;
+            }
+
+            &__paragraph {
+              text-align: center;
+              margin-top: 30px;
+              font-size: 14px;
+            }
+
+            &__button {
+              width: 100%;
+              text-align: center;
+              font-size: 12px;
+              padding: 10px 15px;
+              border-radius: 5px;
+              margin-top: 30px;
+            }
+          }
+
+          &__right {
+            width: 100%;
+            float: left;
+            padding: 0;
+            padding-left: 0;
+            margin-top: 30px;
+
+            .wrapper {
+              display: none;
+            }
+
+            &__title {
+              font-size: 17px;
+              text-align: center;
+            }
+
+            &__paragraph {
+              font-size: 12px;
+              margin-top: 25px;
+              text-align: center;
+              padding: 0 30px;
+            }
+          }
+        }
+      }
+
+      &__community {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 17px;
+        }
+
+        &__slogan {
+          width: 90%;
+          font-size: 19px;
+          margin-top: 30px;
+        }
+
+        &__thumbnail {
+          height: 210px;
+          margin-top: 30px;
+          border-radius: 0;
+        }
+
+        &__box {
+          margin-top: -30px;
+
+          &__left {
+            width: 100%;
+            padding: 15px;
+
+            &__title {
+              font-size: 24px;
+              text-align: center;
+              margin-top: 15px;
+            }
+
+            &__subject {
+              font-size: 12px;
+              padding: 8px 15px;
+              margin: 0 auto;
+              margin-top: 30px;
+              background: #fff;
+              color: #232323;
+              border: 1px solid #eee;
+            }
+
+            &__paragraph {
+              margin-top: 30px;
+              font-size: 14px;
+              text-align: center;
+            }
+
+            &__button {
+              width: 100%;
+              text-align: center;
+              font-size: 12px;
+              padding: 10px 15px;
+              border-radius: 5px;
+              margin-top: 30px;
+            }
+          }
+
+          &__right {
+            display: none;
+          }
+        }
+      }
+
+      &__goal {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 17px;
+        }
+
+        &__slogan {
+          width: 90%;
+          font-size: 21px;
+          position: relative;
+          z-index: 2;
+          margin-top: 30px;
+        }
+
+        &__hands {
+          position: absolute;
+          right: 15px;
+          top: 20px;
+          height: 100%;
+          width: 100px;
+          float: left;
+          padding: 0;
+          opacity: 0.5;
+
+          img {
+            width: 100px;
+            height: auto;
           }
         }
       }
