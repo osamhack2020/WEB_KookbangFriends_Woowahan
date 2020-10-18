@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lee from "../../../lib/Lee";
 
 import "./Footer.scss";
 
 const Footer = () => {
+  useEffect(() => {
+    // if (/iPhone/i.test(navigator.userAgent)) {
+    //   const Footer = Lee.get("Footer");
+    //   Footer.style.paddingBottom = "50px";
+    // }
+  });
+
   function go() {
     const site: HTMLInputElement = Lee.get("siteUrl") as HTMLInputElement;
     const siteURL = site.value;
@@ -21,13 +28,8 @@ const Footer = () => {
             <li>이용약관</li>
             <li>개인정보처리방침</li>
             <li>운영정책</li>
-            <li>청소년보호정책</li>
             <li>권리침해신고안내</li>
-            <li>군법위반신고안내</li>
           </ul>
-          <div className="footer__area__contents__copyright">
-            Copyright © 국방프렌즈. All rights reserved.
-          </div>
           <img
             src="/static/icons/thankyou.png"
             className="footer__area__contents__thank"
@@ -56,6 +58,9 @@ const Footer = () => {
               className="footer__area__contents__select__go"
               onClick={go}
             />
+          </div>
+          <div className="footer__area__contents__copyright">
+            Copyright © 국방프렌즈. All rights reserved.
           </div>
         </div>
       </div>
