@@ -59,3 +59,18 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .home-card-box__area {
+    &__contents {
+      &__date {
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      &__title {
+        font-size: 17px;
+      }
+    }
+  }
+}

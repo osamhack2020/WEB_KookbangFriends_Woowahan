@@ -19,3 +19,22 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .home-card__area {
+    margin-top: -15px;
+
+    &__contents {
+      padding: 15px;
+      &__subject {
+        span {
+          font-size: 17px;
+        }
+      }
+
+      &__lists {
+        margin-top: 15px;
+      }
+    }
+  }
+}

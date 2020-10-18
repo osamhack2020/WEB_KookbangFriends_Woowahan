@@ -27,6 +27,9 @@
         display: table;
         cursor: pointer;
         margin-top: 20px;
+        overflow: hidden;
+        height: 35px;
+        padding-right: 10px;
 
         a {
           font-size: 32px;
@@ -110,6 +113,150 @@
           color: rgb(121, 121, 121);
           font-weight: 900;
           margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .home-notice__area {
+    &__contents {
+      &__latest {
+        width: calc(66.66% - 30px);
+        float: left;
+        margin-right: 30px;
+
+        &__subject {
+          a {
+            font-size: 17px;
+          }
+        }
+
+        &__title {
+          display: block;
+          margin-top: 20px;
+          height: 33px;
+
+          a {
+            font-size: 21px;
+          }
+
+          &-new {
+            font-size: 12px;
+            top: -3px;
+          }
+        }
+
+        &__date {
+          display: table;
+          margin-top: 15px;
+
+          a {
+            span {
+              font-family: "Noto Sans KR", serif, Arial;
+              font-size: 14px;
+              color: rgb(121, 121, 121);
+              font-weight: 900;
+            }
+          }
+        }
+      }
+
+      &__more {
+        &__lists {
+          width: 33.33%;
+
+          li {
+            margin-bottom: 15px;
+          }
+
+          &__title {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 14px;
+            font-weight: 700;
+            height: 25px;
+          }
+
+          &__date {
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-notice__area {
+    display: none;
+    margin-top: 30px;
+
+    &__contents {
+      padding: 15px;
+
+      &__latest {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-right: 0;
+
+        &__subject {
+          a {
+            font-size: 14px;
+          }
+        }
+
+        &__title {
+          margin-top: 15px;
+          height: auto;
+
+          a {
+            font-size: 19px;
+          }
+
+          &-new {
+            font-size: 10px;
+            padding: 5px;
+            padding-left: 6px;
+            padding-right: 8px;
+          }
+        }
+
+        &__date {
+          a {
+            span {
+              font-size: 12px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      &__more {
+        display: none;
+        &__lists {
+          width: 100%;
+          margin-top: 30px;
+          position: relative;
+          overflow: hidden;
+
+          li {
+            margin-bottom: 15px;
+          }
+
+          &__title {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 14px;
+            font-weight: 700;
+            height: 25px;
+          }
+
+          &__date {
+            font-size: 12px;
+            font-weight: 700;
+          }
         }
       }
     }

@@ -6,6 +6,7 @@
   margin-bottom: 30px;
   border-radius: 15px;
   background: #fff;
+  border: 2px solid #eee;
 
   &:hover {
     top: -10px;
@@ -62,10 +63,12 @@
       overflow: hidden;
 
       * {
+        display: block;
         font-family: "Noto Sans KR", serif, Arial;
         font-size: 14px !important;
         color: #555;
         font-weight: 700;
+        line-height: 1.5em !important;
       }
 
       img {
@@ -127,6 +130,120 @@
 
       img {
         width: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .home-time-line-box__area {
+    &__contents {
+      &__type {
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 10px;
+      }
+
+      &__title {
+        padding: 0 15px;
+      }
+
+      &__description {
+        padding: 0 15px;
+        margin-top: 10px;
+        height: 38px;
+
+        * {
+          font-size: 12px !important;
+        }
+      }
+
+      &__user {
+        margin-top: 15px;
+        padding: 15px 15px;
+        padding-right: 40px;
+
+        &__thumbnail {
+          width: 38px;
+          height: 38px;
+        }
+
+        &__info {
+          margin-left: 10px;
+          margin-top: 2px;
+
+          &__nickname {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 12px;
+          }
+
+          &__date {
+            font-size: 10px;
+            color: #555;
+          }
+        }
+      }
+      &__likes {
+        right: 15px;
+        font-size: 12px;
+        bottom: 13px;
+
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-time-line-box__area {
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    &:hover {
+      top: 0;
+    }
+
+    &__contents {
+      &__type {
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 10px;
+      }
+
+      &__title {
+        padding: 0 10px;
+        font-size: 14px;
+        height: 46px;
+      }
+
+      &__description {
+        padding: 0 10px;
+      }
+
+      &__user {
+        margin-top: 15px;
+        padding: 15px 10px;
+
+        &__thumbnail {
+          width: 30px;
+          height: 30px;
+        }
+
+        &__info {
+          margin-left: 7px;
+          margin-top: -2px;
+        }
+      }
+      &__likes {
+        right: 10px;
+        font-size: 10px;
+        bottom: 15px;
+
+        img {
+          width: 16px;
+        }
       }
     }
   }

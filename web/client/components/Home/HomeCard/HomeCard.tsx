@@ -37,11 +37,17 @@ const params = {
     disableOnInteraction: false,
   },
   breakpoints: {
-    880: {
-      slidesPerView: 5,
+    769: {
+      slidesPerView: 3.5,
+    },
+    360: {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+      freeMode: true,
     },
     0: {
       slidesPerView: 1.5,
+      spaceBetween: 15,
       freeMode: true,
     },
   },

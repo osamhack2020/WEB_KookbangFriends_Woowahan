@@ -34,6 +34,13 @@ const TIMELINE_QUERY = gql`
   }
 `;
 
+const breakpointColumnsObj = {
+  default: 4,
+  1280: 3,
+  769: 2,
+  360: 1,
+};
+
 const HomeTimeLine = () => {
   let feeds;
 
@@ -76,7 +83,7 @@ const HomeTimeLine = () => {
           </div>
           <ul className="home-time-line__area__contents__lists">
             <Masonry
-              breakpointCols={4}
+              breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column"
             >
