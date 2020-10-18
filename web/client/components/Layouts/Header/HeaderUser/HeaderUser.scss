@@ -49,3 +49,35 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .header-user__area {
+    &__contents {
+      &__thumbnail {
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-user__area {
+    display: none;
+
+    &__contents {
+      &__thumbnail {
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

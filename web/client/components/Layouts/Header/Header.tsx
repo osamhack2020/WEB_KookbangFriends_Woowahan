@@ -16,10 +16,16 @@ const Registration = dynamic(import("../Registration/Registration"), {
   ssr: false,
 });
 
+const HeaderTab = dynamic(import("./HeaderTab/HeaderTab"), {
+  ssr: false,
+});
+
 const Header = () => {
   let [login, setLogin] = useState(false);
 
   useEffect(() => {
+    closeMenu();
+
     const header = Lee.get("Header");
     const footer = Lee.get("Footer");
 
@@ -43,10 +49,27 @@ const Header = () => {
     }
   });
 
+  function openMenu() {
+    const menuIcon = Lee.get("menuIcon");
+    const mobileMenu = Lee.get("mobileMenu");
+
+    Lee.toggleClass(menuIcon, "open");
+    Lee.toggleClass(mobileMenu, "open");
+  }
+
+  function closeMenu() {
+    const menuIcon = Lee.get("menuIcon");
+    const mobileMenu = Lee.get("mobileMenu");
+
+    Lee.removeClass(menuIcon, "open");
+    Lee.removeClass(mobileMenu, "open");
+  }
+
   return (
     <div id="Header">
       <Login />
       <Registration />
+      <HeaderTab />
       <div className="header__area parents">
         <div className="header__area__contents parents">
           <DelayLink
@@ -69,7 +92,7 @@ const Header = () => {
                 Lee.loadingStart();
               }}
             >
-              <li>소개</li>
+              <li className="pc">소개</li>
             </DelayLink>
             <DelayLink
               to="consultingList"
@@ -78,7 +101,7 @@ const Header = () => {
                 Lee.loadingStart();
               }}
             >
-              <li>상담 서비스</li>
+              <li className="pc">상담 서비스</li>
             </DelayLink>
             <DelayLink
               to="card"
@@ -87,7 +110,7 @@ const Header = () => {
                 Lee.loadingStart();
               }}
             >
-              <li>카드뉴스</li>
+              <li className="pc">카드뉴스</li>
             </DelayLink>
             <DelayLink
               to="support?type=공지사항"
@@ -96,7 +119,16 @@ const Header = () => {
                 Lee.loadingStart();
               }}
             >
-              <li>체계지원</li>
+              <li className="pc">체계지원</li>
+            </DelayLink>
+            <DelayLink
+              to={`community?type=list&category=전체게시글`}
+              delay={200}
+              onDelayStart={function () {
+                Lee.loadingStart();
+              }}
+            >
+              <li className="community mobile">커뮤니티</li>
             </DelayLink>
           </ul>
           <ul className="header__area__contents__logins">
@@ -118,6 +150,63 @@ const Header = () => {
               </>
             )}
           </ul>
+          <div className="header__area__contents__menu-icon">
+            <div id="menuIcon" className="" onClick={openMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div className="header__area__contents__menus-mobile" id="mobileMenu">
+            <ul className="header__area__contents__menus-mobile__lists">
+              <DelayLink
+                to="about"
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>소개</li>
+              </DelayLink>
+              <DelayLink
+                to="consultingList"
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>상담서비스</li>
+              </DelayLink>
+              <DelayLink
+                to="card"
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>카드뉴스</li>
+              </DelayLink>
+              <DelayLink
+                to="support?type=공지사항"
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>체계지원</li>
+              </DelayLink>
+              <DelayLink
+                to={`community?type=list&category=전체게시글`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>커뮤니티</li>
+              </DelayLink>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

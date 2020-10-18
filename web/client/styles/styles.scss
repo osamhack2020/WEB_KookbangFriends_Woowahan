@@ -233,3 +233,33 @@ input::placeholder {
     top: 64px !important;
   }
 }
+
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -15px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; /* gutter size */
+    background-clip: padding-box;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
