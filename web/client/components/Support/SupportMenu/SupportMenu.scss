@@ -28,3 +28,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .support-menu__area {
+    &__contents {
+      &__lists {
+        li {
+          font-size: 14px;
+          font-weight: 700;
+          margin-right: 15px;
+
+          &.selected {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}

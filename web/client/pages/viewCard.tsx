@@ -51,8 +51,6 @@ function ViewCard({ query }) {
 
   if (data) {
     card = data.cards[0];
-
-    console.log(card);
   }
 
   const date = new Date(card.date);

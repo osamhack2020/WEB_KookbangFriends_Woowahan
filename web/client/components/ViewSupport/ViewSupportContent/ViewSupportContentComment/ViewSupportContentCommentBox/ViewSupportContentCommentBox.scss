@@ -77,3 +77,53 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .view-support-content-comment-box__area {
+    margin-top: 15px;
+    padding-bottom: 15px;
+
+    &__contents {
+      &__thumbnail {
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+
+      &__info {
+        position: relative;
+        width: calc(100% - 50px);
+        margin-left: 10px;
+        float: left;
+
+        &__stat {
+          margin-top: 4px;
+
+          &__username {
+            font-size: 12px;
+          }
+
+          &__date {
+            font-size: 10px;
+            margin-left: 10px;
+            top: 1.5px;
+          }
+        }
+
+        &__description {
+          margin-top: 4px;
+          line-height: 1.2em;
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &__delete {
+        top: 1.5px;
+        font-size: 10px;
+        z-index: 2;
+      }
+    }
+  }
+}

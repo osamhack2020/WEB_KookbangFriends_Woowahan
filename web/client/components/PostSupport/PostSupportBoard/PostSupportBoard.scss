@@ -90,3 +90,49 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .post-support-board__area {
+    margin-top: 50px;
+
+    &__contents {
+      &__post {
+        &__title {
+          font-size: 21px;
+          line-height: 1.4em;
+        }
+
+        &__date {
+          border-bottom: 3px solid #eee;
+          padding-bottom: 30px;
+          margin-top: 30px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        &__description {
+          font-size: 14px;
+          padding: 30px 0;
+          min-height: 120px;
+        }
+
+        &__buttons {
+          margin-top: 30px;
+
+          li {
+            cursor: pointer;
+            float: left;
+            margin: 0 15px;
+
+            button {
+              font-size: 14px;
+              padding: 8px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

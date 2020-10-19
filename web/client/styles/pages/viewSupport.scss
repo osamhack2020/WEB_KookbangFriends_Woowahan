@@ -10,3 +10,14 @@
     padding-top: 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .view-support__area {
+    margin-top: 49px;
+    padding-bottom: 50px;
+
+    &__contents {
+      padding: 50px 15px;
+    }
+  }
+}

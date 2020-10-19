@@ -262,4 +262,35 @@ input::placeholder {
   .mobile {
     display: block;
   }
+
+  .sun-editor {
+    * {
+      font-family: "Noto Sans KR", serif, Arial !important;
+    }
+
+    .se-wrapper {
+      * {
+        font-size: 12px !important;
+      }
+    }
+
+    .se-btn-select.se-btn-tool-format,
+    .se-btn-select.se-btn-tool-size {
+      padding: 7px;
+    }
+
+    .se-dialog .se-dialog-inner .se-dialog-content {
+      margin-top: 90px !important;
+    }
+
+    .se-toolbar.se-toolbar-sticky {
+      top: 50px !important;
+    }
+  }
+
+  .community-add-feed__area__contents__description {
+    .se-toolbar.se-toolbar-sticky {
+      top: 96px !important;
+    }
+  }
 }
