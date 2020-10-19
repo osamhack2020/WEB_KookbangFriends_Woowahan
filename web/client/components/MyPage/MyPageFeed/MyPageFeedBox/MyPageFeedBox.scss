@@ -156,3 +156,98 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .my-page-feed-box__area {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 30px;
+
+    &__contents {
+      &__pro {
+        padding: 10px;
+
+        &__thumbnail {
+          width: 40px;
+          height: 40px;
+        }
+
+        &__name {
+          width: calc(100% - 55px);
+          font-size: 12px;
+          margin-left: 15px;
+          margin-top: 2px;
+        }
+      }
+
+      &__info {
+        padding: 15px;
+
+        &__date {
+          font-size: 12px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        &__title {
+          font-size: 17px;
+          height: auto;
+        }
+
+        &__view {
+          font-size: 12px;
+
+          img {
+            width: 10px;
+            height: 10px;
+            top: -6px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      &__user {
+        padding: 10px;
+        border-top: 2px solid #eee;
+
+        &__thumbnail {
+          width: 40px;
+          height: 40px;
+        }
+
+        &__info {
+          width: calc(100% - 50px);
+          margin-left: 10px;
+          margin-top: 2px;
+
+          &__nickname {
+            font-size: 12px;
+            span {
+              font-size: 12px;
+            }
+          }
+
+          &__date {
+            font-size: 10px;
+
+            span {
+              font-size: 10px;
+            }
+          }
+
+          &__likes {
+            right: 10px;
+            bottom: 11px;
+            font-size: 12px;
+
+            img {
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

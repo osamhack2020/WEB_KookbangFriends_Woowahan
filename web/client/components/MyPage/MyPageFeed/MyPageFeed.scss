@@ -49,3 +49,135 @@
     }
   }
 }
+
+@media (max-width: 1480px) {
+  .my-page-feed__area {
+    width: calc(100% - 310px);
+    float: left;
+    margin-left: 50px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 15px;
+    min-height: 70vh;
+    border: 2px solid #eee;
+
+    &__contents {
+      &__title {
+        position: relative;
+        font-size: 24px;
+        font-weight: 900;
+        color: #232323;
+        line-height: 1;
+        padding-top: 5px;
+      }
+
+      &__button {
+        font-family: "Noto Sans KR", serif, Arial;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 700;
+        padding: 7px 11px;
+        padding-top: 6px;
+        border-radius: 5px;
+        background: #305f5d;
+      }
+
+      &__lists {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+      }
+
+      &__none {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 300px;
+        font-weight: 900;
+        color: #555;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .my-page-feed__area {
+    width: 100%;
+    margin-left: 0;
+    padding: 30px;
+    min-height: 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &__contents {
+      &__title {
+        position: relative;
+        font-size: 24px;
+        font-weight: 900;
+        color: #232323;
+        line-height: 1;
+        padding-top: 5px;
+      }
+
+      &__button {
+        font-family: "Noto Sans KR", serif, Arial;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 700;
+        padding: 7px 11px;
+        padding-top: 6px;
+        border-radius: 5px;
+        background: #305f5d;
+      }
+
+      &__lists {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+      }
+
+      &__none {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 300px;
+        font-weight: 900;
+        color: #555;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-page-feed__area {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    &__contents {
+      &__title {
+        font-size: 14px;
+        padding-top: 6px;
+      }
+
+      &__button {
+        font-size: 11px;
+        padding: 5px 8px;
+        padding-top: 4px;
+        top: -1px;
+      }
+
+      &__none {
+        font-size: 14px;
+        margin-top: 75px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

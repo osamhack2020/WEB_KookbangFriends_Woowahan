@@ -9,6 +9,11 @@ import "./MyPageFeed.scss";
 
 import MyPageFeedBox from "./MyPageFeedBox/MyPageFeedBox";
 
+const breakpointColumnsObj = {
+  default: 2,
+  769: 1,
+};
+
 const MyPageFeed = (props) => {
   const FEED_QUERY = gql`
     query {
@@ -17,7 +22,7 @@ const MyPageFeed = (props) => {
           feed_likes {
             id
             title
-            paragraph
+            description
             type
             date
             thumbnail {
@@ -71,7 +76,7 @@ const MyPageFeed = (props) => {
           {feeds.length > 0 ? (
             <ul className="my-page-feed__area__contents__lists">
               <Masonry
-                breakpointCols={2}
+                breakpointCols={breakpointColumnsObj}
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column"
               >
@@ -81,7 +86,7 @@ const MyPageFeed = (props) => {
                       key={`feed-${index}`}
                       id={feed.id}
                       title={feed.title}
-                      paragraph={feed.paragraph}
+                      description={feed.description}
                       thumbnail={feed.thumbnail}
                       type={feed.type}
                       date={feed.date}

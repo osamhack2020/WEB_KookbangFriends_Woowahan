@@ -94,3 +94,91 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .my-page-view-consulting-recipient__area {
+    &__subject {
+      font-weight: 900;
+      font-size: 17px;
+      color: #232323;
+    }
+
+    &__contents {
+      padding: 30px;
+
+      &__title {
+        font-size: 19px;
+      }
+
+      &__thumbnail {
+        width: 120px;
+        height: 120px;
+      }
+
+      &__info {
+        width: calc(100% - 120px);
+        padding-left: 30px;
+
+        &__subject {
+          font-size: 14px;
+        }
+
+        &__username {
+          font-size: 21px;
+
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-page-view-consulting-recipient__area {
+    &__subject {
+      font-size: 14px;
+    }
+
+    &__contents {
+      padding: 10px;
+
+      &__title {
+        font-size: 14px;
+      }
+
+      &__thumbnail {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 10px;
+        top: 13px;
+      }
+
+      &__info {
+        width: 100%;
+        padding-left: 0;
+
+        &__subject {
+          font-size: 12px;
+          padding-left: 60px;
+        }
+
+        &__username {
+          font-size: 17px;
+          padding-left: 60px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        &__paragraph {
+          font-size: 12px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

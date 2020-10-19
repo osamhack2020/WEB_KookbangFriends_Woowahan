@@ -53,3 +53,50 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .my-page-view-consulting-context__area {
+    margin-top: 15px;
+
+    &__subject {
+      font-weight: 900;
+      font-size: 21px;
+      color: #232323;
+    }
+
+    &__contents {
+      padding: 10px;
+      border-radius: 15px;
+      border: 2px solid #eee;
+
+      &__subject {
+        font-size: 12px;
+      }
+
+      &__date {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+
+      &__type {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+
+      &__title {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      &__description {
+        margin-top: 30px;
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

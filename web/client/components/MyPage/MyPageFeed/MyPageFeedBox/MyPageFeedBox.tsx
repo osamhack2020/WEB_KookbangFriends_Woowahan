@@ -47,7 +47,7 @@ function MyPageFeedBox(props) {
               {props.title}
             </div>
             <div className="my-page-feed-box__area__contents__info__paragraph">
-              {props.paragraph}
+              {props.description}
             </div>
             <div className="my-page-feed-box__area__contents__info__view">
               <span>자세히 보기</span>

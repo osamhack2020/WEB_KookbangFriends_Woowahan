@@ -44,6 +44,7 @@
       }
 
       &__name {
+        width: calc(100% - 65px);
         font-size: 17px;
         font-weight: 900;
         float: left;
@@ -133,6 +134,120 @@
 
         &.solved {
           color: rgb(13, 30, 54);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .my-page-consulting-box__area {
+    width: calc(50% - 15px);
+    margin-right: 30px;
+    margin-top: 30px;
+
+    &__contents {
+      &__pro {
+        padding: 15px;
+
+        &__name {
+          width: calc(100% - 65px);
+          font-size: 14px;
+          margin-left: 15px;
+        }
+      }
+
+      &__info {
+        padding: 15px;
+
+        &__date {
+          font-size: 12px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        &__title {
+          font-size: 19px;
+          height: 60px;
+        }
+
+        &__view {
+          font-size: 14px;
+
+          img {
+            width: 10px;
+            height: 10px;
+            top: -6px;
+            margin-left: 5px;
+          }
+        }
+
+        &__stat {
+          right: 15px;
+          bottom: 15px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-page-consulting-box__area {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 30px;
+
+    &__contents {
+      &__pro {
+        padding: 10px;
+
+        &__thumbnail {
+          width: 40px;
+          height: 40px;
+        }
+
+        &__name {
+          width: calc(100% - 55px);
+          font-size: 12px;
+          margin-left: 15px;
+          margin-top: 2px;
+        }
+      }
+
+      &__info {
+        padding: 15px;
+
+        &__date {
+          font-size: 12px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        &__title {
+          font-size: 17px;
+          height: auto;
+        }
+
+        &__view {
+          font-size: 12px;
+
+          img {
+            width: 10px;
+            height: 10px;
+            top: -6px;
+            margin-left: 5px;
+          }
+        }
+
+        &__stat {
+          right: 15px;
+          bottom: 15px;
+          font-size: 14px;
         }
       }
     }

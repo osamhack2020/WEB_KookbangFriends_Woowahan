@@ -34,3 +34,81 @@
     }
   }
 }
+
+@media (max-width: 1480px) {
+  .my-page-info__area {
+    width: 260px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .my-page-info__area {
+    width: 100%;
+
+    &__contents {
+      &__menu {
+        width: calc(100% - 200px);
+        float: left;
+        padding: 30px;
+        padding-top: 25px;
+        margin-top: 0;
+        margin-left: 30px;
+
+        li {
+          cursor: pointer;
+          font-size: 17px;
+          font-weight: 900;
+          text-align: center;
+          margin-top: 10px;
+          padding: 5px 0;
+          color: rgb(107, 107, 107);
+          transition: color 0.2s;
+
+          &:hover {
+            color: #232323;
+          }
+
+          &.selected {
+            color: #000 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-page-info__area {
+    width: 100%;
+
+    &__contents {
+      &__menu {
+        width: calc(100% - 115px);
+        float: left;
+        padding: 10px;
+        padding-top: 15px;
+        margin-top: 0;
+        margin-left: 15px;
+
+        li {
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 900;
+          text-align: center;
+          margin-top: 0;
+          padding: 5px 0;
+          color: rgb(107, 107, 107);
+          transition: color 0.2s;
+
+          &:hover {
+            color: #232323;
+          }
+
+          &.selected {
+            color: #000 !important;
+          }
+        }
+      }
+    }
+  }
+}

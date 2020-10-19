@@ -168,3 +168,69 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .my-page-view-consulting-comment__area {
+    margin-top: 15px;
+
+    &__contents {
+      padding: 10px;
+
+      &__top {
+        &__title {
+          font-size: 14px;
+        }
+      }
+
+      &__input {
+        margin-top: 15px;
+
+        textarea {
+          min-height: 120px;
+          padding: 10px;
+          padding-right: 85px;
+          font-size: 12px;
+        }
+
+        &__button {
+          bottom: 20px;
+          right: 10px;
+          padding: 8px 12px;
+          font-size: 12px;
+          font-weight: 700;
+        }
+
+        &__login {
+          font-size: 12px;
+          padding: 35px 0;
+          color: #555;
+
+          &__button {
+            padding: 8px 12px;
+            font-size: 12px;
+            margin-top: 15px;
+          }
+        }
+      }
+
+      &__list {
+        margin-top: 15px;
+        padding-top: 0;
+        border-top: 2px solid #e6e6e6;
+
+        &__none {
+          font-size: 12px;
+          margin-top: 30px;
+          margin-bottom: 15px;
+        }
+
+        &__title {
+          font-size: 19px;
+          font-weight: 900;
+          color: #555;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

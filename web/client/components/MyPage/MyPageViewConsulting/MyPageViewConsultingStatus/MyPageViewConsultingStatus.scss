@@ -141,3 +141,36 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .my-page-view-consulting-status__area {
+    padding: 0px;
+
+    &__contents {
+      padding: 10px;
+      border-bottom: none;
+
+      &__subject {
+        font-size: 12px;
+      }
+
+      &__now {
+        font-size: 17px;
+        margin-top: 10px;
+      }
+
+      &__paragraph {
+        position: absolute;
+        right: unset;
+        left: 10px;
+        top: 75px;
+        font-size: 12px;
+        width: calc(100% - 20px);
+      }
+
+      &__graph {
+        margin-top: 55px;
+      }
+    }
+  }
+}

@@ -33,3 +33,55 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .my-page-info-user__area {
+    width: 170px;
+    height: 200px;
+    float: left;
+
+    &__contents {
+      padding: 30px;
+
+      &__thumbnail {
+        position: relative;
+        padding-top: 100%;
+        border-radius: 1000px;
+        overflow: hidden;
+        background: #eee;
+        border: 2px solid #eee;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s;
+        }
+      }
+
+      &__username {
+        font-size: 14px;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-page-info-user__area {
+    width: 100px;
+    height: 125px;
+
+    &__contents {
+      padding: 10px;
+
+      &__username {
+        font-size: 10px;
+        margin-top: 5px;
+      }
+    }
+  }
+}

@@ -1,13 +1,23 @@
 import React from "react";
 import Lee from "../../../lib/Lee";
 import DelayLink from "../../../lib/DelayLink";
-import Cookies from "js-cookie";
+import Router from "next/router";
+import { unsetToken } from "../../../lib/auth";
 
 import "./MyPageInfo.scss";
 
 import MyPageInfoUser from "./MyPageInfoUser/MyPageInfoUser";
 
 const MyPageInfo = (props) => {
+  function logout() {
+    unsetToken();
+    Lee.loadingStart();
+
+    setTimeout(() => {
+      Router.push("/");
+    }, 200);
+  }
+
   return (
     <div id="MyPageInfo">
       <div className="my-page-info__area parents">
@@ -58,6 +68,7 @@ const MyPageInfo = (props) => {
               >
                 <li>좋아요 피드</li>
               </DelayLink>
+              <li onClick={logout}>로그아웃</li>
             </ul>
           )}
         </div>
