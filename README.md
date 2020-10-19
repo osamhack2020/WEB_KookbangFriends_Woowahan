@@ -10,12 +10,27 @@
 
 ## 기능 설계
  * 온라인 비대면 상담 서비스<br>
-   - 병영생활 고충상담<br>
-   - 방위사업비리 신고상담<br>
-   - 군범죄 · 테러 신고상담<br>
-   - 성폭력 신고상담<br>
-   - 양성평등 신고상담<br>
-   - 기타 고민상담 등<br><br>
+   <table border="0">
+        <tbody><tr>
+            <td rowspan="6">　　　　<img src="/image/2_CONSULT_half.jpg" width="75%" height="25%"></td>
+            <td width=300> 병영생활 고충상담 </td>
+        </tr>
+        <tr>
+            <td> 방위사업비리 신고상담 </td>
+        </tr>
+        <tr>
+            <td> 군범죄 · 테러 신고상담 </td>
+        </tr>
+        <tr>
+            <td> 성폭력 신고상담 </td>
+        </tr>
+        <tr>
+            <td> 양성평등 신고상담 </td>
+        </tr>
+        <tr>
+            <td> 기타 고민상담 등 </td>
+        </tr>
+   </tbody></table>
    
  * 커뮤니티 서비스<br>
    - 자유게시판<br>
