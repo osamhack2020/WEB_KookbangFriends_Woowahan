@@ -10,3 +10,40 @@
     padding-top: 50px;
   }
 }
+
+@media (max-width: 1480px) {
+  .community__area {
+    &__contents {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .community__area {
+    &__contents {
+      padding-left: 240px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .community__area {
+    margin-top: 100px;
+    padding-bottom: 0;
+    &__contents {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .community__area {
+    margin-top: 95px;
+    &__contents {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+    }
+  }
+}

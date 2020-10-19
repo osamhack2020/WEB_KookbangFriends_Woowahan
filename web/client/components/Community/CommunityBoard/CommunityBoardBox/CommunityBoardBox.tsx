@@ -51,8 +51,17 @@ function CommunityBoardBox(props) {
           </div>
           <div className="community-board-box__area__contents__user__info">
             <div className="community-board-box__area__contents__user__info__nickname">
-              <span>{props.user.username}</span>님이 <span>{props.type}</span>에
-              피드를 추가하셨습니다.
+              <span>{props.user.username}</span>님이
+              <DelayLink
+                to={`community?type=list&category=${props.type}`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <span> {props.type}</span>
+              </DelayLink>
+              에 피드를 추가하셨습니다.
             </div>
             <div className="community-board-box__area__contents__user__info__date">
               {`${date.getFullYear()}년 ${month}월 ${day}일`}

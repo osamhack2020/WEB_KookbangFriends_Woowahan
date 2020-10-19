@@ -55,3 +55,142 @@
     }
   }
 }
+
+@media (max-width: 1480px) {
+  .community-nav__area {
+    left: 30px;
+    margin-left: 0;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .community-nav__area {
+    width: 180px;
+    padding: 115px 15px;
+
+    &__contents {
+      &__category {
+        &__title {
+          font-size: 12px;
+        }
+
+        &__lists {
+          padding: 0;
+
+          li {
+            font-size: 14px;
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+
+            span {
+              left: 10px;
+              top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .community-nav__area {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 63px;
+    height: 62px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #eee;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: #fff;
+    z-index: 9;
+
+    &__contents {
+      &__category {
+        &__title {
+          display: none;
+        }
+
+        &__lists {
+          padding: 0;
+          margin-top: 0;
+
+          li {
+            font-size: 14px;
+            float: left;
+            margin: 0 10px;
+
+            img {
+              display: none;
+            }
+
+            span {
+              left: 0;
+              top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .community-nav__area {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    height: 46px;
+    padding: 10px 7.5px;
+    background: #fff;
+    z-index: 9;
+
+    &__contents {
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &__category {
+        &__title {
+          display: none;
+        }
+
+        &__lists {
+          padding: 0;
+          margin-top: 0;
+          width: 420px;
+
+          li {
+            font-size: 12px;
+            float: left;
+            margin: 0 7px;
+            width: 56px;
+
+            img {
+              display: none;
+            }
+
+            span {
+              left: 0;
+              top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -64,3 +64,57 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .community-board__area {
+    &__contents {
+      &__add {
+        margin-bottom: 15px;
+        border-radius: 5px;
+
+        &__title {
+          font-size: 14px;
+          padding: 10px;
+          padding-top: 12px;
+        }
+
+        &__info {
+          padding: 10px;
+
+          &__description {
+            width: calc(100% - 63px);
+            font-size: 12px;
+            padding-top: 2px;
+          }
+
+          &__button {
+            cursor: pointer;
+            font-family: "Noto Sans KR", serif, Arial;
+            padding: 5px 8px;
+            background: #305f5d;
+            margin-top: -2px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            float: right;
+          }
+        }
+      }
+
+      &__board {
+        padding: 0;
+        padding-top: 5px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      &__board-nothing {
+        padding-top: calc(50vh - 240px);
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+}

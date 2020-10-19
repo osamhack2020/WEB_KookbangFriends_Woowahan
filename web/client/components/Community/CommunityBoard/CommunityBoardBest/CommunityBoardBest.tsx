@@ -17,7 +17,7 @@ function CommunityBoardBest(props) {
         <div className="community-board-best__area parents">
           <div className="community-board-best__area__contents parents">
             <div className="community-board-best__area__contents__title">
-              카테고리 피드 TOP 3
+              {props.category} 피드 TOP 3
             </div>
             <ul className="community-board-best__area__contents__lists parents">
               {bests.map((feed, index) => {

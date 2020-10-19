@@ -188,3 +188,95 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .community-add-feed__area {
+    border-radius: 5px;
+
+    &__contents {
+      padding: 10px;
+
+      &__user {
+        &__thumbnail {
+          width: 40px;
+          height: 40px;
+        }
+
+        &__info {
+          width: calc(100% - 50px);
+          margin-left: 10px;
+          margin-top: 0;
+
+          &__username {
+            font-size: 14px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+
+          &__date {
+            font-size: 12px;
+            margin-top: 0px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      &__thumbnail {
+        margin-top: 15px;
+        border-radius: 10px;
+      }
+
+      &__category {
+        font-size: 12px;
+        margin-top: 30px;
+        padding: 6px 10px;
+      }
+
+      &__title {
+        font-size: 19px;
+        margin-top: 15px;
+      }
+
+      &__description {
+        font-size: 14px;
+        margin-top: 20px;
+
+        * {
+          font-size: 14px !important;
+        }
+      }
+
+      &__buttons {
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        li {
+          button {
+            cursor: pointer;
+            border: none;
+            box-shadow: none;
+            background: rgb(48, 95, 93);
+            color: #fff;
+            font-weight: 900;
+            font-size: 14px;
+            padding: 0;
+            color: #fff;
+            border-radius: 5px;
+            padding: 8px 10px;
+          }
+
+          &:last-child {
+            button {
+              background: #555;
+            }
+          }
+        }
+      }
+    }
+  }
+}

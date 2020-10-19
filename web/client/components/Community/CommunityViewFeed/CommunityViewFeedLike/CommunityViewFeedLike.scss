@@ -33,3 +33,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .community-view-feed-like__area {
+    &__contents {
+      width: 69px;
+      margin-top: 65px;
+      padding: 10px 10px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
