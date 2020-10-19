@@ -10,9 +10,9 @@
 
 ## 기능 설계
  * 온라인 비대면 상담 서비스<br>
-   <table border="0">
+   <table>
         <tbody><tr>
-            <td rowspan="6">　　　　<img src="/image/2_CONSULT_half.jpg" width="75%" height="25%"></td>
+            <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
             <td width=300> 병영생활 고충상담 </td>
         </tr>
         <tr>
@@ -33,14 +33,37 @@
    </tbody></table>
    
  * 커뮤니티 서비스<br>
-   - 자유게시판<br>
-   - 병영생활 노하우 공유<br>
-   - 온라인 동아리 활동<br>
-   - 고민 공유 및 상담 등<br><br>
+    <table>
+        <tbody><tr>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
+            <td width="300"> 자유게시판 </td>
+        </tr>
+        <tr>
+            <td> 병영생활 노하우 공유 </td>
+        </tr>
+        <tr>
+            <td> 온라인 동아리 활동 </td>
+        </tr>
+        <tr>
+            <td> 고민 공유 및 상담 등 </td>
+        </tr>
+   </tbody></table>
     
  * 뉴스/정보 제공<br>
-   - 카드뉴스/인포그래픽 제공<br>
-   - 국방유튜브 제공 등<br><br>
+    <table>
+        <tbody><tr>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
+            <td width="300" height="75"> 카드뉴스/인포그래픽 제공 </td>
+        </tr>
+        <tr>
+            <td height="75"> 군/국방부 홍보효과 </td>
+        </tr>
+        <tr>
+           <td rowspan="2"></td>
+        </tr>
+        <tr>
+        </tr>
+   </tbody></table>
     
  * 마이페이지 기능<br>
    - 로그인/회원가입<br>
