@@ -123,3 +123,156 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .card__area {
+    &__video {
+      &__contents {
+        &__title {
+          font-size: 32px;
+        }
+
+        &__bi {
+          position: absolute;
+          left: 30px;
+          bottom: 234px;
+          height: 38px;
+          animation: 0.5s infinite bi-up;
+          transform: scaleX(-1);
+
+          @keyframes bi-up {
+            0% {
+              bottom: 234px;
+            }
+            50% {
+              bottom: 237px;
+            }
+            100% {
+              bottom: 234px;
+            }
+          }
+        }
+      }
+    }
+
+    &__contents {
+      &__lists {
+        li {
+          cursor: pointer;
+          width: calc(33.33% - 20px);
+          margin-right: 30px;
+          margin-top: 30px;
+
+          &:nth-child(4n) {
+            margin-right: 30px;
+          }
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card__area {
+    margin-top: 49px;
+    padding-bottom: 50px;
+
+    &__video {
+      height: calc(100vh - 100px);
+      min-height: 0;
+
+      &__fade {
+        opacity: 0.3;
+      }
+
+      &__contents {
+        height: calc(100vh - 100px);
+        min-height: 0;
+        padding: 0 15px;
+
+        &__title {
+          width: 90%;
+          font-size: 24px;
+          left: 15px;
+          bottom: unset;
+          top: 100px;
+
+          span {
+            font-size: 12px;
+            padding: 10px 14px;
+            top: -17px;
+            left: 40px;
+          }
+        }
+
+        &__bi {
+          left: 15px;
+          bottom: 194px;
+          height: 30px;
+
+          @keyframes bi-up {
+            0% {
+              top: 88px;
+            }
+            50% {
+              top: 91px;
+            }
+            100% {
+              top: 88px;
+            }
+          }
+        }
+
+        &__scroll {
+          position: absolute;
+          left: 15px;
+          bottom: 100px;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+
+          img {
+            height: 15px;
+            float: left;
+            position: relative;
+            margin-right: 10px;
+            top: 2px;
+          }
+        }
+      }
+    }
+
+    &__contents {
+      padding: 0px 15px;
+
+      &__lists {
+        margin-top: 15px;
+
+        li {
+          position: relative;
+          cursor: pointer;
+          width: calc(50% - 7.5px);
+          margin-right: 15px;
+          margin-top: 15px;
+          overflow: hidden;
+
+          &:nth-child(3n) {
+            margin-right: 15px;
+          }
+
+          &:nth-child(2n) {
+            margin-right: 0 !important;
+          }
+
+          &:hover {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

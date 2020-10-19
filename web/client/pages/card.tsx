@@ -46,7 +46,6 @@ function Card() {
 
   if (data) {
     cards = data.cards;
-    console.log(cards);
   }
 
   return (
@@ -56,9 +55,19 @@ function Card() {
       </Head>
       <div className="card__area parents">
         <div className="card__area__video parents">
-          <video autoPlay loop muted playsInline>
+          <video autoPlay loop muted playsInline className="pc">
             <source src="/static/videos/card-video.webm" type="video/webm" />
             <source src="/static/videos/card-video.mp4" type="video/mp4" />
+          </video>
+          <video autoPlay loop muted playsInline className="mobile">
+            <source
+              src="/static/videos/card-video-mobile.webm"
+              type="video/webm"
+            />
+            <source
+              src="/static/videos/card-video-mobile.mp4"
+              type="video/mp4"
+            />
           </video>
           <div className="card__area__video__fade"></div>
           <div className="card__area__video__contents">
@@ -74,6 +83,10 @@ function Card() {
               alt="bi"
               className="card__area__video__contents__bi"
             />
+            <div className="card__area__video__contents__scroll mobile">
+              <img src="/static/icons/bottom-arrow.png" alt="scroll" /> 스크롤
+              해서 더 알아보세요!
+            </div>
           </div>
         </div>
         <div className="card__area__contents parents">
