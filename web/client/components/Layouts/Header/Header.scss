@@ -150,11 +150,12 @@
       margin-left: 50px;
       float: right;
       top: 6px;
+      width: 350px;
 
       li {
         font-family: "Noto Sans KR", serif, Arial;
         cursor: pointer;
-        float: left;
+        float: right;
         font-size: 14px;
         color: #232323;
         margin-left: 30px;
@@ -198,8 +199,9 @@
       }
 
       &__logins {
-        margin-left: 30px;
+        margin-left: 0;
         top: 9px;
+        width: 270px;
 
         li {
           font-size: 12px;

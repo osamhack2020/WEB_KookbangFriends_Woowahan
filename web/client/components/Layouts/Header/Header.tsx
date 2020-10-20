@@ -136,8 +136,6 @@ const Header = () => {
               <HeaderUser />
             ) : (
               <>
-                <li onClick={Lee.openLogin}>로그인</li>
-                <li onClick={Lee.openRegistration}>회원가입</li>
                 <DelayLink
                   to={`community?type=list&category=전체게시글`}
                   delay={200}
@@ -147,6 +145,8 @@ const Header = () => {
                 >
                   <li className="community">커뮤니티</li>
                 </DelayLink>
+                <li onClick={Lee.openRegistration}>회원가입</li>
+                <li onClick={Lee.openLogin}>로그인</li>
               </>
             )}
           </ul>

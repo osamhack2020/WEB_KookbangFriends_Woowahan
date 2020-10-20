@@ -61,6 +61,17 @@ const HeaderUser = () => {
     <div id="HeaderUser">
       <div className="header-user__area">
         <div className="header-user__area__contents">
+          <DelayLink
+            to={`community?type=list&category=전체게시글`}
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li className="community">커뮤니티</li>
+          </DelayLink>
+
+          <li onClick={logout}>로그아웃</li>
           {me.user.role.name === "Professional" ? (
             <DelayLink
               to={`mypage?type=consulting&ver=professional`}
@@ -106,16 +117,6 @@ const HeaderUser = () => {
               </li>
             </DelayLink>
           )}
-          <li onClick={logout}>로그아웃</li>
-          <DelayLink
-            to={`community?type=list&category=전체게시글`}
-            delay={200}
-            onDelayStart={function () {
-              Lee.loadingStart();
-            }}
-          >
-            <li className="community">커뮤니티</li>
-          </DelayLink>
         </div>
       </div>
     </div>
