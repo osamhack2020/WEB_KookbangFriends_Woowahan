@@ -9,10 +9,11 @@
  * '국방프렌즈'는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.<br><br>
 
 ## 기능 설계
+### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.
  * 온라인 비대면 상담 서비스<br>
    <table>
         <tbody><tr>
-            <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
+            <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
             <td width=300> 병영생활 고충상담 </td>
         </tr>
         <tr>
@@ -35,7 +36,7 @@
  * 커뮤니티 서비스<br>
     <table>
         <tbody><tr>
-            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
             <td width="300"> 자유게시판 </td>
         </tr>
         <tr>
@@ -66,17 +67,40 @@
    </tbody></table>
     
  * 마이페이지 기능<br>
-   - 로그인/회원가입<br>
-   - 상담 내역 확인<br>
-   - 관심 커뮤니티 피드 확인<br><br>
+     <table>
+        <tbody><tr>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
+            <td width="300"> 로그인/회원가입 </td>
+        </tr>
+        <tr>
+            <td> 상담 내역 확인 </td>
+        </tr>
+        <tr>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_LIKE.jpg"><img src="/image/9_LIKE_readme.jpg" width="60%" height="60%"></a></div></td>
+           <td>관심 커뮤니티 피드 확인</td>
+        </tr>
+        <tr>
+           <td>　</td>
+        </tr>
+   </tbody></table>
     
  * 24시간 AI 챗봇 서비스<br>
-   - 헬프데스크 지원<br>
-   - 서비스 가이드라인 제공<br><br>
-   
- * 카카오톡 챗봇 서비스<br>
-   - 헬프데스크 지원<br>
-   - 웹사이트 연동 정보 제공<br><br>
+      <table>
+        <tbody><tr>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="60%" height="60%"></a><br><h6>데스크탑 버전</h6></div></td>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_MOB_readme.jpg"><img src="/image/5_CHAT_MOB_readme.jpg" width="60%" height="60%"></a><br><h6>모바일 버전</h6></div></td>
+            <td width="300"> 헬프데스크 지원 </td>
+        </tr>
+        <tr>
+            <td> 서비스 가이드라인 제공 </td>
+        </tr>
+        <tr>
+           <td> 카카오톡 채널 챗봇 연동 </td>
+        </tr>
+        <tr>
+           <td> 기타 문의사항 24시간 접수 </td>
+        </tr>
+   </tbody></table>
    
  (기능은 개발 과정에 따라 추가/삭제될 수 있음)<br><br>  
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
