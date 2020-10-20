@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chatbot-messages",
+      "handler": "chatbot-message.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chatbot-messages/count",
+      "handler": "chatbot-message.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chatbot-messages/:id",
+      "handler": "chatbot-message.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chatbot-messages",
+      "handler": "chatbot-message.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chatbot-messages/:id",
+      "handler": "chatbot-message.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chatbot-messages/:id",
+      "handler": "chatbot-message.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

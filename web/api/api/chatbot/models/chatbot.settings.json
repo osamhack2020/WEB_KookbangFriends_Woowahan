@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chatbots",
+  "info": {
+    "name": "chatbot"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "scene": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "chatbot_messages": {
+      "via": "chatbot",
+      "collection": "chatbot-message"
+    },
+    "reply": {
+      "type": "string",
+      "required": true
+    },
+    "button": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

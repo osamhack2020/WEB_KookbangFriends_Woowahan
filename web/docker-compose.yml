@@ -10,6 +10,20 @@ services:
     volumes:
       - ./client/:/app
     ports:
+      - "6061:3000"
+    networks:
+      - backend
+
+  kookbang-friends-osam-dev:
+    restart: always
+    container_name: kookbang-friends-osam-dev
+    image: kookbang-friends-osam-dev
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./dev
+    volumes:
+      - ./dev/:/app
+    ports:
       - "7061:3000"
     networks:
       - backend
