@@ -88,7 +88,7 @@
       <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="60%" height="60%"></a><br><h6>데스크탑 버전</h6></div></td>
-            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_MOB.jpg"><img src="/image/5_CHAT_MOB_readme.jpg" width="60%" height="60%"></a><br><h6>모바일 버전</h6></div></td>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_MOB_readme.jpg"><img src="/image/5_CHAT_MOB_readme.jpg" width="60%" height="60%"></a><br><h6>모바일 버전</h6></div></td>
             <td width="300"> 헬프데스크 지원 </td>
         </tr>
         <tr>
