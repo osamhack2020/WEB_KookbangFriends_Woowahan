@@ -1,0 +1,37 @@
+#ChatbotBox.hide {
+  display: none;
+}
+
+.chatbot-box__area {
+  cursor: pointer;
+  display: table;
+  padding: 5px 10px;
+  border-radius: 1000px;
+  border: 2px solid #eee;
+  background: #fff;
+  margin-top: 10px;
+  float: right;
+  clear: both;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  &__contents {
+    &__text {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &__end {
+      font-family: "Noto Sans KR", serif, Arial;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #555;
+      margin: 20px 0;
+    }
+  }
+}

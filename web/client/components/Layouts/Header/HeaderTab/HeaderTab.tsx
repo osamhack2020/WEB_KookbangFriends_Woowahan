@@ -22,6 +22,12 @@ const HeaderTab = (props) => {
     }
   }
 
+  function openChatbot() {
+    const Chatbot = Lee.get("Chatbot");
+    Lee.removeClass(Chatbot, "hide");
+    Lee.removeClass(Chatbot, "invisible");
+  }
+
   return (
     <div id="HeaderTab">
       <div className="header__tab__area parents">
@@ -40,7 +46,7 @@ const HeaderTab = (props) => {
                 상담서비스
               </li>
             </DelayLink>
-            <li>
+            <li onClick={openChatbot}>
               <img src="/static/icons/chat-green.png" alt="chatbot" />
               <br />
               챗봇서비스

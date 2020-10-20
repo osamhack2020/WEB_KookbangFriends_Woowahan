@@ -28,18 +28,24 @@ const Right = () => {
     window.scrollTo(0, 0);
   }
 
+  function openChatbot() {
+    const Chatbot = Lee.get("Chatbot");
+    Lee.removeClass(Chatbot, "hide");
+    Lee.removeClass(Chatbot, "invisible");
+  }
+
   return (
     <div id="Right">
       <div className="right__area">
         <div className="right__area__top" onClick={scrollTop}>
           <img src="/static/icons/top.png" alt="top" />
         </div>
-        <div className="right__area__contents">
+        <div className="right__area__contents" onClick={openChatbot}>
           <div className="right__area__contents__chatbot">
             <img src="/static/icons/chat-bot.png" alt="chatbot" />
           </div>
         </div>
-        <div className="right__area__chat">
+        <div className="right__area__chat" onClick={openChatbot}>
           <span>내가 도와줄게!</span>
         </div>
       </div>

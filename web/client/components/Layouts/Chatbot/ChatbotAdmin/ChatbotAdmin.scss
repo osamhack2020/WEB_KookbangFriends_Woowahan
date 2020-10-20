@@ -1,0 +1,63 @@
+.chatbot-admin__area {
+  &__contents {
+    &__thumbnail {
+      position: relative;
+      margin-top: 5px;
+      width: 40px;
+      height: 40px;
+      padding: 9px;
+      padding-top: 6px;
+      padding-right: 10px;
+      background: linear-gradient(-45deg, #305f5d, #30435f, #305a5f, #305f5d);
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
+      border-radius: 1000px;
+      float: left;
+
+      img {
+        animation: shake-flip 2s ease infinite;
+        transform: scaleX(-1);
+      }
+    }
+
+    &__text {
+      position: relative;
+      float: left;
+      width: calc(100% - 46px);
+      margin-left: 6px;
+      margin-top: 2px;
+
+      &__name {
+        font-family: "Noto Sans KR", serif, Arial;
+        font-size: 14px;
+        font-weight: 700;
+        color: #232323;
+      }
+
+      &__paragraph {
+        font-family: "Noto Sans KR", serif, Arial;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px;
+        background: #f5f5f5;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: table;
+      }
+
+      &__button {
+        font-family: "Noto Sans KR", serif, Arial;
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        background: #fff;
+        border-radius: 10px;
+        color: #232323;
+        border: 2px solid #eee;
+      }
+    }
+  }
+}

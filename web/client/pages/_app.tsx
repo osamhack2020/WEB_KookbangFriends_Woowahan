@@ -18,6 +18,10 @@ const Right = dynamic(import("../components/Layouts/Right/Right"), {
   ssr: false,
 });
 
+const Chatbot = dynamic(import("../components/Layouts/Chatbot/Chatbot"), {
+  ssr: false,
+});
+
 class App extends NextApp<any> {
   render() {
     const { Component, pageProps, apolloClient } = this.props;
@@ -25,6 +29,7 @@ class App extends NextApp<any> {
     return (
       <ApolloProvider client={apolloClient}>
         <Header />
+        <Chatbot />
         <div id="content">
           <Component {...pageProps} />
         </div>

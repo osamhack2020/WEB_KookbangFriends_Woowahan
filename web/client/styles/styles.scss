@@ -178,6 +178,17 @@ input::placeholder {
     transform: translateY(-2px) translateX(-1px) rotate(2deg);
   }
 }
+@keyframes shake-flip {
+  0% {
+    transform: translateY(-1px) translateX(2px) rotate(2deg) scaleX(-1);
+  }
+  50% {
+    transform: translateY(0px) translateX(1px) rotate(-1deg) scaleX(-1);
+  }
+  100% {
+    transform: translateY(-1px) translateX(2px) rotate(2deg) scaleX(-1);
+  }
+}
 
 #content {
   position: relative;

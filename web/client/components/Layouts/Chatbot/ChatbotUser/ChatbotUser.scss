@@ -1,0 +1,26 @@
+.chatbot-user__area {
+  &__contents {
+    &__text {
+      position: relative;
+      width: calc(100% - 46px);
+      margin-left: 6px;
+      margin-top: 2px;
+      clear: both;
+      float: right;
+
+      &__paragraph {
+        font-family: "Noto Sans KR", serif, Arial;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 10px;
+        background: #35475f;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: table;
+        float: right;
+        color: #fff;
+      }
+    }
+  }
+}
