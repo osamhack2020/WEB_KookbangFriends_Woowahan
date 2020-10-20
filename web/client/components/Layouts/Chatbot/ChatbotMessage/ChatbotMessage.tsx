@@ -26,6 +26,7 @@ const CHATBOT_QUERY = gql`
 let message = [];
 let sceneIndex = 0;
 let sceneText;
+let scroll = 0;
 
 const ChatbotMessage = () => {
   sceneIndex++;
@@ -37,13 +38,26 @@ const ChatbotMessage = () => {
 
   useEffect(() => {
     const chatBox = Lee.gets(`chatBox-${sceneIndex}`);
+    const chatField = Lee.get("chatField");
+    const chatAdmin = Lee.gets(`chatAdmin-${sceneIndex}`);
 
     for (let i = 0; i < chatBox.length; i++) {
       Lee.addClass(chatBox[i], "show");
     }
 
-    const chatField = Lee.get("chatField");
-    chatField.scrollTop = chatField.scrollHeight;
+    for (let j = 0; j < chatAdmin.length; j++) {
+      Lee.addClass(chatAdmin[j], "active");
+    }
+
+    chatField.scrollTop = scroll - (chatField.clientHeight - 150);
+
+    setTimeout(() => {
+      chatField.scrollTo({ top: chatField.scrollHeight, behavior: "smooth" });
+    }, 100);
+
+    setTimeout(() => {
+      scroll = chatField.scrollHeight;
+    }, 400);
   });
 
   let chatbot;
@@ -81,6 +95,7 @@ const ChatbotMessage = () => {
             button={chatbot.button}
             link={chatbot.link}
             key={`chatAdmin-${sceneIndex}`}
+            index={sceneIndex}
           />
         );
       } else {
@@ -88,6 +103,7 @@ const ChatbotMessage = () => {
           <ChatbotAdmin
             reply="무슨 말씀인지 잘 이해하지 못했어요. 다시 시도해주세요."
             key={`chatAdmin-${sceneIndex}`}
+            index={sceneIndex}
           />
         );
       }

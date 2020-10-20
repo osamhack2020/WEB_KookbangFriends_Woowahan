@@ -22,7 +22,7 @@ const ChatbotBox = (props) => {
         choice();
       }}
     >
-      <div className="chatbot-box__area">
+      <div className={`chatbot-box__area ${props.target}`}>
         <div className="chatbot-box__area__contents">
           <div className="chatbot-box__area__contents__text">{props.text}</div>
         </div>

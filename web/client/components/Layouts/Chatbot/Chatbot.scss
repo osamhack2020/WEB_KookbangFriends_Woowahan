@@ -79,6 +79,8 @@
       overflow-y: scroll;
       // scroll-behavior: smooth;
       background: #e5f0ff;
+      transition: opacity 0.2s;
+      opacity: 1;
 
       &::-webkit-scrollbar {
         display: none;

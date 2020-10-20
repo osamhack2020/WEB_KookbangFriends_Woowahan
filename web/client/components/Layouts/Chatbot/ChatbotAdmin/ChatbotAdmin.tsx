@@ -15,7 +15,7 @@ const ChatbotAdmin = (props) => {
   }
 
   return (
-    <div id="ChatbotAdmin">
+    <div id="ChatbotAdmin" className={`chatAdmin-${props.index}`}>
       <div className="chatbot-admin__area">
         <div className="chatbot-admin__area__contents parents">
           <div className="chatbot-admin__area__contents__thumbnail">
