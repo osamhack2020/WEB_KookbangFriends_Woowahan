@@ -112,6 +112,55 @@ const openRegistrationCharacter = () => {
   }
 };
 
+const openMenu = () => {
+  if (loginAnimationIndex === 0) {
+    loginAnimationIndex = 1;
+    const menuIcon = get("menuIcon");
+    const mobileMenu = get("mobileMenu");
+
+    if (checkClass(mobileMenu, "open")) {
+      setTimeout(() => {
+        removeClass(menuIcon, "open");
+        removeClass(mobileMenu, "open");
+        loginAnimationIndex = 0;
+      }, 200);
+
+      removeClass(mobileMenu, "active");
+    } else {
+      toggleClass(menuIcon, "open");
+      toggleClass(mobileMenu, "open");
+
+      setTimeout(() => {
+        toggleClass(mobileMenu, "active");
+        loginAnimationIndex = 0;
+      }, 400);
+    }
+
+    closeChatbot();
+  }
+};
+
+const closeChatbot = () => {
+  const Chatbot = get("Chatbot");
+
+  addClass(Chatbot, "hide");
+  setTimeout(() => {
+    addClass(Chatbot, "invisible");
+  }, 200);
+};
+
+const closeMenu = () => {
+  const menuIcon = get("menuIcon");
+  const mobileMenu = get("mobileMenu");
+
+  setTimeout(() => {
+    removeClass(menuIcon, "open");
+    removeClass(mobileMenu, "open");
+  }, 200);
+
+  removeClass(mobileMenu, "active");
+};
+
 module.exports = {
   addClass,
   removeClass,
@@ -125,4 +174,7 @@ module.exports = {
   openLogin,
   openRegistration,
   openRegistrationCharacter,
+  closeChatbot,
+  openMenu,
+  closeMenu,
 };
