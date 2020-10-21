@@ -5,15 +5,6 @@ import Lee from "../../../../lib/Lee";
 import "./ChatbotAdmin.scss";
 
 const ChatbotAdmin = (props) => {
-  function closeChatbot() {
-    const Chatbot = Lee.get("Chatbot");
-
-    Lee.addClass(Chatbot, "hide");
-    setTimeout(() => {
-      Lee.addClass(Chatbot, "invisible");
-    }, 200);
-  }
-
   return (
     <div id="ChatbotAdmin" className={`chatAdmin-${props.index}`}>
       <div className="chatbot-admin__area">
@@ -34,7 +25,7 @@ const ChatbotAdmin = (props) => {
                   onDelayStart={function () {
                     Lee.loadingStart();
                     setTimeout(() => {
-                      closeChatbot();
+                      Lee.closeChatbot();
                     }, 100);
                   }}
                 >

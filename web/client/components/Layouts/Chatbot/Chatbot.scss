@@ -15,13 +15,13 @@
   bottom: 30px;
   right: 30px;
   width: 360px;
-  height: 600px;
-  background: #eee;
+  background: #555;
   z-index: 11;
-  padding: 2px;
+  padding: 0px;
   border-radius: 15px;
   overflow: hidden;
   transition: opacity 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 60px 0px;
 
   &__contents {
     background: #fff;
@@ -30,7 +30,6 @@
 
     &__top {
       padding: 15px;
-      border-bottom: 2px solid #95acbd;
       background: linear-gradient(
           -45deg,
           rgb(48, 95, 93),
@@ -75,7 +74,7 @@
 
     &__field {
       padding: 15px;
-      height: 520px;
+      height: 570px;
       overflow-y: scroll;
       // scroll-behavior: smooth;
       background: #e5f0ff;
@@ -113,13 +112,13 @@
     height: calc(100vh - 100px);
     padding: 0;
     border-radius: 0;
+    box-shadow: none;
 
     &__contents {
       border-radius: 0;
 
       &__top {
         padding: 11px;
-        border-bottom: 1px solid #95acbd;
 
         &__katalk {
           left: 15px;

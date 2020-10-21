@@ -6,15 +6,6 @@ import "./Chatbot.scss";
 import ChatbotMessage from "./ChatbotMessage/ChatbotMessage";
 
 const Chatbot = () => {
-  function closeChatbot() {
-    const Chatbot = Lee.get("Chatbot");
-
-    Lee.addClass(Chatbot, "hide");
-    setTimeout(() => {
-      Lee.addClass(Chatbot, "invisible");
-    }, 200);
-  }
-
   return (
     <div id="Chatbot" className="hide invisible">
       <div className="chatbot__area">
@@ -32,7 +23,7 @@ const Chatbot = () => {
               src="/static/icons/close-white.png"
               alt="close"
               className="chatbot__area__contents__top__close"
-              onClick={closeChatbot}
+              onClick={Lee.closeChatbot}
             />
           </div>
           <div
