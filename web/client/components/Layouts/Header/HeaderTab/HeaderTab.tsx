@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Lee from "../../../../lib/Lee";
 import DelayLink from "../../../../lib/DelayLink";
 import Cookies from "js-cookie";
@@ -6,13 +6,10 @@ import Router from "next/router";
 
 import "./HeaderTab.scss";
 
-const HeaderTab = (props) => {
-  useEffect(() => {
-    console.log("hi");
-  });
-
+const HeaderTab = () => {
   function auth(target) {
     if (Cookies.get("username") && Cookies.get("jwt")) {
+      Lee.closeChatbot();
       Lee.loadingStart();
       setTimeout(() => {
         Router.push(target);
@@ -26,6 +23,7 @@ const HeaderTab = (props) => {
     const Chatbot = Lee.get("Chatbot");
     Lee.removeClass(Chatbot, "hide");
     Lee.removeClass(Chatbot, "invisible");
+    Lee.closeMenu();
   }
 
   return (
@@ -38,6 +36,10 @@ const HeaderTab = (props) => {
               delay={200}
               onDelayStart={function () {
                 Lee.loadingStart();
+
+                setTimeout(() => {
+                  Lee.closeChatbot();
+                }, 200);
               }}
             >
               <li>

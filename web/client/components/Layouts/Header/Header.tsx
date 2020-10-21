@@ -20,11 +20,14 @@ const HeaderTab = dynamic(import("./HeaderTab/HeaderTab"), {
   ssr: false,
 });
 
+let loginAnimationIndex = 0;
+
 const Header = () => {
   let [login, setLogin] = useState(false);
 
   useEffect(() => {
-    closeMenu();
+    Lee.closeMenu();
+    Lee.closeChatbot();
 
     const header = Lee.get("Header");
     const footer = Lee.get("Footer");
@@ -48,22 +51,6 @@ const Header = () => {
       Lee.removeClass(footer, "community");
     }
   });
-
-  function openMenu() {
-    const menuIcon = Lee.get("menuIcon");
-    const mobileMenu = Lee.get("mobileMenu");
-
-    Lee.toggleClass(menuIcon, "open");
-    Lee.toggleClass(mobileMenu, "open");
-  }
-
-  function closeMenu() {
-    const menuIcon = Lee.get("menuIcon");
-    const mobileMenu = Lee.get("mobileMenu");
-
-    Lee.removeClass(menuIcon, "open");
-    Lee.removeClass(mobileMenu, "open");
-  }
 
   return (
     <div id="Header">
@@ -151,7 +138,7 @@ const Header = () => {
             )}
           </ul>
           <div className="header__area__contents__menu-icon">
-            <div id="menuIcon" className="" onClick={openMenu}>
+            <div id="menuIcon" className="" onClick={Lee.openMenu}>
               <span></span>
               <span></span>
               <span></span>
@@ -179,6 +166,15 @@ const Header = () => {
                 <li>상담서비스</li>
               </DelayLink>
               <DelayLink
+                to={`community?type=list&category=전체게시글`}
+                delay={200}
+                onDelayStart={function () {
+                  Lee.loadingStart();
+                }}
+              >
+                <li>커뮤니티</li>
+              </DelayLink>
+              <DelayLink
                 to="card"
                 delay={200}
                 onDelayStart={function () {
@@ -196,16 +192,32 @@ const Header = () => {
               >
                 <li>체계지원</li>
               </DelayLink>
-              <DelayLink
-                to={`community?type=list&category=전체게시글`}
-                delay={200}
-                onDelayStart={function () {
-                  Lee.loadingStart();
-                }}
-              >
-                <li>커뮤니티</li>
-              </DelayLink>
             </ul>
+            <img
+              src="/static/characters/male/I_7914273_3_15898a66095_064.png"
+              alt="character"
+              className="header__area__contents__menus-mobile__lists__character-1"
+            />
+            <img
+              src="/static/characters/g20/I_7914891_2_15898a71562_508.png"
+              alt="character"
+              className="header__area__contents__menus-mobile__lists__character-2"
+            />
+            <img
+              src="/static/characters/e20/I_7914980_5_15898a72011_676.png"
+              alt="character"
+              className="header__area__contents__menus-mobile__lists__character-3"
+            />
+            <img
+              src="/static/characters/a40/I_7915493_5_15898a76872_959.png"
+              alt="character"
+              className="header__area__contents__menus-mobile__lists__character-4"
+            />
+            <img
+              src="/static/characters/female/I_7914304_2_15898a66219_777.png"
+              alt="character"
+              className="header__area__contents__menus-mobile__lists__character-5"
+            />
           </div>
         </div>
       </div>
