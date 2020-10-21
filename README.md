@@ -14,7 +14,7 @@
    <table>
         <tbody><tr>
             <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
-            <td width=300> 병영생활 고충상담 </td>
+            <td width="33%"> 병영생활 고충상담 </td>
         </tr>
         <tr>
             <td> 방위사업비리 신고상담 </td>
@@ -37,7 +37,7 @@
     <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
-            <td width="300"> 자유게시판 </td>
+            <td width="33%"> 자유게시판 </td>
         </tr>
         <tr>
             <td> 병영생활 노하우 공유 </td>
@@ -54,7 +54,7 @@
     <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
-            <td width="300" height="75"> 카드뉴스/인포그래픽 제공 </td>
+            <td width="33%" height="75"> 카드뉴스/인포그래픽 제공 </td>
         </tr>
         <tr>
             <td height="75"> 군/국방부 홍보효과 </td>
@@ -70,7 +70,7 @@
      <table>
         <tbody><tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
-            <td width="300"> 로그인/회원가입 </td>
+            <td width="33%"> 로그인/회원가입 </td>
         </tr>
         <tr>
             <td> 상담 내역 확인 </td>
@@ -89,7 +89,7 @@
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="60%" height="60%"></a><br><h6>데스크탑 버전</h6></div></td>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_MOB_readme.jpg"><img src="/image/5_CHAT_MOB_readme.jpg" width="60%" height="60%"></a><br><h6>모바일 버전</h6></div></td>
-            <td width="300"> 헬프데스크 지원 </td>
+            <td width="33%"> 헬프데스크 지원 </td>
         </tr>
         <tr>
             <td> 서비스 가이드라인 제공 </td>
@@ -148,5 +148,5 @@
 (제공 예정)<br><br>
 
 ## 팀 정보 (Team Information)
- * 이무열 (팀장) / muyeol95@gmail.com / https://github.com/dsvp<br>
- * 김정훈 (팀원) / kjeonghoon065@gmail.com / https://github.com/LiiNen<br>
+ * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
+ * 김정훈 (팀원) / kjeonghoon065@gmail.com<br><a href="https://github.com/LiiNen"><img src="https://img.shields.io/badge/Github-LiiNen-green?style=flat&logo=github" alt="LiiNen"></a>
