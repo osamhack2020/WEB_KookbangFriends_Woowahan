@@ -9,11 +9,6 @@ import "./MyPageFeed.scss";
 
 import MyPageFeedBox from "./MyPageFeedBox/MyPageFeedBox";
 
-const breakpointColumnsObj = {
-  default: 2,
-  769: 1,
-};
-
 const MyPageFeed = (props) => {
   const FEED_QUERY = gql`
     query {
@@ -65,6 +60,11 @@ const MyPageFeed = (props) => {
   if (data) {
     feeds = data.me.user.feed_likes;
   }
+
+  const breakpointColumnsObj = {
+    default: 2,
+    769: 1,
+  };
 
   return (
     <div id="MyPageFeed">

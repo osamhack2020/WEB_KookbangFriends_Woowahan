@@ -68,6 +68,9 @@ function MyPage({ query }) {
         Lee.loadingFinish();
       }
     } else {
+      if (query.ver !== "professional") {
+        Router.push(`${location.href}&ver=professional`);
+      }
       me = data.me;
       Lee.loadingFinish();
     }

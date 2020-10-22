@@ -64,7 +64,7 @@ const MyPageViewConsultingRecipient = (props) => {
           <div className="my-page-view-consulting-recipient__area__contents__thumbnail">
             {props.recipient.thumbnail ? (
               <img
-                src={`https://api.kookbang.kr${props.recipient.thumbnail.url}`}
+                src={`https://osam2.kookbang.kr${props.recipient.thumbnail.url}`}
                 alt="thumbnail"
               />
             ) : (

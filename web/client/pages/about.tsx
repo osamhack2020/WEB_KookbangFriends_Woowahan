@@ -17,11 +17,25 @@ function About() {
       </Head>
       <div className="about__area parents">
         <div className="about__area__video parents">
-          <video autoPlay loop muted playsInline className="pc">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/static/images/about-video.jpg"
+            className="pc"
+          >
             <source src="/static/videos/about-video.webm" type="video/webm" />
             <source src="/static/videos/about-video.mp4" type="video/mp4" />
           </video>
-          <video autoPlay loop muted playsInline className="mobile">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/static/images/about-video-mobile.jpg"
+            className="mobile"
+          >
             <source
               src="/static/videos/about-video-mobile.webm"
               type="video/webm"
@@ -67,10 +81,7 @@ function About() {
               고민이 있으신가요?
             </div>
             <div className="about__area__contents__consult__thumbnail">
-              <img
-                src="https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=80"
-                alt="background"
-              />
+              <img src="/static/images/about-consulting.jpg" alt="background" />
             </div>
             <div className="about__area__contents__consult__box parents">
               <div className="about__area__contents__consult__box__left">
@@ -155,10 +166,7 @@ function About() {
               비대면 동아리 활동을 즐겨보세요!
             </div>
             <div className="about__area__contents__community__thumbnail mobile">
-              <img
-                src="https://t1.kakaocdn.net/kakaocorp/admin/co/main-content/4518.jpg"
-                alt="background"
-              />
+              <img src="/static/images/test.jpg" alt="background" />
             </div>
             <div className="about__area__contents__community__box parents">
               <div className="about__area__contents__community__box__left">
@@ -175,7 +183,7 @@ function About() {
                   }}
                 >
                   <div className="about__area__contents__community__box__left__subject">
-                    커뮤니티
+                    국방 SNS
                   </div>
                 </DelayLink>
                 <div className="about__area__contents__community__box__left__paragraph">

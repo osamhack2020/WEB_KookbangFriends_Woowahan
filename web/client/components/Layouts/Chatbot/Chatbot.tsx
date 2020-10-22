@@ -11,11 +11,13 @@ const Chatbot = () => {
       <div className="chatbot__area">
         <div className="chatbot__area__contents parents">
           <div className="chatbot__area__contents__top parents">
-            <img
-              src="/static/icons/katalk.png"
-              alt="kakaotalk"
-              className="chatbot__area__contents__top__katalk"
-            />
+            <a href="https://pf.kakao.com/_LTfuK" target="_blank">
+              <img
+                src="/static/icons/katalk.png"
+                alt="kakaotalk"
+                className="chatbot__area__contents__top__katalk"
+              />
+            </a>
             <div className="chatbot__area__contents__top__title">
               국방프렌즈 헬프데스크
             </div>

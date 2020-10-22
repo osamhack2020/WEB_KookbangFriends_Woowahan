@@ -47,6 +47,7 @@ const MyPageInfo = (props) => {
               >
                 <li>좋아요 피드</li>
               </DelayLink>
+              <li onClick={logout}>로그아웃</li>
             </ul>
           ) : (
             <ul className="my-page-info__area__contents__menu">

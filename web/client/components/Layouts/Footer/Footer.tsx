@@ -1,16 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Lee from "../../../lib/Lee";
 
 import "./Footer.scss";
 
 const Footer = () => {
-  useEffect(() => {
-    // if (/iPhone/i.test(navigator.userAgent)) {
-    //   const Footer = Lee.get("Footer");
-    //   Footer.style.paddingBottom = "50px";
-    // }
-  });
-
   function go() {
     const site: HTMLInputElement = Lee.get("siteUrl") as HTMLInputElement;
     const siteURL = site.value;
@@ -20,15 +13,19 @@ const Footer = () => {
     }
   }
 
+  function ready() {
+    alert("서비스 시행 시 적용 예정입니다.");
+  }
+
   return (
     <div id="Footer">
       <div className="footer__area parents">
         <div className="footer__area__contents parents">
           <ul className="footer__area__contents__menus parents">
-            <li>이용약관</li>
-            <li>개인정보처리방침</li>
-            <li>운영정책</li>
-            <li>권리침해신고안내</li>
+            <li onClick={ready}>이용약관</li>
+            <li onClick={ready}>개인정보처리방침</li>
+            <li onClick={ready}>운영정책</li>
+            <li onClick={ready}>권리침해신고안내</li>
           </ul>
           <img
             src="/static/icons/thankyou.png"

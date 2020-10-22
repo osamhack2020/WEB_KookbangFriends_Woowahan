@@ -144,6 +144,21 @@
     &__contents {
       padding: 10px;
 
+      &__status {
+        right: 5px;
+        top: 5px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        select {
+          width: 80px;
+          padding: 5px 3px 7px;
+          font-size: 12px;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+      }
+
       &__title {
         font-size: 14px;
       }
@@ -163,6 +178,7 @@
         &__subject {
           font-size: 12px;
           padding-left: 60px;
+          width: calc(100% - 85px);
         }
 
         &__username {

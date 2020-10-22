@@ -56,7 +56,7 @@
         font-weight: 700;
       }
 
-      &__paragraph {
+      &__description {
         font-family: "Noto Sans KR", serif, Arial;
         font-size: 14px;
         margin-top: 30px;
@@ -64,6 +64,15 @@
         overflow: hidden;
         font-weight: 700;
         color: #555;
+
+        * {
+          font-family: "Noto Sans KR", serif, Arial;
+          font-size: 14px !important;
+        }
+
+        img {
+          display: none !important;
+        }
       }
 
       &__view {
@@ -194,6 +203,17 @@
         &__title {
           font-size: 17px;
           height: auto;
+        }
+
+        &__description {
+          margin-top: 10px;
+          height: 44px;
+          line-height: 1.2em;
+
+          * {
+            font-family: "Noto Sans KR", serif, Arial;
+            font-size: 14px !important;
+          }
         }
 
         &__view {

@@ -55,11 +55,25 @@ function Card() {
       </Head>
       <div className="card__area parents">
         <div className="card__area__video parents">
-          <video autoPlay loop muted playsInline className="pc">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/static/images/card-video.jpg"
+            className="pc"
+          >
             <source src="/static/videos/card-video.webm" type="video/webm" />
             <source src="/static/videos/card-video.mp4" type="video/mp4" />
           </video>
-          <video autoPlay loop muted playsInline className="mobile">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/static/images/card-video-mobile.jpg"
+            className="mobile"
+          >
             <source
               src="/static/videos/card-video-mobile.webm"
               type="video/webm"

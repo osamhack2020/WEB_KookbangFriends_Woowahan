@@ -46,8 +46,15 @@ function MyPageFeedBox(props) {
             <div className="my-page-feed-box__area__contents__info__title">
               {props.title}
             </div>
-            <div className="my-page-feed-box__area__contents__info__paragraph">
-              {props.description}
+            <div className="my-page-feed-box__area__contents__info__description">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: props.description.replace(
+                    /(?:\r\n|\r|\n)/g,
+                    "<br />"
+                  ),
+                }}
+              ></span>
             </div>
             <div className="my-page-feed-box__area__contents__info__view">
               <span>자세히 보기</span>
