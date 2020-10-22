@@ -77,6 +77,34 @@ export default class MyDocument extends Document {
             property="al:web:url"
             content="http://applinks.org/documentation"
           />
+
+          <meta
+            name="description"
+            content="국방프렌즈는 병영 생활을 하며 생기는 다양한 고민과 고충을 친구에게 말하는 것처럼 부담 없이 이야기하고 상담받을 수 있습니다."
+          />
+
+          <meta property="og:url" content="https://friends.kookbang.kr" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="국방프렌즈" />
+          <meta
+            property="og:description"
+            content="국방프렌즈는 병영 생활을 하며 생기는 다양한 고민과 고충을 친구에게 말하는 것처럼 부담 없이 이야기하고 상담받을 수 있습니다."
+          />
+          <meta
+            property="og:image"
+            content="https://friends.kookbang.kr/static/images/meta-cover.jpg"
+          />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="국방프렌즈" />
+          <meta
+            name="twitter:description"
+            content="국방프렌즈는 병영 생활을 하며 생기는 다양한 고민과 고충을 친구에게 말하는 것처럼 부담 없이 이야기하고 상담받을 수 있습니다."
+          />
+          <meta
+            name="twitter:image"
+            content="https://friends.kookbang.kr/static/images/meta-cover.jpg"
+          />
         </Head>
         <body>
           <Main />
