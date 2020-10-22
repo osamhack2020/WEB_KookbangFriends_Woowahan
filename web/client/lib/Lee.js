@@ -84,7 +84,7 @@ const openLogin = () => {
     addClass(login, "active");
     setTimeout(() => {
       loginAnimationIndex = 0;
-    }, 1000);
+    }, 400);
   }
 };
 
@@ -96,7 +96,7 @@ const openRegistration = () => {
     addClass(registration, "active");
     setTimeout(() => {
       loginAnimationIndex = 0;
-    }, 1000);
+    }, 400);
   }
 };
 
@@ -108,7 +108,7 @@ const openRegistrationCharacter = () => {
     addClass(registrationCharacter, "active");
     setTimeout(() => {
       loginAnimationIndex = 0;
-    }, 1000);
+    }, 400);
   }
 };
 

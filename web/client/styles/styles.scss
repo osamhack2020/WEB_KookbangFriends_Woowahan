@@ -253,6 +253,17 @@ input::placeholder {
   display: none;
 }
 
+.se-video-container {
+  figure {
+    padding-bottom: 0 !important;
+  }
+
+  iframe {
+    height: 340px !important;
+    border-radius: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .my-masonry-grid {
     display: -webkit-box; /* Not needed if autoprefixing */

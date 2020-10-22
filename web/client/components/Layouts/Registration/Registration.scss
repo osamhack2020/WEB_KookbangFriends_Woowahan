@@ -2,10 +2,6 @@
   .registration__area {
     visibility: visible;
     opacity: 1;
-
-    &__contents {
-      top: 50%;
-    }
   }
 }
 
@@ -18,7 +14,7 @@
   height: 100vh;
   z-index: 100;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 
   &__fade {
     position: absolute;
@@ -35,13 +31,13 @@
     position: absolute;
     width: 460px;
     left: 50%;
-    top: 100%;
+    top: 50%;
     transform: translateX(-50%) translateY(-50%);
     padding: 30px;
     border-radius: 15px;
     background: #232323;
     z-index: 2;
-    transition: top 0.8s ease-in-out;
+    transition: top 0.2s ease-in-out;
 
     &__logo {
       font-size: 22px;
