@@ -142,8 +142,28 @@ const openMenu = () => {
 
 const closeChatbot = () => {
   const Chatbot = get("Chatbot");
+  const chatbotTab = get("chatbotTab");
+  const consultingTab = get("consultingTab");
+  const mypageTab = get("mypageTab");
+
+  if (location.pathname === "/mypage") {
+    addClass(mypageTab, "active");
+    removeClass(consultingTab, "active");
+  } else if (
+    location.pathname === "/consultingList" ||
+    location.pathname === "/consulting" ||
+    location.pathname === "/viewConsulting"
+  ) {
+    addClass(consultingTab, "active");
+    removeClass(mypageTab, "active");
+  } else {
+    removeClass(consultingTab, "active");
+    removeClass(mypageTab, "active");
+  }
 
   addClass(Chatbot, "hide");
+  removeClass(chatbotTab, "active");
+
   setTimeout(() => {
     addClass(Chatbot, "invisible");
   }, 200);

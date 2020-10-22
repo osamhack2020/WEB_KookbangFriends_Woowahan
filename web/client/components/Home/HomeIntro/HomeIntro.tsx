@@ -9,11 +9,14 @@ const HomeIntro = () => {
     <div id="HomeIntro">
       <div className="home-intro__area parents">
         <div className="home-intro__area__background parents">
-          <img
-            src="https://t1.kakaocdn.net/kakaocorp/admin/co/main-content/4518.jpg"
-            alt="background"
-          />
-          <video autoPlay loop muted playsInline>
+          <img src="/static/images/test.jpg" alt="background" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/static/images/home-video.jpg"
+          >
             <source src="/static/videos/home-video.webm" type="video/webm" />
             <source src="/static/videos/home-video.mp4" type="video/mp4" />
           </video>

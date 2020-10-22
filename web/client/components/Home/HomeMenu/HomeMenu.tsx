@@ -40,7 +40,7 @@ const HomeMenu = () => {
                   title="다른 병영 친구들과 정보를 공유하세요!"
                   paragraph="병영생활 팁, 고민, 지식 등을 다른 군 장병 및 군무원분들과 공유할 수 있습니다."
                   thumbnail="/static/images/home-community.jpg"
-                  type="커뮤니티"
+                  type="국방 SNS"
                 />
               </DelayLink>
             </li>

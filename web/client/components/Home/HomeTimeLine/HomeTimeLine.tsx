@@ -34,13 +34,6 @@ const TIMELINE_QUERY = gql`
   }
 `;
 
-const breakpointColumnsObj = {
-  default: 4,
-  1280: 3,
-  769: 2,
-  360: 1,
-};
-
 const HomeTimeLine = () => {
   let feeds;
 
@@ -64,6 +57,13 @@ const HomeTimeLine = () => {
     feeds = data.feeds;
   }
 
+  const breakpointColumnsObj = {
+    default: 4,
+    1280: 3,
+    769: 2,
+    360: 1,
+  };
+
   return (
     <div id="HomeTimeLine">
       <div className="home-time-line__area parents">
@@ -77,7 +77,7 @@ const HomeTimeLine = () => {
                   Lee.loadingStart();
                 }}
               >
-                <span>커뮤니티</span>
+                <span>국방 SNS</span>
               </DelayLink>
             </div>
           </div>
