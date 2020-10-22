@@ -23,7 +23,17 @@ const COMMENT_MUTATION = gql`
       }
     ) {
       feedComment {
+        id
         description
+        createdAt
+        user {
+          id
+          username
+          thumbnail {
+            url
+          }
+          avatar
+        }
       }
     }
   }
@@ -40,6 +50,7 @@ function CommunityViewFeedComment(props) {
 
   const [input, setInput] = useState(initialValue);
   let [login, setLogin] = useState(false);
+  let [comments, setComments] = useState(props.comments);
 
   useEffect(() => {
     if (Cookies.get("username") && Cookies.get("jwt")) {
@@ -49,7 +60,16 @@ function CommunityViewFeedComment(props) {
     }
   });
 
-  const [createComment] = useMutation(COMMENT_MUTATION);
+  const [createComment] = useMutation(COMMENT_MUTATION, {
+    onCompleted({ createFeedComment: { feedComment } }) {
+      setComments([...comments, feedComment]);
+      setInput(initialValue);
+      setTimeout(() => {
+        const submitBtn = Lee.get("submitBtn") as HTMLButtonElement;
+        submitBtn.disabled = false;
+      }, 400);
+    },
+  });
 
   const handleInputChange = (e: React.ChangeEvent<any>) => {
     e.persist();
@@ -75,11 +95,11 @@ function CommunityViewFeedComment(props) {
             feedID: props.id,
           },
         });
-
-        location.reload();
       } catch {
         alert(`요청이 잘못 되었습니다.`);
-        submitBtn.disabled = false;
+        setTimeout(() => {
+          submitBtn.disabled = false;
+        }, 400);
       }
     };
 
@@ -89,7 +109,10 @@ function CommunityViewFeedComment(props) {
       input.description === null
     ) {
       alert("댓글의 내용을 입력해주세요.");
-      submitBtn.disabled = false;
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+      }, 400);
     } else {
       addComment();
     }
@@ -133,9 +156,9 @@ function CommunityViewFeedComment(props) {
             )}
           </div>
           <div className="community-view-feed-comment__area__contents__list parents">
-            {props.comments.length > 0 ? (
+            {comments.length > 0 ? (
               <ul className="community-view-feed-comment__area__contents__lists parents">
-                {props.comments.map((comment, index) => {
+                {comments.map((comment, index) => {
                   return (
                     <CommunityViewFeedCommentBox
                       key={`comment-${index}`}
@@ -144,6 +167,8 @@ function CommunityViewFeedComment(props) {
                       description={comment.description}
                       date={comment.createdAt}
                       login={login}
+                      comments={comments}
+                      setComments={setComments}
                     />
                   );
                 })}

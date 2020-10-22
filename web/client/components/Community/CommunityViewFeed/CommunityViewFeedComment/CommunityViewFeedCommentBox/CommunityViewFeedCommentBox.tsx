@@ -31,7 +31,17 @@ function CommunityViewFeedCommentBox(props) {
     }
   });
 
-  const [deleteComment] = useMutation(COMMENT_DELETE);
+  const [deleteComment] = useMutation(COMMENT_DELETE, {
+    onCompleted({ deleteFeedComment: { feedComment } }) {
+      props.comments.map((comment, index) => {
+        if (comment.id === feedComment.id) {
+          let newArr = props.comments;
+          newArr.splice(index, 1);
+          props.setComments([...newArr]);
+        }
+      });
+    },
+  });
 
   const handleSubmit = async (e: React.ChangeEvent<any>) => {
     const addComment = async () => {
@@ -41,8 +51,6 @@ function CommunityViewFeedCommentBox(props) {
             id: props.id,
           },
         });
-
-        location.reload();
       } catch {
         alert(`요청이 잘못 되었습니다.`);
       }

@@ -13,7 +13,9 @@ const FEED_UPDATE = gql`
       input: { where: { id: $feedID }, data: { user_likes: $userID } }
     ) {
       feed {
-        title
+        user_likes {
+          id
+        }
       }
     }
   }
@@ -22,12 +24,13 @@ const FEED_UPDATE = gql`
 function CommunityViewFeedLike(props) {
   let [addPermission, setAddPermission] = useState(false);
   let [deletePermission, setDeletePermission] = useState(false);
+  let [likes, setLikes] = useState(props.like);
 
   useEffect(() => {
     if (Cookies.get("jwt")) {
       let check = false;
 
-      props.like.map((like) => {
+      likes.map((like) => {
         if (like.id === jwtDecode(Cookies.get("jwt")).id) {
           check = true;
         }
@@ -46,12 +49,16 @@ function CommunityViewFeedLike(props) {
     }
   });
 
-  const [updateLike] = useMutation(FEED_UPDATE);
+  const [updateLike] = useMutation(FEED_UPDATE, {
+    onCompleted({ updateFeed: { feed } }) {
+      setLikes(feed.user_likes);
+    },
+  });
 
   const addLike = async (e: React.ChangeEvent<any>) => {
     let likers = [];
 
-    props.like.map((like) => {
+    likes.map((like) => {
       likers.push(like.id);
     });
 
@@ -65,8 +72,6 @@ function CommunityViewFeedLike(props) {
             userID: likers,
           },
         });
-
-        location.reload();
       } catch {
         alert(`요청이 잘못 되었습니다.`);
       }
@@ -78,7 +83,7 @@ function CommunityViewFeedLike(props) {
   const deleteLike = async (e: React.ChangeEvent<any>) => {
     let likers = [];
 
-    props.like.map((like) => {
+    likes.map((like) => {
       likers.push(like.id);
     });
 
@@ -92,8 +97,6 @@ function CommunityViewFeedLike(props) {
             userID: likers,
           },
         });
-
-        location.reload();
       } catch {
         alert(`요청이 잘못 되었습니다.`);
       }
@@ -111,7 +114,7 @@ function CommunityViewFeedLike(props) {
         >
           <img src="/static/icons/heart-line.png" alt="like" />
           <br />
-          <span>{props.like.length}</span>
+          <span>{likes.length}</span>
         </div>
       ) : deletePermission ? (
         <div
@@ -120,7 +123,7 @@ function CommunityViewFeedLike(props) {
         >
           <img src="/static/icons/heart-fill.png" alt="like" />
           <br />
-          <span>{props.like.length}</span>
+          <span>{likes.length}</span>
         </div>
       ) : (
         <div
@@ -129,7 +132,7 @@ function CommunityViewFeedLike(props) {
         >
           <img src="/static/icons/heart-line.png" alt="like" />
           <br />
-          <span>{props.like.length}</span>
+          <span>{likes.length}</span>
         </div>
       )}
     </div>

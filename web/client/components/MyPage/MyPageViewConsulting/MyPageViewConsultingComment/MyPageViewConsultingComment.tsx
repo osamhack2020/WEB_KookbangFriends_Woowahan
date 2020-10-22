@@ -28,6 +28,14 @@ const COMMENT_MUTATION = gql`
     ) {
       consultingComment {
         description
+        createdAt
+        user {
+          username
+          thumbnail {
+            url
+          }
+          avatar
+        }
       }
     }
   }
@@ -44,6 +52,7 @@ function MyPageViewConsultingComment(props) {
 
   const [input, setInput] = useState(initialValue);
   let [login, setLogin] = useState(false);
+  let [comments, setComments] = useState(props.comments);
 
   useEffect(() => {
     if (Cookies.get("username") && Cookies.get("jwt")) {
@@ -53,7 +62,16 @@ function MyPageViewConsultingComment(props) {
     }
   });
 
-  const [createComment] = useMutation(COMMENT_MUTATION);
+  const [createComment] = useMutation(COMMENT_MUTATION, {
+    onCompleted({ createConsultingComment: { consultingComment } }) {
+      setComments([...comments, consultingComment]);
+      setInput(initialValue);
+      setTimeout(() => {
+        const submitBtn = Lee.get("submitBtn") as HTMLButtonElement;
+        submitBtn.disabled = false;
+      }, 400);
+    },
+  });
 
   const handleInputChange = (e: React.ChangeEvent<any>) => {
     e.persist();
@@ -79,11 +97,11 @@ function MyPageViewConsultingComment(props) {
             consultingID: props.id,
           },
         });
-
-        location.reload();
       } catch {
         alert(`요청이 잘못 되었습니다.`);
-        submitBtn.disabled = false;
+        setTimeout(() => {
+          submitBtn.disabled = false;
+        }, 400);
       }
     };
 
@@ -93,7 +111,9 @@ function MyPageViewConsultingComment(props) {
       input.description === null
     ) {
       alert("댓글의 내용을 입력해주세요.");
-      submitBtn.disabled = false;
+      setTimeout(() => {
+        submitBtn.disabled = false;
+      }, 400);
     } else {
       addComment();
     }
@@ -137,9 +157,9 @@ function MyPageViewConsultingComment(props) {
             )}
           </div>
           <div className="my-page-view-consulting-comment__area__contents__list parents">
-            {props.comments.length > 0 ? (
+            {comments.length > 0 ? (
               <ul className="my-page-view-consulting-comment__area__contents__lists parents">
-                {props.comments.map((comment, index) => {
+                {comments.map((comment, index) => {
                   return (
                     <MyPageViewConsultingCommentBox
                       key={`comment-${index}`}

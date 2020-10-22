@@ -23,7 +23,17 @@ const COMMENT_MUTATION = gql`
       }
     ) {
       supportComment {
+        id
+        user {
+          id
+          username
+          thumbnail {
+            url
+          }
+          avatar
+        }
         description
+        createdAt
       }
     }
   }
@@ -40,6 +50,7 @@ function ViewSupportContentComment(props) {
 
   const [input, setInput] = useState(initialValue);
   let [login, setLogin] = useState(false);
+  let [comments, setComments] = useState(props.comments);
 
   useEffect(() => {
     if (Cookies.get("username") && Cookies.get("jwt")) {
@@ -49,7 +60,16 @@ function ViewSupportContentComment(props) {
     }
   });
 
-  const [createComment] = useMutation(COMMENT_MUTATION);
+  const [createComment] = useMutation(COMMENT_MUTATION, {
+    onCompleted({ createSupportComment: { supportComment } }) {
+      setComments([...comments, supportComment]);
+      setInput(initialValue);
+      setTimeout(() => {
+        const submitBtn = Lee.get("submitBtn") as HTMLButtonElement;
+        submitBtn.disabled = false;
+      }, 400);
+    },
+  });
 
   const handleInputChange = (e: React.ChangeEvent<any>) => {
     e.persist();
@@ -75,11 +95,11 @@ function ViewSupportContentComment(props) {
             supportID: props.id,
           },
         });
-
-        location.reload();
       } catch {
         alert(`요청이 잘못 되었습니다.`);
-        submitBtn.disabled = false;
+        setTimeout(() => {
+          submitBtn.disabled = false;
+        }, 400);
       }
     };
 
@@ -89,7 +109,10 @@ function ViewSupportContentComment(props) {
       input.description === null
     ) {
       alert("댓글의 내용을 입력해주세요.");
-      submitBtn.disabled = false;
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+      }, 400);
     } else {
       addComment();
     }
@@ -101,7 +124,7 @@ function ViewSupportContentComment(props) {
         <div className="view-support-content-comment__area__contents parents">
           <div className="view-support-content-comment__area__contents__top parents">
             <div className="view-support-content-comment__area__contents__top__title parents">
-              댓글 ({props.comments.length})
+              댓글 ({comments.length})
             </div>
           </div>
           <div className="view-support-content-comment__area__contents__input parents">
@@ -133,9 +156,9 @@ function ViewSupportContentComment(props) {
             )}
           </div>
           <div className="view-support-content-comment__area__contents__list parents">
-            {props.comments.length > 0 ? (
+            {comments.length > 0 ? (
               <ul className="view-support-content-comment__area__contents__lists parents">
-                {props.comments.map((comment, index) => {
+                {comments.map((comment, index) => {
                   return (
                     <ViewSupportContentCommentBox
                       key={`comment-${index}`}
@@ -144,6 +167,8 @@ function ViewSupportContentComment(props) {
                       description={comment.description}
                       date={comment.createdAt}
                       login={login}
+                      comments={comments}
+                      setComments={setComments}
                     />
                   );
                 })}
