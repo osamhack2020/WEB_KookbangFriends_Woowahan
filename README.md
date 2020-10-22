@@ -107,33 +107,89 @@
  * .
 ## 기술 스택 (Technique Used)
 ### Basic
- - Git
- - Docker
+<table><tbody>
+ <tr>
+  <td>
+   <div align="center"><a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a><br>Git</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://www.docker.com/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a><br>docker</div>
+  </td>
+ </tr>
+ </tbody></table>
  
 ### Back-end
- - Node.js
- - Express
- - Javascript
- - Strapi
- - Linux (Ubuntu)
- - Nginx
- - JWT (Json Web Token)
+<table><tbody>
+ <tr>
+  <td width="60">
+   <div align="center"><a href="https://nodejs.org" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><br>Node.js</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://expressjs.com" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a><br>Express</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a><br>Javascript</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://strapi.io/" target="_blank"> <img src="https://strapi.io/assets/strapi-logo-dark.svg" alt="strapi" width="40" height="40"/> </a><br>Strapi</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://www.linux.org/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a><br>Linux</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://www.nginx.com" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a><br>Nginx</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://jwt.io" target="_blank"> <img src="https://jwt.io/img/pic_logo.svg" alt="jwt" width="40" height="40"/> </a><br>JWT</div>
+  </td>
+ </tr>
+ </tbody></table>
+ 
  - SSL (Secure Sockets Layer)
  - CORS(Cross-Origin Resource Sharing)
   
 ### Front-end
- - React.js (Hooks)
- - Next.js
- - Typescript (Javascript)
- - HTML5
- - SCSS
+<table><tbody>
+ <tr>
+  <td>
+   <div align="center"><a href="https://reactjs.org/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a><br>React.js</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a><br>Next.js</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a><br>Typescript</div>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a><br>Javascript</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://www.w3.org/html/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a><br>Html5</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://sass-lang.com" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a><br>SCSS</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://graphql.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="40" height="40"/> </a><br>GraphQL</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a><br>Babel</div>
+  </td>
+  <td>
+   <div align="center"><a href="https://webpack.js.org" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg" alt="webpack" width="40" height="40"/> </a><br>Webpack</div>
+  </td>
+ </tr>
+ </tbody></table>
+
  - Apollo
- - GraphQL
- - Babel
- - Webpack
  
  ### Database
- - MongoDB
+ <table><tbody>
+ <tr>
+  <td>
+   <div align="center"><a href="https://www.mongodb.com/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a><br>MongoDB</div>
+  </td></tr>
+ </tbody></table>
  
  ### Skillsget back
  - 반응형 웹 (Responsive Web)
