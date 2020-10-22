@@ -68,7 +68,7 @@ const HeaderUser = () => {
               Lee.loadingStart();
             }}
           >
-            <li className="community">커뮤니티</li>
+            <li className="community">국방 SNS</li>
           </DelayLink>
 
           <li onClick={logout}>로그아웃</li>

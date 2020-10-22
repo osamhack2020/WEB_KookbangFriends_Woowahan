@@ -28,6 +28,13 @@
           height: 23px;
           opacity: 0.5;
           padding-bottom: 3px;
+          transition: opacity 0.2s;
+        }
+
+        &.active {
+          img {
+            opacity: 1;
+          }
         }
       }
     }

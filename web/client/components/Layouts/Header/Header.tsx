@@ -20,8 +20,6 @@ const HeaderTab = dynamic(import("./HeaderTab/HeaderTab"), {
   ssr: false,
 });
 
-let loginAnimationIndex = 0;
-
 const Header = () => {
   let [login, setLogin] = useState(false);
 
@@ -115,7 +113,7 @@ const Header = () => {
                 Lee.loadingStart();
               }}
             >
-              <li className="community mobile">커뮤니티</li>
+              <li className="community mobile">국방 SNS</li>
             </DelayLink>
           </ul>
           <ul className="header__area__contents__logins">
@@ -130,7 +128,7 @@ const Header = () => {
                     Lee.loadingStart();
                   }}
                 >
-                  <li className="community">커뮤니티</li>
+                  <li className="community">국방 SNS</li>
                 </DelayLink>
                 <li onClick={Lee.openRegistration}>회원가입</li>
                 <li onClick={Lee.openLogin}>로그인</li>
@@ -145,81 +143,81 @@ const Header = () => {
               <span></span>
             </div>
           </div>
-          <div className="header__area__contents__menus-mobile" id="mobileMenu">
-            <ul className="header__area__contents__menus-mobile__lists">
-              <DelayLink
-                to="about"
-                delay={200}
-                onDelayStart={function () {
-                  Lee.loadingStart();
-                }}
-              >
-                <li>소개</li>
-              </DelayLink>
-              <DelayLink
-                to="consultingList"
-                delay={200}
-                onDelayStart={function () {
-                  Lee.loadingStart();
-                }}
-              >
-                <li>상담서비스</li>
-              </DelayLink>
-              <DelayLink
-                to={`community?type=list&category=전체게시글`}
-                delay={200}
-                onDelayStart={function () {
-                  Lee.loadingStart();
-                }}
-              >
-                <li>커뮤니티</li>
-              </DelayLink>
-              <DelayLink
-                to="card"
-                delay={200}
-                onDelayStart={function () {
-                  Lee.loadingStart();
-                }}
-              >
-                <li>카드뉴스</li>
-              </DelayLink>
-              <DelayLink
-                to="support?type=공지사항"
-                delay={200}
-                onDelayStart={function () {
-                  Lee.loadingStart();
-                }}
-              >
-                <li>체계지원</li>
-              </DelayLink>
-            </ul>
-            <img
-              src="/static/characters/male/I_7914273_3_15898a66095_064.png"
-              alt="character"
-              className="header__area__contents__menus-mobile__lists__character-1"
-            />
-            <img
-              src="/static/characters/g20/I_7914891_2_15898a71562_508.png"
-              alt="character"
-              className="header__area__contents__menus-mobile__lists__character-2"
-            />
-            <img
-              src="/static/characters/e20/I_7914980_5_15898a72011_676.png"
-              alt="character"
-              className="header__area__contents__menus-mobile__lists__character-3"
-            />
-            <img
-              src="/static/characters/a40/I_7915493_5_15898a76872_959.png"
-              alt="character"
-              className="header__area__contents__menus-mobile__lists__character-4"
-            />
-            <img
-              src="/static/characters/female/I_7914304_2_15898a66219_777.png"
-              alt="character"
-              className="header__area__contents__menus-mobile__lists__character-5"
-            />
-          </div>
         </div>
+      </div>
+      <div className="header__area__contents__menus-mobile" id="mobileMenu">
+        <ul className="header__area__contents__menus-mobile__lists">
+          <DelayLink
+            to="about"
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li>소개</li>
+          </DelayLink>
+          <DelayLink
+            to="consultingList"
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li>상담서비스</li>
+          </DelayLink>
+          <DelayLink
+            to={`community?type=list&category=전체게시글`}
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li>SNS</li>
+          </DelayLink>
+          <DelayLink
+            to="card"
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li>카드뉴스</li>
+          </DelayLink>
+          <DelayLink
+            to="support?type=공지사항"
+            delay={200}
+            onDelayStart={function () {
+              Lee.loadingStart();
+            }}
+          >
+            <li>체계지원</li>
+          </DelayLink>
+        </ul>
+        <img
+          src="/static/characters/male/I_7914273_3_15898a66095_064.png"
+          alt="character"
+          className="header__area__contents__menus-mobile__lists__character-1"
+        />
+        <img
+          src="/static/characters/g20/I_7914891_2_15898a71562_508.png"
+          alt="character"
+          className="header__area__contents__menus-mobile__lists__character-2"
+        />
+        <img
+          src="/static/characters/e20/I_7914980_5_15898a72011_676.png"
+          alt="character"
+          className="header__area__contents__menus-mobile__lists__character-3"
+        />
+        <img
+          src="/static/characters/a40/I_7915493_5_15898a76872_959.png"
+          alt="character"
+          className="header__area__contents__menus-mobile__lists__character-4"
+        />
+        <img
+          src="/static/characters/female/I_7914304_2_15898a66219_777.png"
+          alt="character"
+          className="header__area__contents__menus-mobile__lists__character-5"
+        />
       </div>
     </div>
   );
