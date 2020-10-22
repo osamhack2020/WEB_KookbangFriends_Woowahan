@@ -146,11 +146,12 @@
   <td width="60">
    <div align="center"><a href="https://jwt.io" target="_blank"> <img src="https://jwt.io/img/pic_logo.svg" alt="jwt" width="40" height="40"/> </a><br>JWT</div>
   </td>
+  </td>
+  <td width="60">
+   <div align="center"><a href="https://letsencrypt.org/" target="_blank"> <img src="https://letsencrypt.org/images/le-logo-standard.svg" alt="letsencrypt" width="40" height="40"/> </a><br>SSL</div>
+  </td>
  </tr>
  </tbody></table>
- 
- - SSL (Secure Sockets Layer)
- - CORS(Cross-Origin Resource Sharing)
   
 ### Front-end
 <table><tbody>
@@ -182,10 +183,11 @@
   <td>
    <div align="center"><a href="https://webpack.js.org" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/webpack/webpack-original.svg" alt="webpack" width="40" height="40"/> </a><br>Webpack</div>
   </td>
+  <td>
+   <div align="center"><a href="https://www.apollographql.com/" target="_blank"><img src="https://user-images.githubusercontent.com/841294/53402609-b97a2180-39ba-11e9-8100-812bab86357c.png" alt="Apollo" height="40"/> </a><br>Apollo</div>
+  </td>
  </tr>
  </tbody></table>
-
- - Apollo
  
  ### Database
  <table><tbody>
