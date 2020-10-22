@@ -108,6 +108,25 @@ function CommunityNav(props) {
               )}
             </DelayLink>
             <DelayLink
+              to={`community?type=list&category=국방마켓`}
+              delay={200}
+              onDelayStart={function () {
+                Lee.loadingStart();
+              }}
+            >
+              {props.category === "국방마켓" ? (
+                <li className="selected">
+                  <img src="/static/icons/shopping-cart.png" alt="icon" />
+                  <span>국방마켓</span>
+                </li>
+              ) : (
+                <li>
+                  <img src="/static/icons/shopping-cart.png" alt="icon" />
+                  <span>국방마켓</span>
+                </li>
+              )}
+            </DelayLink>
+            <DelayLink
               to={`community?type=list&category=국방유튜브`}
               delay={200}
               onDelayStart={function () {
