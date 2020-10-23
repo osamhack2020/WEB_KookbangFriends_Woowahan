@@ -1,3 +1,5 @@
+<!-- https://mynameisdabin.tistory.com/15 -->
+
 <html lang="ko">
 	<head>
 		<link rel="stylesheet" href="">
@@ -7,22 +9,57 @@
 	</head>
 	
 	<body>
-		<div id="myGraph"></div>
+		<svg id="myGraph" width="600px" height="300px" style="margin-left: 0px;"></svg>
 		
 		<script>
-		
+			
 			function drawGraph() {
-				margin = {top: 10, right: 30, bottom: 30, left:60},
-					width = 460 - margin.left - margin.right,
-					height = 400 - margin.top - margin.bottom;
+				var xScale = d3.scaleTime()
+					.domain([new Date("2020-10-01T00:00:00"), new Date("2020-11-01T00:00:00")])
+					.range([50, 550]);
+				var yScale = d3.scaleLinear()
+					.domain([0, 50000])
+					.range([250, 50]);
+				var xAxisG = d3.select("#myGraph").append("g")
+					.attr("transform", "translate(0, 250)")
+					.call(d3.axisBottom(xScale));
+				var yAxisG = d3.select("#myGraph").append("g")
+					.attr("transform", "translate(50, 0)")
+					.call(d3.axisLeft(yScale));
+				var xAxis = d3.axisBottom(xScale).tickSize(5).ticks(2);
+				var yAxis = d3.axisRight(yScale).tickSize(-5).ticks(5);
+				xAxis(xAxisG);
+				yAxis(yAxisG);
 				
-				var svg = d3.select("#myGraph")
-					.append("svg")
-						.attr("width", width + margin.left + margin.right)
-						.attr("height", height + margin.top + margin.bottom)
-					.append("g")
-						.attr("transform",
-							  "translate(" + margin.left + "," + margin.top + ")");
+				d3.select("#myGraph").selectAll("circle")
+					.data(commitHistory)
+					.enter()
+					.append("circle")	//점모양
+					.attr("r", 1)		//점반지름
+					.attr("cx", d=>xScale(d.date))
+					.attr("cy", d=>yScale(d.line))
+					.style("fill", "black");	//색상
+				
+				var lineGenerator = d3.line()
+					.x(d=>xScale(d.date))
+					.y(d=>yScale(d.line));
+				
+				d3.select("#myGraph")
+					.append("path")
+					.attr("d", lineGenerator(commitHistory))
+					.attr("fill", "none")		//선채우기
+					.attr("stroke-width", 1)	//기준선길이
+					.attr("stroke", "black");	//기준선색상
+				
+				var tickElement = document.querySelectorAll(".tick text");
+				for(var i = 0; i < tickElement.length; i++) {
+					if(tickElement[i].getAttribute('x')) {
+						tickElement[i].setAttribute('x', -9);
+					}
+					else {
+						tickElement[i].setAttribute('y', 9);
+					}
+				}
 			}
 			
 		</script>
