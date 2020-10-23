@@ -58,7 +58,8 @@ function ViewSupportContentComment(props) {
     } else {
       setLogin(false);
     }
-  });
+    setComments(props.comments);
+  }, [props]);
 
   const [createComment] = useMutation(COMMENT_MUTATION, {
     onCompleted({ createSupportComment: { supportComment } }) {

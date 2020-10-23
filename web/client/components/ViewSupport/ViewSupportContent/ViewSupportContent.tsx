@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lee from "../../../lib/Lee";
 import DelayLink from "../../../lib/DelayLink";
 
@@ -22,6 +22,10 @@ function ViewSupportContent(props) {
   } else {
     day = date.getDate();
   }
+
+  useEffect(() => {
+    console.log(props);
+  });
 
   return (
     <div id="ViewSupportContent">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Masonry from "react-masonry-css";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
@@ -34,10 +34,14 @@ const TIMELINE_QUERY = gql`
   }
 `;
 
-const HomeTimeLine = () => {
+function HomeTimeLine() {
+  useEffect(() => {
+    refetch();
+  });
+
   let feeds;
 
-  const { data, loading, error } = useQuery(TIMELINE_QUERY, {
+  const { data, loading, error, refetch } = useQuery(TIMELINE_QUERY, {
     ssr: true,
   });
 
@@ -108,6 +112,6 @@ const HomeTimeLine = () => {
       </div>
     </div>
   );
-};
+}
 
 export default HomeTimeLine;

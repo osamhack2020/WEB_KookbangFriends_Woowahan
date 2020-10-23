@@ -148,7 +148,8 @@ const CommunityAddFeed = (props) => {
       props.category === "병영노하우" ||
       props.category === "동아리모집" ||
       props.category === "고민나누기" ||
-      props.category === "국방유튜브"
+      props.category === "국방유튜브" ||
+      props.category === "국방마켓"
     ) {
       Lee.loadingFinish();
     } else {

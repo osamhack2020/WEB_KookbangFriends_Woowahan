@@ -50,7 +50,7 @@ const FEED_QUERY = gql`
 function CommunityViewFeed(props) {
   useEffect(() => {
     Lee.loadingFinish();
-  });
+  }, [props]);
 
   let feed;
 
