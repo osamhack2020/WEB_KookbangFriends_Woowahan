@@ -1,6 +1,6 @@
 var URI ="https://api.github.com/repos/dsvp/WEB_KookbangFriends_Woowahan/commits?page=";
 var URI2 = "&per_page=100";
-var myToken = "token "
+var myToken = "token a1307591322a35fa339158725bdd944bcebae7a2"
 
 var commitList = [];
 var commitHistory = [];
@@ -52,13 +52,14 @@ function getEachRequest(index, callback) {
 		if(xhr.readyState === xhr.DONE) {
 			if(xhr.status === 200 || xhr.status === 201) {
 				var eachArr = [];
-				eachArr[0] = xhr.response['files'].length;
+				eachArr[0] = xhr.response['files'].length; //0번째인덱스 : 파일 변경 수
 				var sum = 0;
 				for(var i = 0; i < xhr.response['files'].length; i++) {
 					sum+=xhr.response['files'][i]['changes'];
 				}
-				eachArr[1] = sum;
-				commitHistory[index] = eachArr;
+				eachArr[1] = sum; // 1번째 인덱스 : 변경 글자 수
+				eachArr[2] = xhr.response['commit']['author']['date']; // 2번째 인덱스 : 변경 날짜
+				commitHistory[index] = {file:eachArr[0], word:eachArr[1], date:new Date(eachArr[2])};
 				callback();
 			}
 			else {
@@ -74,8 +75,11 @@ function checkFinish() {
 	checkFin++;
 	if(checkFin == commitList.length) {
 		for(var i = 0; i < commitList.length; i++) {
-			console.log('커밋' + (commitList.length - i) + ' 변경된 파일 수 : ' + commitHistory[i][0]);
-			console.log('변경된 글자 수 : ' + commitHistory[i][1]);
+			console.log('커밋' + (commitList.length - i) + ' 변경된 파일 수 : ' + commitHistory[i]['file']);
+			console.log('변경된 글자 수 : ' + commitHistory[i]['word']);
+			console.log('변경 날짜 : ' + commitHistory[i]['date']);
 		}
+		
+		makeGraphData();
 	}
 }
