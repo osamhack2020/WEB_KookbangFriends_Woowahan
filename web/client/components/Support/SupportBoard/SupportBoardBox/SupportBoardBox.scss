@@ -66,6 +66,7 @@
         border-radius: 1000px;
         overflow: hidden;
         float: left;
+        border: 1px solid #eee;
 
         img {
           position: absolute;
@@ -150,6 +151,14 @@
 
     &:hover {
       top: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 15px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
     }
 
     &__contents {

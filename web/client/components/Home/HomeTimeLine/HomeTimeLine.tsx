@@ -11,7 +11,7 @@ import HomeTimeLineBox from "./HomeTimeLineBox/HomeTimeLineBox";
 
 const TIMELINE_QUERY = gql`
   query {
-    feeds(sort: "date:desc", limit: 8) {
+    feeds(sort: "date:desc", limit: 12) {
       id
       title
       description

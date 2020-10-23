@@ -124,7 +124,7 @@ function CommunityViewFeedComment(props) {
         <div className="community-view-feed-comment__area__contents parents">
           <div className="community-view-feed-comment__area__contents__top parents">
             <div className="community-view-feed-comment__area__contents__top__title parents">
-              댓글 ({props.comments.length})
+              댓글 ({comments.length})
             </div>
           </div>
           <div className="community-view-feed-comment__area__contents__input parents">
