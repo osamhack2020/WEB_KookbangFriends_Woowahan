@@ -105,7 +105,7 @@
         <tr>
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
-   </tbody></table><br>
+   </tbody></table>
 <h3 align="center"><img src="/image/mobile.jpg"></h3><br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
@@ -215,5 +215,4 @@
 ## 팀 정보 (Team Information)
  * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
  * 김정훈 (팀원) / kjeonghoon065@gmail.com<br><a href="https://github.com/LiiNen"><img src="https://img.shields.io/badge/Github-LiiNen-green?style=flat&logo=github" alt="LiiNen"></a>
-<br><br>
 <h3 align="center"><img src="/image/LOGO_README.jpg"></h3>
