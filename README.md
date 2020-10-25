@@ -16,7 +16,7 @@
 
 ## 기능 설계
 ### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br><br>
-· 온라인 비대면 상담 서비스<br>
+ㆍ 온라인 비대면 상담 서비스<br>
    <table>
         <tbody><tr>
             <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
@@ -39,7 +39,7 @@
         </tr>
    </tbody></table><br><br>
    
-· 커뮤니티 서비스<br>
+ㆍ 커뮤니티 서비스<br>
     <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
@@ -56,7 +56,7 @@
         </tr>
    </tbody></table><br><br>
    
-· 뉴스/정보 제공<br>
+ㆍ 뉴스/정보 제공<br>
     <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
@@ -72,7 +72,7 @@
         </tr>
    </tbody></table><br><br>
    
-· 마이페이지 기능<br>
+ㆍ 마이페이지 기능<br>
      <table>
         <tbody><tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
@@ -90,10 +90,10 @@
         </tr>
    </tbody></table><br><br>
    
-· 24시간 AI 챗봇 서비스<br>
-      <table>
+ㆍ 24시간 AI 챗봇 서비스<br>
+<table>
         <tbody><tr>
-            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="60%" height="60%"></a><br><h6>데스크탑 버전</h6></div></td>
+            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="57.7423%" height="%"></a><br><h6>데스크탑 버전</h6></div></td>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_MOB_readme.jpg"><img src="/image/5_CHAT_MOB_readme.jpg" width="60%" height="60%"></a><br><h6>모바일 버전</h6></div></td>
             <td width="33%"> 헬프데스크 지원 </td>
         </tr>
