@@ -6,8 +6,7 @@
 
 ## 프로젝트 설명  
 <h3>'국방프렌즈'는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</h3>
-<p align="center"><img src="/image/Introduce.jpg"></p>  
-&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+<p align="center"><img src="/image/Introduce.jpg"></p>
    <table><tbody><tr>
    <td width="50%"><h4 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/0_HOME.jpg"><img src="/image/0_HOME.jpg" width="72.3307%" height="72.3307%"></a><br><br>국방프렌즈 메인화면</h4></td>
    <td width="50%"><h4 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/0_HOME_MOB.jpg"><img src="/image/0_HOME_MOB.jpg" width="75%" height="75%"></a><br><br>모바일 버전</h4></td>
@@ -107,13 +106,12 @@
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
    </tbody></table><br><br>
-<p align="center"><img src="/image/mobile.jpg"></p>
-<br><br>  
+<h3 align="center"><img src="/image/mobile.jpg"></h3>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
  * .
 ## 기술 스택 (Technique Used)
-<p align="center"><img src="/image/skill.jpg"></p><br>
+<h3 align="center"><img src="/image/skill.jpg"></h3>
 
 ### Basic
 <table><tbody>
@@ -218,4 +216,4 @@
  * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
  * 김정훈 (팀원) / kjeonghoon065@gmail.com<br><a href="https://github.com/LiiNen"><img src="https://img.shields.io/badge/Github-LiiNen-green?style=flat&logo=github" alt="LiiNen"></a>
 <br><br>
-<p align="center"><img src="/image/LOGO_README.jpg"></p>
+<h3 align="center"><img src="/image/LOGO_README.jpg"></h3>
