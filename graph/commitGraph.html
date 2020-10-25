@@ -2,9 +2,8 @@
 
 <html lang="ko">
 	<head>
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="graph.css">
 		<script src="apiGithubParsingJS.js"></script>
-		<script src="makeGraph.js"></script>
 		<script src="https://d3js.org/d3.v6.min.js"></script>
 	</head>
 	
@@ -31,25 +30,39 @@
 				xAxis(xAxisG);
 				yAxis(yAxisG);
 				
-				d3.select("#myGraph").selectAll("circle")
-					.data(commitHistory)
-					.enter()
-					.append("circle")	//점모양
-					.attr("r", 1)		//점반지름
-					.attr("cx", d=>xScale(d.date))
-					.attr("cy", d=>yScale(d.line))
-					.style("fill", "black");	//색상
 				
 				var lineGenerator = d3.line()
 					.x(d=>xScale(d.date))
-					.y(d=>yScale(d.line));
+					.y(d=>yScale(d.line))
+					.curve(d3.curveCatmullRom);
+				
+				var area = d3.area()
+					.x(function(d) {return xScale(d.date);})
+					.y0('250')
+					.y1(function(d) {return yScale(d.line);})
+					.curve(d3.curveCatmullRom);
 				
 				d3.select("#myGraph")
 					.append("path")
 					.attr("d", lineGenerator(commitHistory))
 					.attr("fill", "none")		//선채우기
-					.attr("stroke-width", 1)	//기준선길이
-					.attr("stroke", "black");	//기준선색상
+					.attr("stroke-width", 1)	//선두께
+					.attr("stroke", "lightgray")	//선색상
+				
+				d3.select("#myGraph")
+					.append("path")
+					.attr("d", area(commitHistory))
+					.attr("class", "area");
+				
+				
+				d3.select("#myGraph").selectAll("circle")
+					.data(commitHistory)
+					.enter()
+					.append("circle")	//점모양
+					.attr("r", 0.75)		//점반지름
+					.attr("cx", d=>xScale(d.date))
+					.attr("cy", d=>yScale(d.line))
+					.style("fill", "black");	//색상
 				
 				var tickElement = document.querySelectorAll(".tick text");
 				for(var i = 0; i < tickElement.length; i++) {
@@ -60,6 +73,7 @@
 						tickElement[i].setAttribute('y', 9);
 					}
 				}
+				
 			}
 			
 		</script>

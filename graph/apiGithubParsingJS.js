@@ -80,7 +80,6 @@ function checkFinish() {
 			console.log(commitHistory[i]['line']);
 		}
 		
-		makeGraphData();
 		drawGraph();
 	}
 }
