@@ -1,11 +1,10 @@
 
-<p align="center"><img src="/image/LOGO_README.jpg"></p>
+<p align="center"><img src="/image/ending.jpg"></p>
 
 ## 팀소개 및 프로젝트 설명 영상
 (제공 예정)<br><br>
 
 ## 프로젝트 설명  
-&nbsp;  
 <h3>'국방프렌즈'는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</h3>
 <p align="center"><img src="/image/Introduce.jpg"></p>  
 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
@@ -16,8 +15,8 @@
     <br>
 
 ## 기능 설계
-### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  
- * 온라인 비대면 상담 서비스<br>
+### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br><br>
+· 온라인 비대면 상담 서비스<br>
    <table>
         <tbody><tr>
             <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
@@ -38,9 +37,9 @@
         <tr>
             <td> 기타 고민상담 등 </td>
         </tr>
-   </tbody></table>
+   </tbody></table><br><br>
    
- * 커뮤니티 서비스<br>
+· 커뮤니티 서비스<br>
     <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
@@ -55,9 +54,9 @@
         <tr>
             <td> 고민 공유 및 상담 등 </td>
         </tr>
-   </tbody></table>
-    
- * 뉴스/정보 제공<br>
+   </tbody></table><br><br>
+   
+· 뉴스/정보 제공<br>
     <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
@@ -71,9 +70,9 @@
         </tr>
         <tr>
         </tr>
-   </tbody></table>
-    
- * 마이페이지 기능<br>
+   </tbody></table><br><br>
+   
+· 마이페이지 기능<br>
      <table>
         <tbody><tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
@@ -89,9 +88,9 @@
         <tr>
            <td>　</td>
         </tr>
-   </tbody></table>
-    
- * 24시간 AI 챗봇 서비스<br>
+   </tbody></table><br><br>
+   
+· 24시간 AI 챗봇 서비스<br>
       <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="60%" height="60%"></a><br><h6>데스크탑 버전</h6></div></td>
@@ -107,12 +106,15 @@
         <tr>
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
-   </tbody></table>
-   
- (기능은 개발 과정에 따라 추가/삭제될 수 있음)<br><br>  
+   </tbody></table><br><br>
+<p align="center"><img src="/image/mobile.jpg"></p>
+<br><br>  
+
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
  * .
 ## 기술 스택 (Technique Used)
+<p align="center"><img src="/image/skill.jpg"></p><br>
+
 ### Basic
 <table><tbody>
  <tr>
@@ -215,3 +217,5 @@
 ## 팀 정보 (Team Information)
  * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
  * 김정훈 (팀원) / kjeonghoon065@gmail.com<br><a href="https://github.com/LiiNen"><img src="https://img.shields.io/badge/Github-LiiNen-green?style=flat&logo=github" alt="LiiNen"></a>
+<br><br>
+<p align="center"><img src="/image/LOGO_README.jpg"></p>
