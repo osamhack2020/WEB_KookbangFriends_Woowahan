@@ -1,5 +1,3 @@
-<!-- https://mynameisdabin.tistory.com/15 -->
-
 <html lang="ko">
 	<head>
 		<link rel="stylesheet" href="graph.css">
@@ -8,7 +6,8 @@
 	</head>
 	
 	<body>
-		<svg id="myGraph" width="600px" height="300px" style="margin-left: 0px;"></svg>
+		<svg id="myGraph" width="600px" height="300px"></svg>
+		<svg id="myUserGraph" width="600px" height="300px"></svg>
 		
 		<script>
 			
@@ -54,7 +53,6 @@
 					.attr("d", area(commitHistory))
 					.attr("class", "area");
 				
-				
 				d3.select("#myGraph").selectAll("circle")
 					.data(commitHistory)
 					.enter()
@@ -63,6 +61,78 @@
 					.attr("cx", d=>xScale(d.date))
 					.attr("cy", d=>yScale(d.line))
 					.style("fill", "black");	//색상
+				
+				var tickElement = document.querySelectorAll(".tick text");
+				for(var i = 0; i < tickElement.length; i++) {
+					if(tickElement[i].getAttribute('x')) {
+						tickElement[i].setAttribute('x', -9);
+					}
+					else {
+						tickElement[i].setAttribute('y', 9);
+					}
+				}
+				
+			}
+			
+			function drawUserGraph() {
+				console.log("hello");
+				
+				var xScale = d3.scaleTime()
+					.domain([new Date("2020-10-01T00:00:00"), new Date("2020-11-01T00:00:00")])
+					.range([50, 550]);
+				var yScale = d3.scaleLinear()
+					.domain([0, 100])
+					.range([250, 50]);
+				var xAxisG = d3.select("#myUserGraph").append("g")
+					.attr("transform", "translate(0, 250)")
+					.call(d3.axisBottom(xScale));
+				var yAxisG = d3.select("#myUserGraph").append("g")
+					.attr("transform", "translate(50, 0)")
+					.call(d3.axisLeft(yScale));
+				var xAxis = d3.axisBottom(xScale).tickSize(5).ticks(2);
+				var yAxis = d3.axisRight(yScale).tickSize(-5).ticks(5);
+				xAxis(xAxisG);
+				yAxis(yAxisG);
+				
+				console.log(commitLiiNen);
+				console.log(commitDsvp);
+				
+				var lineGenerator = d3.line()
+					.x(d=>xScale(d.date))
+					.y(d=>yScale(d.count))
+					.curve(d3.curveCatmullRom);
+				
+				d3.select("#myUserGraph")
+					.append("path")
+					.attr("d", lineGenerator(commitLiiNen))
+					.attr("fill", "none")		//선채우기
+					.attr("stroke-width", 1)	//선두께
+					.attr("stroke", "orange")	//선색상
+				
+				d3.select("#myUserGraph")
+					.append("path")
+					.attr("d", lineGenerator(commitDsvp))
+					.attr("fill", "none")		//선채우기
+					.attr("stroke-width", 1)	//선두께
+					.attr("stroke", "skyblue")	//선색상
+				
+				d3.select("#myUserGraph").selectAll("circle-red")
+					.data(commitLiiNen)
+					.enter()
+					.append("circle")	//점모양
+					.attr("r", 0.75)		//점반지름
+					.attr("cx", d=>xScale(d.date))
+					.attr("cy", d=>yScale(d.count))
+					.style("fill", "red");	//색상
+				
+				d3.select("#myUserGraph").selectAll("circle-blue")
+					.data(commitDsvp)
+					.enter()
+					.append("circle")	//점모양
+					.attr("r", 0.75)		//점반지름
+					.attr("cx", d=>xScale(d.date))
+					.attr("cy", d=>yScale(d.count))
+					.style("fill", "blue");	//색상
 				
 				var tickElement = document.querySelectorAll(".tick text");
 				for(var i = 0; i < tickElement.length; i++) {
