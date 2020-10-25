@@ -14,7 +14,7 @@
     <br>
 
 ## 기능 설계
-### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br><br>
+### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br>
 ㆍ 온라인 비대면 상담 서비스<br>
    <table>
         <tbody><tr>
@@ -36,7 +36,7 @@
         <tr>
             <td> 기타 고민상담 등 </td>
         </tr>
-   </tbody></table><br><br>
+   </tbody></table><br>
    
 ㆍ 커뮤니티 서비스<br>
     <table>
@@ -53,7 +53,7 @@
         <tr>
             <td> 고민 공유 및 상담 등 </td>
         </tr>
-   </tbody></table><br><br>
+   </tbody></table><br>
    
 ㆍ 뉴스/정보 제공<br>
     <table>
@@ -69,7 +69,7 @@
         </tr>
         <tr>
         </tr>
-   </tbody></table><br><br>
+   </tbody></table><br>
    
 ㆍ 마이페이지 기능<br>
      <table>
@@ -87,7 +87,7 @@
         <tr>
            <td>　</td>
         </tr>
-   </tbody></table><br><br>
+   </tbody></table><br>
    
 ㆍ 24시간 AI 챗봇 서비스<br>
 <table>
@@ -105,8 +105,8 @@
         <tr>
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
-   </tbody></table><br><br>
-<h3 align="center"><img src="/image/mobile.jpg"></h3>
+   </tbody></table><br>
+<h3 align="center"><img src="/image/mobile.jpg"></h3><br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
  * .
