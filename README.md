@@ -214,14 +214,15 @@
  - PWA (Progressive Web Apps)
  
 ## 프로젝트 사용법 (Getting Started)
-step1. 국방프렌즈 저장소를 클론합니다.
 
+<p>step1. 국방프렌즈 저장소를 클론합니다.</p>
 
 ```bash
 git clone https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan
 ```
 <br>
-step2. 저장한 폴더로 이동하고 패키지를 설치합니다.
+<p>step2. 저장한 폴더로 이동하고 패키지를 설치합니다.</p>
+
 
 ```bash
 // 클라이언트 패키지 설치
@@ -234,14 +235,14 @@ cd ../api
 yarn install
 ```
 <br>
-step3. docker-compose 설정을 진행합니다.
+<p>step3. docker-compose 설정을 진행합니다.</p>
 
     // web/docker-compose.yml 파일을 본인 환경에 맞게 수정합니다.
     // 컨테이너 명, 포트 정보, DB 정보를 수정하시면 됩니다.
     // 기본 포트 (클라이언트 : 3000, 서버 : 1337, DB : 27017) 
     // 가이드 참조 : https://docs.docker.com/compose/gettingstarted/
 <br>
-step4. docker-compose로 컨테이너를 빌드합니다.
+<p>step4. docker-compose로 컨테이너를 빌드합니다.</p>
 
 ```bash
 // web 폴더로 이동 후 docker-compose 빌드
@@ -250,7 +251,7 @@ docker-compose build
 ```
 
 <br>
-step5. docker-compose로 컨테이너를 작동시킵니다.
+<p>step5. docker-compose로 컨테이너를 작동시킵니다.</p>
 
 ```bash
 // docker-compose 실행
@@ -258,7 +259,7 @@ docker-compose up
 ```
 <br>
 (기본적인 데이터베이스 및 리소스 파일이 같이 업로드 되어 있어서 api 및 db 폴더는 초기화 후 진행하시는 것을 추천드립니다.)
-<br>
+<br><br>
 
 ## 팀 정보 (Team Information)
  * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
