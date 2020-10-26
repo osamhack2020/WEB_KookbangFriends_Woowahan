@@ -8,8 +8,6 @@ module.exports = ({ env }) => ({
         srv: env.bool("DATABASE_SRV", false),
         port: env.int("DATABASE_PORT", 27017),
         database: env("DATABASE_NAME", "kookbangfriendsosam"),
-        username: env("DATABASE_USERNAME", "kbosam"),
-        password: env("DATABASE_PASSWORD", "!60OSAM@TEST61#"),
         timezone: "Asia/Seoul",
       },
       options: {

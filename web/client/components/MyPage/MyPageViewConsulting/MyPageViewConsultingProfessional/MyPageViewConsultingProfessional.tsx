@@ -9,7 +9,7 @@ const MyPageViewConsultingProfessional = (props) => {
         <div className="my-page-view-consulting-professional__area__contents parents">
           <div className="my-page-view-consulting-professional__area__contents__thumbnail">
             <img
-              src={`https://osam2.kookbang.kr${props.professional.thumbnail.url}`}
+              src={`http://127.0.0.1${props.professional.thumbnail.url}`}
               alt="thumbnail"
             />
           </div>

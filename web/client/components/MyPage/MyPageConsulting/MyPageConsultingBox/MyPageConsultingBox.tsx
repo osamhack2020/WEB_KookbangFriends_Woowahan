@@ -37,7 +37,7 @@ function MyPageConsultingBox(props) {
                 {props.pro ? (
                   props.pro.thumbnail ? (
                     <img
-                      src={`https://osam2.kookbang.kr${props.pro.thumbnail.url}`}
+                      src={`http://127.0.0.1${props.pro.thumbnail.url}`}
                       alt="thumbnail"
                     />
                   ) : (
@@ -45,7 +45,7 @@ function MyPageConsultingBox(props) {
                   )
                 ) : props.rec.thumbnail ? (
                   <img
-                    src={`https://osam2.kookbang.kr${props.rec.thumbnail.url}`}
+                    src={`http://127.0.0.1${props.rec.thumbnail.url}`}
                     alt="thumbnail"
                   />
                 ) : (
@@ -108,7 +108,7 @@ function MyPageConsultingBox(props) {
                 {props.pro ? (
                   props.pro.thumbnail ? (
                     <img
-                      src={`https://osam2.kookbang.kr${props.pro.thumbnail.url}`}
+                      src={`http://127.0.0.1${props.pro.thumbnail.url}`}
                       alt="thumbnail"
                     />
                   ) : (
@@ -116,7 +116,7 @@ function MyPageConsultingBox(props) {
                   )
                 ) : props.rec.thumbnail ? (
                   <img
-                    src={`https://osam2.kookbang.kr${props.rec.thumbnail.url}`}
+                    src={`http://127.0.0.1${props.rec.thumbnail.url}`}
                     alt="thumbnail"
                   />
                 ) : (

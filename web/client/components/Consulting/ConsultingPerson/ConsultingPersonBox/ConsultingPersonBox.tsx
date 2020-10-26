@@ -36,10 +36,7 @@ function ConsultingPersonBox(props) {
           <img src="/static/icons/check.png" alt="check" />
         </div>
         <div className="consulting-person-box__area__contents__thumbnail">
-          <img
-            src={`https://osam2.kookbang.kr${props.thumbnail.url}`}
-            alt="thumbnail"
-          />
+          <img src={`http://127.0.0.1${props.thumbnail.url}`} alt="thumbnail" />
         </div>
         <div className="consulting-person-box__area__contents__info parents">
           <div className="consulting-person-box__area__contents__info__name">

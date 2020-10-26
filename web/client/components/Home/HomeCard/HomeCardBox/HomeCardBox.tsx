@@ -33,10 +33,7 @@ const HomeCardBox = (props) => {
         <div className="home-card-box__area parents">
           <div className="home-card-box__area__contents parents">
             <div className="home-card-box__area__contents__thumbnail parents">
-              <img
-                src={`https://osam2.kookbang.kr${props.thumbnail}`}
-                alt="thumbnail"
-              />
+              <img src={`http://127.0.0.1${props.thumbnail}`} alt="thumbnail" />
             </div>
             <div className="home-card-box__area__contents__date">
               {`${date.getFullYear()}년 ${month}월 ${day}일`}

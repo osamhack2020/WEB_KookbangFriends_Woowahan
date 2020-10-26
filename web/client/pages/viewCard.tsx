@@ -80,7 +80,7 @@ function ViewCard({ query }) {
             <div className="view-card__area__contents__top__info parents">
               <div className="view-card__area__contents__top__info__thumbnail">
                 <img
-                  src={`https://osam2.kookbang.kr${card.thumbnail.url}`}
+                  src={`http://127.0.0.1${card.thumbnail.url}`}
                   alt="thumbnail"
                 />
               </div>
@@ -110,10 +110,7 @@ function ViewCard({ query }) {
             {card.contents.map((image, index) => {
               return (
                 <li key={`image-${index}`}>
-                  <img
-                    src={`https://osam2.kookbang.kr${image.url}`}
-                    alt="image"
-                  />
+                  <img src={`http://127.0.0.1${image.url}`} alt="image" />
                 </li>
               );
             })}

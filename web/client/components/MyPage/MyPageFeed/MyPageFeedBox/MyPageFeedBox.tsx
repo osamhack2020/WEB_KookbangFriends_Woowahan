@@ -34,7 +34,7 @@ function MyPageFeedBox(props) {
           {props.thumbnail && (
             <div className="my-page-feed-box__area__contents__thumbnail">
               <img
-                src={`https://osam2.kookbang.kr${props.thumbnail.url}`}
+                src={`http://127.0.0.1${props.thumbnail.url}`}
                 alt="thumbnail"
               />
             </div>
@@ -65,7 +65,7 @@ function MyPageFeedBox(props) {
             <div className="my-page-feed-box__area__contents__user__thumbnail">
               {props.user.thumbnail ? (
                 <img
-                  src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
+                  src={`http://127.0.0.1${props.user.thumbnail.url}`}
                   alt="thumbnail"
                 />
               ) : (

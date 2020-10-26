@@ -38,7 +38,7 @@ const Login = () => {
     const fetchPostInfo = async () => {
       try {
         const res: any = await axios.post(
-          "https://osam2.kookbang.kr/auth/local",
+          "http://127.0.0.1/auth/local",
           inputs
         );
         if (res.error) {

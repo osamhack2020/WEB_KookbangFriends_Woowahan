@@ -9,7 +9,7 @@ import { unsetToken } from "../../../lib/auth";
 
 import RegistrationCharacter from "./RegistrationCharacter/RegistrationCharacter";
 
-const apiUrl = process.env.API_URL || "https://osam2.kookbang.kr";
+const apiUrl = process.env.API_URL || "http://127.0.0.1";
 const strapi = new Strapi(apiUrl);
 
 const UPLOAD_MUTATION = gql`

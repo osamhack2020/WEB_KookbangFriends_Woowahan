@@ -48,7 +48,7 @@ function CommunityBoardBestBox(props) {
           {props.thumbnail ? (
             <div className="community-board-best-box__area__contents__thumbnail">
               <img
-                src={`https://osam2.kookbang.kr${props.thumbnail.url}`}
+                src={`http://127.0.0.1${props.thumbnail.url}`}
                 alt="thumbnail"
               />
             </div>
@@ -64,7 +64,7 @@ function CommunityBoardBestBox(props) {
             <div className="community-board-best-box__area__contents__user__thumbnail">
               {props.user.thumbnail ? (
                 <img
-                  src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
+                  src={`http://127.0.0.1${props.user.thumbnail.url}`}
                   alt="thumbnail"
                 />
               ) : (

@@ -39,7 +39,7 @@ function MyPageViewConsultingCommentBox(props) {
         <div className="my-page-view-consulting-comment-box__area__contents__thumbnail">
           {props.user.thumbnail ? (
             <img
-              src={`https://osam2.kookbang.kr${props.user.thumbnail.url}`}
+              src={`http://127.0.0.1${props.user.thumbnail.url}`}
               alt="thumbnail"
             />
           ) : (

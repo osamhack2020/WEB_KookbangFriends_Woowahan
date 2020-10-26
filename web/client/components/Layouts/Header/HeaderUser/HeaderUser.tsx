@@ -84,7 +84,7 @@ const HeaderUser = () => {
                 <div className="header-user__area__contents__thumbnail">
                   {me.user.thumbnail ? (
                     <img
-                      src={`https://osam2.kookbang.kr${me.user.thumbnail.url}`}
+                      src={`http://127.0.0.1${me.user.thumbnail.url}`}
                       alt="thumbnail"
                     />
                   ) : (
@@ -106,7 +106,7 @@ const HeaderUser = () => {
                 <div className="header-user__area__contents__thumbnail">
                   {me.user.thumbnail ? (
                     <img
-                      src={`https://osam2.kookbang.kr${me.user.thumbnail.url}`}
+                      src={`http://127.0.0.1${me.user.thumbnail.url}`}
                       alt="thumbnail"
                     />
                   ) : (

@@ -84,7 +84,7 @@ function CommunityFriends(props) {
                     <div className="community-friends__area__contents__friends__lists__thumbnail">
                       {friend.thumbnail ? (
                         <img
-                          src={`https://osam2.kookbang.kr${friend.thumbnail.url}`}
+                          src={`http://127.0.0.1${friend.thumbnail.url}`}
                           alt="thumbnail"
                         />
                       ) : (

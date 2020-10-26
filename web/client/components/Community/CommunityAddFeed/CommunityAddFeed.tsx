@@ -251,7 +251,7 @@ const CommunityAddFeed = (props) => {
           <div className="community-add-feed__area__contents__user__thumbnail">
             {me.user.thumbnail ? (
               <img
-                src={`https://osam2.kookbang.kr${me.user.thumbnail.url}`}
+                src={`http://127.0.0.1${me.user.thumbnail.url}`}
                 alt="thumbnail"
               />
             ) : (
