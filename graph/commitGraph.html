@@ -21,6 +21,7 @@
 				var xAxisG = d3.select("#myGraph").append("g")
 					.attr("transform", "translate(0, 250)")
 					.call(d3.axisBottom(xScale));
+			
 				var yAxisG = d3.select("#myGraph").append("g")
 					.attr("transform", "translate(50, 0)")
 					.call(d3.axisLeft(yScale));
@@ -62,6 +63,14 @@
 					.attr("cy", d=>yScale(d.line))
 					.style("fill", "black");	//색상
 				
+				d3.select("#myGraph").append("text")
+					.attr("x", 50)
+					.attr("y", 40)
+					.style("color", "black")
+					.style("text-anchor", "middle")
+					.style("font-size", "12px")
+					.text("　　Line / Commit");
+				
 				var tickElement = document.querySelectorAll(".tick text");
 				for(var i = 0; i < tickElement.length; i++) {
 					if(tickElement[i].getAttribute('x')) {
@@ -79,7 +88,7 @@
 				
 				var xScale = d3.scaleTime()
 					.domain([new Date("2020-10-01T00:00:00"), new Date("2020-11-01T00:00:00")])
-					.range([50, 550]);
+					.range([50, 150]);
 				var yScale = d3.scaleLinear()
 					.domain([0, 100])
 					.range([250, 50]);
