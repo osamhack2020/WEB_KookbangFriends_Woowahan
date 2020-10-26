@@ -107,9 +107,10 @@
         </tr>
    </tbody></table>
 
-<!--<h3 align="center"><img src="/image/kakao_channel.jpg"></h3><br>-->
-
-<h3 align="center"><img src="/image/mobile.jpg"></h3><br>
+<h3 align="center">
+	<img src="/image/kakao_channel_combine.jpg"><br>
+	<img src="/image/mobile.jpg"><br>
+</h3>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
  * .
