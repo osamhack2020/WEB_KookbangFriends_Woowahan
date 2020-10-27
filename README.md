@@ -1,5 +1,6 @@
 
 <p align="center"><img src="/image/ending.jpg"></p>
+<p align="center"><a href="https://kjeonghoon065.gitbook.io/kookbangfriends/"> ☞ 국방프렌즈 Document (Gitbook) </a></p>
 <br>
 <h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
 <h4 align="center"><a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br>
@@ -105,15 +106,19 @@
         <tr>
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
-   </tbody></table>
+   </tbody></table><br>
 
 <h3 align="center">
-	<img src="/image/kakao_channel_combine.jpg"><br>
+	<img src="/image/kakao_channel_combine.jpg"><br><br>
 	<img src="/image/mobile.jpg"><br>
-</h3>
+</h3><br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
- * .
+
+<p><img src="/image/prerequisites.png"></p>
+
+<br>
+
 ## 기술 스택 (Technique Used)
 <h3 align="center"><img src="/image/skill.jpg"></h3>
 
@@ -212,6 +217,7 @@
  - SSR (Server Side Rendering)
  - CSR (Client Side Rendering)
  - PWA (Progressive Web Apps)
+ <br>
  
 ## 프로젝트 사용법 (Getting Started)
 
