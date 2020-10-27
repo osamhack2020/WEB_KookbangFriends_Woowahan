@@ -1,18 +1,28 @@
 
-<p align="center"><img src="/image/ending.jpg"></p>
-<p align="center"><a href="https://kjeonghoon065.gitbook.io/kookbangfriends/"> ☞ 국방프렌즈 Document (Gitbook) </a></p>
-<br>
+<p align="center"><img src="/image/TOP_LOGO.png"></p>
+<p align="center">
+<a href="https://friends.kookbang.kr/">
+<img src="/image/DEMO_BUTTON.png" />
+</a>
+
+<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
+<img src="/image/DOCUMNET_BUTTON.png" />
+</a>
+</p>
+<br><br><br>
 <h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
-<h4 align="center"><a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br>
+<h4 align="center"><a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
+<br>
 
 ## 프로젝트 설명  
-<h3>'국방프렌즈'는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</h3>
+<p>국방프렌즈는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</p>
+<br><br>
 <p align="center"><img src="/image/Introduce.jpg"></p>
    <table><tbody><tr>
    <td width="50%"><h4 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/0_HOME.jpg"><img src="/image/0_HOME.jpg" width="72.3307%" height="72.3307%"></a><br><br>국방프렌즈 메인화면</h4></td>
    <td width="50%"><h4 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/0_HOME_MOB.jpg"><img src="/image/0_HOME_MOB.jpg" width="75%" height="75%"></a><br><br>모바일 버전</h4></td>
     </tr></tbody></table>
-    <br>
+    <br><br>
 
 ## 기능 설계
 ### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br>
@@ -111,13 +121,13 @@
 <h3 align="center">
 	<img src="/image/kakao_channel_combine.jpg"><br><br>
 	<img src="/image/mobile.jpg"><br>
-</h3><br>
+</h3><br><br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
 
 <p><img src="/image/prerequisites.png"></p>
 
-<br>
+<br><br>
 
 ## 기술 스택 (Technique Used)
 <h3 align="center"><img src="/image/skill.jpg"></h3>
@@ -265,7 +275,7 @@ docker-compose up
 ```
 <br>
 (기본적인 데이터베이스 및 리소스 파일이 같이 업로드 되어 있어서 api 및 db 폴더는 초기화 후 진행하시는 것을 추천드립니다.)
-<br><br>
+<br><br><br>
 
 ## 팀 정보 (Team Information)
  * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
