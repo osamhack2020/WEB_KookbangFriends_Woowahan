@@ -246,7 +246,7 @@
 git clone https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan
 ```
 <br>
-<p>step2. 저장한 폴더로 이동하고 패키지를 설치합니다.</p>
+<p>step2. 클론한 폴더로 이동하고 패키지를 설치합니다.</p>
 
 
 ```bash
@@ -283,7 +283,7 @@ docker-compose build
 docker-compose up
 ```
 <br>
-(기본적인 데이터베이스 및 리소스 파일이 같이 업로드 되어 있어서 api 및 db 폴더는 초기화 후 진행하시는 것을 추천드립니다.)
+(현재 GitHub repository에는 기본적인 DB와 리소스 파일이 같이 업로드가 되어있어 API 및 DB 폴더는 초기화 후에 진행하는 것을 권장드립니다.)
 <br><br><br>
 
 ## 팀 정보 (Team Information)
