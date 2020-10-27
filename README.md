@@ -1,11 +1,18 @@
 
 <p align="center"><img src="/image/TOP_LOGO.png"></p>
 <p align="center">
-<img src="/image/DEMO_BUTTON.png" />
-
-<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
-<img src="/image/DOCUMNET_BUTTON.png" />
-</a>
+	<img src="/image/DEMO_BUTTON.png" />
+	<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
+		<img src="/image/DOCUMNET_BUTTON.png" />
+	</a>
+</p>
+<p align="center">
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/search?l=TSX&type=code"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/osamhack2020/WEB_KookbangFriends_Woowahan?color=success"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 </p>
 <br><br><br>
 <h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
