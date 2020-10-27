@@ -1,5 +1,6 @@
 
 <p align="center"><img src="/image/ending.jpg"></p>
+<p align="center"><a href="https://kjeonghoon065.gitbook.io/kookbangfriends/"> ☞ 국방프렌즈 Document (Gitbook) </a></p>
 <br>
 <h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
 <h4 align="center"><a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br>
