@@ -251,13 +251,13 @@ git clone https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan
 
 ```bash
 // 클라이언트 패키지 설치
-cd WEB_KookbangFriends_Woowahan/web/client
-yarn install
-yarn add next
+$ cd WEB_KookbangFriends_Woowahan/web/client
+$ yarn install
+$ yarn add next
 
 // 서버 패키지 설치
-cd ../api
-yarn install
+$ cd ../api
+$ yarn install
 ```
 <br>
 <p>step3. docker-compose 설정을 진행합니다.</p>
@@ -271,8 +271,8 @@ yarn install
 
 ```bash
 // web 폴더로 이동 후 docker-compose 빌드
-cd ../
-docker-compose build
+$ cd ../
+$ docker-compose build
 ```
 
 <br>
@@ -280,7 +280,7 @@ docker-compose build
 
 ```bash
 // docker-compose 실행
-docker-compose up
+$ docker-compose up
 ```
 <br>
 (현재 GitHub repository에는 기본적인 DB와 리소스 파일이 같이 업로드가 되어있어 API 및 DB 폴더는 초기화 후에 진행하는 것을 권장드립니다.)
