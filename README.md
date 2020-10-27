@@ -105,15 +105,19 @@
         <tr>
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
-   </tbody></table>
+   </tbody></table><br>
 
 <h3 align="center">
-	<img src="/image/kakao_channel_combine.jpg"><br>
+	<img src="/image/kakao_channel_combine.jpg"><br><br>
 	<img src="/image/mobile.jpg"><br>
-</h3>
+</h3><br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
- * .
+
+<p><img src="/image/prerequisites.png"></p>
+
+<br>
+
 ## 기술 스택 (Technique Used)
 <h3 align="center"><img src="/image/skill.jpg"></h3>
 
@@ -212,6 +216,7 @@
  - SSR (Server Side Rendering)
  - CSR (Client Side Rendering)
  - PWA (Progressive Web Apps)
+ <br>
  
 ## 프로젝트 사용법 (Getting Started)
 
