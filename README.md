@@ -1,7 +1,9 @@
 
 <p align="center"><img src="/image/TOP_LOGO.png"></p>
 <p align="center">
+	<a href="https://freidns.kookbang.kr/">
 	<img src="/image/DEMO_BUTTON.png" />
+	</a>
 	<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
 		<img src="/image/DOCUMNET_BUTTON.png" />
 	</a>
@@ -16,7 +18,7 @@
 </p>
 <br><br><br>
 <h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
-<h4 align="center"><a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
+<h4 align="center"><a href="https://youtu.be/suvEYpgqv18"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
 <br>
 
 ## 팀 소개  
