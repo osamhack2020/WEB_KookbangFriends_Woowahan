@@ -62,7 +62,9 @@
         <tbody>
 		<tr>
 			<td colspan=2>
-				<b>ㆍ ☕ 온라인 비대면 상담 서비스</b>
+				<br>
+				<b>ㆍ ☕ 온라인 비대면 상담 서비스</b><br>
+				<br>
 			</td>
 		</tr>
 		<tr>
@@ -92,7 +94,9 @@
         <tbody>
 		<tr>
 			<td colspan=2>
-				<b>ㆍ 💖 국방 SNS 서비스</b>
+				<br>
+				<b>ㆍ 💖 국방 SNS 서비스</b><br>
+				<br>
 			</td>
 		</tr>
 		<tr>
@@ -116,7 +120,9 @@
         <tbody>
 		<tr>
 			<td colspan=2>
-				<b>ㆍ 📰 뉴스/정보 제공</b>
+				<br>
+				<b>ㆍ 📰 뉴스/정보 제공</b><br>
+				<br>
 			</td>
 		</tr>
 		<tr>
@@ -140,7 +146,9 @@
         <tbody>
 		<tr>
 			<td colspan=2>
-				<b>ㆍ 🍀 마이페이지 기능</b>
+				<br>
+				<b>ㆍ 🍀 마이페이지 기능</b><br>
+				<br>
 			</td>
 		</tr>
 		<tr>
@@ -165,7 +173,9 @@
         <tbody>
 		<tr>
 			<td colspan=3>
-				<b>ㆍ 🤖 24시간 AI 챗봇 서비스</b>
+				<br>
+				<b>ㆍ 🤖 24시간 AI 챗봇 서비스</b><br>
+				<br>
 			</td>
 		</tr>
 		<tr>
@@ -190,7 +200,9 @@
         <tbody>
 		<tr>
 			<td colspan=2>
-				<b>ㆍ 📱 모바일/앱 완벽 지원</b>
+				<br>
+				<b>ㆍ 📱 모바일/앱 완벽 지원</b><br>
+				<br>
 			</td>
 		</tr>
 		<tr>
