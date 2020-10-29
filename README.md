@@ -18,7 +18,27 @@
 </p>
 <br><br><br>
 <h2 align="center">프로젝트 설명 영상</h2>
-<h4 align="center"><a href="https://youtu.be/suvEYpgqv18"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
+
+<table>
+	<tr>
+		<td>
+			<a href="https://www.youtube.com/watch?v=suvEYpgqv18"><img src="/image/INTRO_THUMBNAIL.png"></a>
+		</td>
+		<td>
+			<a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/GUIDE_THUMBNAIL.png"></a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<b>소개 영상</b>
+		</td>
+		<td align="center">
+			<b>가이드 영상</b>
+		</td>
+	</tr>
+</table>
+
+<h4 align="center"><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
 <br>
 
 ## 팀 소개  
@@ -130,7 +150,7 @@
         </tr>
    </tbody></table><br>
 
-### ㆍ 📱 모바일/태블릿 완벽 지원<br>
+### ㆍ 📱 모바일/앱 완벽 지원<br>
 <table>
         <tbody>
 		<tr>
