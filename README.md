@@ -130,10 +130,19 @@
         </tr>
    </tbody></table><br>
 
+ㆍ 📱 모바일/태블릿 완벽 지원<br>
+<table>
+        <tbody>
+		<tr>
+			<td><div align="center"><img src="/image/mobile_full.gif"></div></td>
+		</tr>
+	</tbody>
+</table><br>
+	
+
 <h3 align="center">
 	<img src="/image/ADMIN.jpg"><br><br>
-	<img src="/image/kakao_channel_combine.jpg"><br><br>
-	<img src="/image/mobile.jpg"><br>
+	<img src="/image/kakao_channel_combine.jpg">
 </h3><br><br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
