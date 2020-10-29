@@ -432,6 +432,32 @@ $ docker-compose up
 <br><br><br>
 
 ## 팀 정보 (Team Information)
- * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
- * 김정훈 (팀원) / kjeonghoon065@gmail.com<br><a href="https://github.com/LiiNen"><img src="https://img.shields.io/badge/Github-LiiNen-green?style=flat&logo=github" alt="LiiNen"></a>
+<table>
+<thead>
+<tr>
+<th align="left">사진</th>
+<th align="left">성명</th>
+<th align="left">이메일</th>
+<th align="left">깃허브</th>
+</tr> 
+</thead>
+<tbody>
+<tr>
+<td><img src="/image/PROFILE1.png" width="60" height="60"></td>
+<td>이무열</td>
+<td>muyeol95@gmail.com</td>
+<td><a href="https://github.com/dsvp">
+<img src="http://img.shields.io/badge/dsvp-655ced?style=social&logo=github"/>
+</a></td> 
+</tr>
+<tr>
+<td><img src="/image/PROFILE2.png" width="60" height="60"></td>
+<td>김정훈</td>
+<td>kjeonghoon065@gmail.com</td>
+<td><a href="https://github.com/LiiNen">
+<img src="http://img.shields.io/badge/LiiNen-655ced?style=social&logo=github"/>
+</a></td> 
+</tr>
+</tbody>
+</table>
 <h3 align="center"><img src="/image/LOGO_README.jpg"></h3>
