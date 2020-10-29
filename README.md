@@ -17,7 +17,7 @@
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 </p>
 <br><br><br>
-<h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
+<h2 align="center">프로젝트 설명 영상</h2>
 <h4 align="center"><a href="https://youtu.be/suvEYpgqv18"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
 <br>
 
@@ -145,14 +145,14 @@
 	<img src="/image/kakao_channel_combine.jpg">
 </h3><br><br>
 
-## 기대효과
+## 국방프렌즈 기대효과
 
 ### 🔐 보안이 강화된 비대면 상담 서비스 제공
 - 기존 국방헬프콜의 문제 보완
 - 최신 보안 시스템 및 암호화 인증 적용
 - 전문상담관 선택 기능 추가
 - 편리한 상담내역 조회 및 관리
-- 추후 오픈소스 gitsi를 연동한 화상 상담 기대
+- 오픈소스 jitsi를 연동한 화상 상담 기대
   
 ### 🌐 국방 SNS를 통한 소통 매개채 형성
 - 전군 통합 온라인 소셜 네트워크 서비스
