@@ -36,9 +36,9 @@
     <br><br>
 
 ## 기능 설계
-### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br><br>
-ㆍ ☕ 온라인 비대면 상담 서비스<br>
-   <table>
+  ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br><br>
+### ㆍ ☕ 온라인 비대면 상담 서비스<br>
+<table>
         <tbody><tr>
             <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
             <td width="33%"> 병영생활 고충상담 </td>
@@ -60,8 +60,8 @@
         </tr>
    </tbody></table><br>
    
-ㆍ 💖 국방 SNS 서비스<br>
-    <table>
+### ㆍ 💖 국방 SNS 서비스<br>
+<table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
             <td width="33%"> 병영생활 노하우 공유 </td>
@@ -77,8 +77,8 @@
         </tr>
    </tbody></table><br>
    
-ㆍ 📰 뉴스/정보 제공<br>
-    <table>
+### ㆍ 📰 뉴스/정보 제공<br>
+<table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
             <td width="33%" height="75"> 카드뉴스/인포그래픽 제공 </td>
@@ -94,8 +94,8 @@
         </tr>
    </tbody></table><br>
    
-ㆍ 🍀 마이페이지 기능<br>
-     <table>
+### ㆍ 🍀 마이페이지 기능<br>
+<table>
         <tbody><tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
             <td width="33%"> 로그인/회원가입 </td>
@@ -112,7 +112,7 @@
         </tr>
    </tbody></table><br>
    
-ㆍ 🤖 24시간 AI 챗봇 서비스<br>
+### ㆍ 🤖 24시간 AI 챗봇 서비스<br>
 <table>
         <tbody><tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="57.7423%" height="%"></a><br><h6>데스크탑 버전</h6></div></td>
@@ -130,7 +130,7 @@
         </tr>
    </tbody></table><br>
 
-ㆍ 📱 모바일/태블릿 완벽 지원<br>
+### ㆍ 📱 모바일/태블릿 완벽 지원<br>
 <table>
         <tbody>
 		<tr>
@@ -144,6 +144,33 @@
 	<img src="/image/ADMIN.jpg"><br><br>
 	<img src="/image/kakao_channel_combine.jpg">
 </h3><br><br>
+
+## 기대효과
+
+### 🔐 보안이 강화된 비대면 상담 서비스 제공
+- 기존 국방헬프콜의 문제 보완
+- 최신 보안 시스템 및 암호화 인증 적용
+- 전문상담관 선택 기능 추가
+- 편리한 상담내역 조회 및 관리
+- 추후 오픈소스 gitsi를 연동한 화상 상담 기대
+  
+### 🌐 국방 SNS를 통한 소통 매개채 형성
+- 전군 통합 온라인 소셜 네트워크 서비스
+- 비대면 동아리 활동 가능
+- 스터디, 고민 상담, 중고물품 거래 가능
+- 무분별한 국방망 체계 피해 해소
+
+### 🖥 AI챗봇을 통한 강력한 업무 지원
+- 챗봇시스템을 통한 24시간 헬프데스크 지원
+- 머신러닝을 통한 인공지능 서비스
+- 지원 업무에 맞게 쉽게 API 설정 가능
+- 체계지원 시스템과 연동하여 질문 접수
+
+### 🎙 카드뉴스를 통한 장병들의 정보 격차 해소
+- 국방부 인포그래픽 제공
+- 장병의 보직에 따른 정보 격차 해소
+- 국방의 소식 제공 등
+<br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
 
