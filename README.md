@@ -340,14 +340,47 @@
   </td></tr>
  </tbody></table>
  
- ### Skillsget back
- - 반응형 웹 (Responsive Web)
- - 크로스 브라우징 (Cross Browsing)
- - 웹 표준 (Web Standards)
- - SEO 검색엔진최적화 (Search Engine Optimization)
- - SSR (Server Side Rendering)
- - CSR (Client Side Rendering)
- - PWA (Progressive Web Apps)
+ ### Web Skills
+<table>
+	<tbody>
+		<tr>
+	  		<td width="200" align="center">
+				반응형 웹<br>
+				(Responsive Web)
+	  		</td>
+			<td width="200" align="center">
+				크로스 브라우징<br>
+				(Cross Browsing)
+	  		</td>
+			<td width="200" align="center">
+				웹 표준<br>
+				(Web Standards)
+	  		</td>
+			<td width="200" align="center">
+				SEO 검색엔진최적화<br>
+				(Search Engine Optimization)
+	  		</td>
+		</tr>
+	 </tbody>
+</table>
+<table>
+	<tbody>
+		<tr>
+			<td width="200" align="center">
+				SSR<br>
+				(Server Side Rendering)
+	  		</td>
+			<td width="200" align="center">
+				CSR<br>
+				(Client Side Rendering)
+	  		</td>
+			<td width="200" align="center">
+				PWA<br>
+				(Progressive Web Apps)
+	  		</td>
+		</tr>
+	 </tbody>
+</table>
  <br>
  
 ## 프로젝트 사용법 (Getting Started)
