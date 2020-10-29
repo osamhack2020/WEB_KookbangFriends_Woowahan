@@ -87,9 +87,10 @@
             <td height="75"> 군/국방부 홍보효과 </td>
         </tr>
         <tr>
-           <td rowspan="2"></td>
+           <td height="75"> 장병 간 정보격차 해소 </td>
         </tr>
         <tr>
+	    <td></td>
         </tr>
    </tbody></table><br>
    
