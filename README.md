@@ -480,6 +480,11 @@
 </table>
 <br><br>
 
+## 서비스 플로우
+<img src="/image/serviceflow.png">
+
+<br><br>
+
 ## 서비스 이용법
 
 <b>1. WEB</b><br>
