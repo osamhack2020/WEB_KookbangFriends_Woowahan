@@ -198,6 +198,33 @@
    </tbody>
 </table>
 <br><br>
+
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 🔧 체계지원 서비스</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/support1.jpg"><img src="/image/support1.jpg" width="60%" height="60%"></a></div></td>
+            <td width="33%"> 공지사항 알림 및 조회 </td>
+        </tr>
+        <tr>
+            <td>건의 및 불편사항 접수</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/support2.jpg"><img src="/image/support2.jpg" width="60%" height="60%"></a></div></td>
+           <td>24시 문의사항 접수</td>
+        </tr>
+        <tr>
+           <td>자주묻는질문 조회</td>
+        </tr>
+   </tbody>
+</table>
+<br><br>
    
 <table>
         <tbody>
