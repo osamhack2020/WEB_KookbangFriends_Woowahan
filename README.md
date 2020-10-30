@@ -4,8 +4,6 @@
 	<a href="https://friends.kookbang.kr/">
 		<img src="/image/DEMO_BUTTON.png" />
 	</a>
-</p>
-<p align="center">
 	<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
 		<img src="/image/DOCUMNET_BUTTON.png" />
 	</a>
@@ -18,7 +16,6 @@
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/osamhack2020/WEB_KookbangFriends_Woowahan?color=success"></a>
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
-	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 </p>
 <br><br><br>
@@ -251,6 +248,46 @@
 - 국방부 인포그래픽 제공
 - 장병의 보직에 따른 정보 격차 해소
 - 국방의 소식 제공 등
+<br>
+
+## 국방프렌즈가 가진 경쟁력
+
+### 🔐 개발문서의 구체성
+구체적인 개발문서의 양호도 및 구체적 표현성
+
+- Gitbook을 이용한 개발문서 정리
+- Database ERD 제공
+- OPEN API 제공
+  
+### 🌐 독창성
+뚜렷한 독창성 유무 정도
+
+- 자율과제 및 지정과제를 포함한 추가 기능 구현 
+- SNS 서비스를 통한 국방 소셜 네트워크 구축
+- 카카오톡과 연동하여 새로운 플랫폼 활용도 기대
+- 웹/모바일 완벽 지원 및 PWA를 이용한 앱 활용 가능
+
+### 🖥 발전 가능성
+커뮤니티, 비즈니스 등에 대한 발전 가능성
+
+- 비대면 상담 서비스, 국방 SNS 기능을 통한 커뮤니티 구축
+- 누구나 쉽게 서비스를 관리할 수 있도록 데이터 관리 페이지 구축
+- 오픈소스로 이루어진 프로그램으로 플랫폼 구축 비용 절감
+- 구체적인 개발문서 정리로 개발 관련 커뮤니티 발전도 가능
+
+### 🎙 완성도(작품데모)
+데모 결과에 대한 시현 능숙도 및 원활한 작동
+
+- 즉시 서비스를 시행할 수 있도록 완성도 있게 제작
+- 모든 기능들은 사용자별 권한 설정이 완료 되고 원활하게 구현되어짐
+- 관리자 페이지를 제공하여 보다 체계적인 관리가 가능
+
+### 🎙 軍 공개SW 기여도
+軍의 공개SW 기술내재화 가능성 정도
+
+- 국방부의 소식을 오픈 API화 하여 다양한 이용가능
+- 국방 SNS의 데이터는 빅데이터로 활용 가능
+- AI 챗봇의 API 설계로 쉽게 기능 분리 및 타 군 체계에 활용 가능
 <br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
