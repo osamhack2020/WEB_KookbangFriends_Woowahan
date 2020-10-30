@@ -74,28 +74,23 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
-            <td width="33%"> 병영생활 고충상담 </td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/consulting1.jpg"><img src="/image/consulting1.jpg" width="60%" height="60%"></a></div></td>
+            <td width="33%">최신 보안 기술 적용</td>
         </tr>
         <tr>
-            <td> 방위사업비리 신고상담 </td>
+            <td>다양한 상담 서비스 지원</td>
         </tr>
         <tr>
-            <td> 군범죄 · 테러 신고상담 </td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/consulting2.jpg"><img src="/image/consulting2.jpg" width="60%" height="60%"></a></div></td>
+           <td>전문상담관 선택 기능</td>
         </tr>
         <tr>
-            <td> 성폭력 신고상담 </td>
-        </tr>
-        <tr>
-            <td> 양성평등 신고상담 </td>
-        </tr>
-        <tr>
-            <td> 기타 고민상담 등 </td>
+           <td>기존 국방헬프콜 단점 보완</td>
         </tr>
    </tbody>
 </table>
 <br><br>
-   
+
 <table>
         <tbody>
 		<tr>
@@ -106,43 +101,45 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
-            <td width="33%"> 병영생활 노하우 공유 </td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/sns1.jpg"><img src="/image/sns1.jpg" width="60%" height="60%"></a></div></td>
+            <td width="33%">전군 통합 SNS 구축</td>
         </tr>
         <tr>
-            <td> 온라인 동아리 활동 </td>
+            <td>병영생활 노하우 / 고민 상담</td>
         </tr>
         <tr>
-            <td> 고민 공유 및 상담 </td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/sns2.jpg"><img src="/image/sns2.jpg" width="60%" height="60%"></a></div></td>
+           <td>동아리 활동 / 중고 물품 거래</td>
         </tr>
         <tr>
-            <td> 중고물품 거래 등 </td>
+           <td>좋아요/댓글 기능</td>
         </tr>
    </tbody>
 </table>
 <br><br>
-   
+
 <table>
         <tbody>
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 📰 뉴스/정보 제공</b><br>
+				<b>ㆍ 📰 카드뉴스/정보 제공</b><br>
 				<br>
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
-            <td width="33%" height="75"> 카드뉴스/인포그래픽 제공 </td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/card1.jpg"><img src="/image/card1.jpg" width="60%" height="60%"></a></div></td>
+            <td width="33%">공모전 및 복지혜택 제공</td>
         </tr>
         <tr>
-            <td height="75"> 군/국방부 홍보효과 </td>
+            <td>알기 쉬운 인포그래픽</td>
         </tr>
         <tr>
-           <td height="75"> 장병 간 정보격차 해소 </td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/card2.jpg"><img src="/image/card2.jpg" width="60%" height="60%"></a></div></td>
+           <td>국방의 소식 홍보</td>
         </tr>
         <tr>
-	    <td></td>
+           <td>장병 간 정보격차 해소</td>
         </tr>
    </tbody>
 </table>
@@ -196,7 +193,7 @@
            <td>관심 커뮤니티 피드 확인</td>
         </tr>
         <tr>
-           <td>　</td>
+           <td>상담관 전용 페이지 구축</td>
         </tr>
    </tbody>
 </table>
