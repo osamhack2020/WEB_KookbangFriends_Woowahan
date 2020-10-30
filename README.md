@@ -485,7 +485,7 @@ $ docker-compose up
 <th width="100" align="left">성명</th>
 <th align="left">이메일</th>
 <th align="left">담당</th>
-<th align="left">활동내역</th>
+<th align="left">기타 활동</th>
 <th align="left">깃허브</th>
 </tr> 
 </thead>
@@ -495,24 +495,36 @@ $ docker-compose up
 <td>이무열</td>
 <td>muyeol95@gmail.com</td>
 <td>프론트엔드 개발<br>서버 환경 구축<br>영상 작업 등</td>
-<td>muyeol95@gmail.com</td>
-<td><a href="https://github.com/dsvp">
-<img src="http://img.shields.io/badge/dsvp-655ced?style=social&logo=github"/>
-</a></td>
+<td>
+	<a href="https://kookbang.dema.mil.kr/newsWeb/20200324/1/BBSMSTR_000000100108/view.do">
+		<img src="/image/dema.png" width="30" height="30"/>
+	</a>&nbsp;
+	<a href="https://news.joins.com/article/23733563">
+		<img src="/image/joongang.png" width="30" height="30"/></td>
+	</a>
+<td>
+	<a href="https://github.com/dsvp">
+		<img src="http://img.shields.io/badge/dsvp-655ced?style=social&logo=github"/>
+	</a>
+</td>
 </tr>
 <tr>
 <td><img src="/image/PROFILE2.png" width="60" height="60"></td>
 <td>김정훈</td>
 <td>kjeonghoon065@gmail.com</td>
 <td>백엔드 개발<br>API 설계<br>문서화 작업 등</td>
-<td>muyeol95@gmail.com</td>
-<td><a href="https://github.com/LiiNen">
-<img src="http://img.shields.io/badge/LiiNen-655ced?style=social&logo=github"/>
-</a></td>
+<td>
+	<a href="https://youtu.be/eZX5dip7ai0?t=574">
+		<img src="/image/youtube.png" width="30" height="30"/>
+	</a>
+</td>
+<td>
+	<a href="https://github.com/LiiNen">
+		<img src="http://img.shields.io/badge/LiiNen-655ced?style=social&logo=github"/>
+	</a>
+</td>
 </tr>
 </tbody>
 </table>
+<br>
 <h3 align="center"><img src="/image/LOGO_README.jpg"></h3>
-
-
-https://youtu.be/eZX5dip7ai0?t=574
