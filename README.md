@@ -147,7 +147,34 @@
    </tbody>
 </table>
 <br><br>
-   
+
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 🥳 로그인/회원가입 기능</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/registration1.jpg"><img src="/image/registration1.jpg" width="60%" height="60%"></a></div></td>
+            <td width="33%"> 로그인 시스템 </td>
+        </tr>
+        <tr>
+            <td> 회원가입 시스템 </td>
+        </tr>
+        <tr>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/registration2.jpg"><img src="/image/registration2.jpg" width="60%" height="60%"></a></div></td>
+           <td> 썸네일 선택 및 업로드 기능 </td>
+        </tr>
+        <tr>
+           <td>　</td>
+        </tr>
+   </tbody>
+</table>
+<br><br>
+
 <table>
         <tbody>
 		<tr>
@@ -159,10 +186,10 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
-            <td width="33%"> 로그인/회원가입 </td>
+            <td width="33%"> 상담 내역 리스트 확인 </td>
         </tr>
         <tr>
-            <td> 상담 내역 확인 </td>
+            <td> 상담 내역 상세보기 </td>
         </tr>
         <tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_LIKE.jpg"><img src="/image/9_LIKE_readme.jpg" width="60%" height="60%"></a></div></td>
