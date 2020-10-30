@@ -478,9 +478,20 @@
 		</tr>
 	 </tbody>
 </table>
- <br>
- 
-## 프로젝트 사용법 (Getting Started)
+<br><br>
+
+## 서비스 이용법
+
+<b>1. WEB</b><br>
+https://friends.kookbang.kr/
+웹사이트 접속 후 서비스 이용<br><br>
+
+<b>2. APP</b><br>
+안드로이드/IOS 기반 스마트폰에서 웹사이트 접속 후 [홈 화면에 사이트 추가 설정]을 하면 PWA 기반 웹앱 설치가 진행됩니다.<br>
+설치 후 어플리케이션으로 이용 가능합니다.
+<br><br><br>
+
+## 개발 프로젝트 사용법 (Getting Started)
 
 <p>step1. 국방프렌즈 저장소를 클론합니다.</p>
 
