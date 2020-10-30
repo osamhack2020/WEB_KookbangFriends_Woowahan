@@ -2,10 +2,15 @@
 <p align="center"><img src="/image/TOP_LOGO.png"></p>
 <p align="center">
 	<a href="https://friends.kookbang.kr/">
-	<img src="/image/DEMO_BUTTON.png" />
+		<img src="/image/DEMO_BUTTON.png" />
 	</a>
+</p>
+<p align="center">
 	<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
 		<img src="/image/DOCUMNET_BUTTON.png" />
+	</a>
+	<a href="https://github.com/dsvp/WEB_KookbangFriends_Woowahan/issues?page=1&q=is%3Aissue+is%3Aclosed">
+		<img src="/image/ISSUE_BUTTON.png" />
 	</a>
 </p>
 <p align="center">
