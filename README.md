@@ -185,7 +185,7 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/mypage1.jpg"><img src="/image/mypage1.jpg" width="60%" height="60%"></a></div></td>
             <td width="33%"> 상담 내역 리스트 확인 </td>
         </tr>
         <tr>
