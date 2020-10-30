@@ -571,7 +571,7 @@ $ docker-compose up
 <tr>
 <td width="100" align="center"><img src="/image/PROFILE2.png" width="60" height="60"></td>
 <td width="100" align="center">김정훈</td>
-<td width="150">백엔드 개발<br>API 설계<br>문서화 작업 등</td>
+<td width="300">백엔드 개발<br>API 설계<br>문서화 작업 등</td>
 <td width="110" align="center">
 	<a href="https://youtu.be/eZX5dip7ai0?t=574">
 		<img src="/image/youtube.png" width="30" height="30"/>
