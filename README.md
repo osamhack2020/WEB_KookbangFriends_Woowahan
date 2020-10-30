@@ -1,22 +1,59 @@
 
 <p align="center"><img src="/image/TOP_LOGO.png"></p>
 <p align="center">
-<a href="https://friends.kookbang.kr/">
-<img src="/image/DEMO_BUTTON.png" />
-</a>
-
-<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
-<img src="/image/DOCUMNET_BUTTON.png" />
-</a>
+	<a href="https://friends.kookbang.kr/">
+		<img src="/image/DEMO_BUTTON.png" />
+	</a>
+	<a href="https://kjeonghoon065.gitbook.io/kookbangfriends/">
+		<img src="/image/DOCUMNET_BUTTON.png" />
+	</a>
+	<a href="https://github.com/dsvp/WEB_KookbangFriends_Woowahan/issues?page=1&q=is%3Aissue+is%3Aclosed">
+		<img src="/image/ISSUE_BUTTON.png" />
+	</a>
+</p>
+<p align="center">
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/search?l=TSX&type=code"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/osamhack2020/WEB_KookbangFriends_Woowahan?color=success"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
+	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 </p>
 <br><br><br>
-<h2 align="center">팀소개 및 프로젝트 설명 영상</h2>
-<h4 align="center"><a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/README_VIDEO.jpg" width="75%" height="75%"></a><br><br>이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
+<h2 align="center">프로젝트 설명 영상</h2>
+
+<table>
+	<tr>
+		<td>
+			<a href="https://www.youtube.com/watch?v=suvEYpgqv18"><img src="/image/INTRO_THUMBNAIL.png"></a>
+		</td>
+		<td>
+			<a href="https://www.youtube.com/watch?v=Oh-SFOLAom0"><img src="/image/GUIDE_THUMBNAIL.png"></a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<b>소개 영상</b>
+		</td>
+		<td align="center">
+			<b>가이드 영상</b>
+		</td>
+	</tr>
+</table>
+
+<h4 align="center">이미지 클릭 시 youtube 영상으로 이동합니다.</h4><br><br><br>
 <br>
 
-## 프로젝트 설명  
-<p>국방프렌즈는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</p>
+## 팀 소개  
+<p align="center"><img src="/image/TEAM_INFO.png"></p>
 <br><br>
+
+## 프로젝트 설명  
+<p><b>국방프렌즈</b>는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</p>
+<br>
+<p><img src="/image/GOAL.png"></p>
+<p><b>국방프렌즈</b>는 <b>자율과제</b>와 <b>지정과제</b>에 대한 내용을 모두 포함하고 있고 추가적으로 다양한 기능들을 완벽하게 구현하여 군 장병 및 군무원 여러분의 소통을 위한 커뮤니티 체계와 정보 격차 해소를 위한 플랫폼입니다.</p>
+<br><br>
+
 <p align="center"><img src="/image/Introduce.jpg"></p>
    <table><tbody><tr>
    <td width="50%"><h4 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/0_HOME.jpg"><img src="/image/0_HOME.jpg" width="72.3307%" height="72.3307%"></a><br><br>국방프렌즈 메인화면</h4></td>
@@ -25,10 +62,18 @@
     <br><br>
 
 ## 기능 설계
-### ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br>
-ㆍ 온라인 비대면 상담 서비스<br>
-   <table>
-        <tbody><tr>
+  ※ 클릭시 확대된 원본 이미지를 확인할 수 있습니다.  <br><br>
+
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ ☕ 온라인 비대면 상담 서비스</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
             <td rowspan="6"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/2_CONSULT.jpg" target="_blank"><img src="/image/2_CONSULT_readme.jpg" width="40%" height="40%"></a></div></td>
             <td width="33%"> 병영생활 고충상담 </td>
         </tr>
@@ -47,28 +92,46 @@
         <tr>
             <td> 기타 고민상담 등 </td>
         </tr>
-   </tbody></table><br>
+   </tbody>
+</table>
+<br><br>
    
-ㆍ 커뮤니티 서비스<br>
-    <table>
-        <tbody><tr>
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 💖 국방 SNS 서비스</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/4_COMMUNITY.jpg" target="_blank"><img src="/image/4_COMMUNITY_readme.jpg" width="50%" height="50%"></a></div></td>
-            <td width="33%"> 자유게시판 </td>
-        </tr>
-        <tr>
-            <td> 병영생활 노하우 공유 </td>
+            <td width="33%"> 병영생활 노하우 공유 </td>
         </tr>
         <tr>
             <td> 온라인 동아리 활동 </td>
         </tr>
         <tr>
-            <td> 고민 공유 및 상담 등 </td>
+            <td> 고민 공유 및 상담 </td>
         </tr>
-   </tbody></table><br>
+        <tr>
+            <td> 중고물품 거래 등 </td>
+        </tr>
+   </tbody>
+</table>
+<br><br>
    
-ㆍ 뉴스/정보 제공<br>
-    <table>
-        <tbody><tr>
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 📰 뉴스/정보 제공</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/3_CARD.jpg"><img src="/image/3_CARD_readme.jpg" width="50%" height="20%"></a></div></td>
             <td width="33%" height="75"> 카드뉴스/인포그래픽 제공 </td>
         </tr>
@@ -76,15 +139,25 @@
             <td height="75"> 군/국방부 홍보효과 </td>
         </tr>
         <tr>
-           <td rowspan="2"></td>
+           <td height="75"> 장병 간 정보격차 해소 </td>
         </tr>
         <tr>
+	    <td></td>
         </tr>
-   </tbody></table><br>
+   </tbody>
+</table>
+<br><br>
    
-ㆍ 마이페이지 기능<br>
-     <table>
-        <tbody><tr>
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 🍀 마이페이지 기능</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
             <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/9_CONLIST.jpg"><img src="/image/9_CONLIST_readme.jpg" width="60%" height="60%"></a></div></td>
             <td width="33%"> 로그인/회원가입 </td>
         </tr>
@@ -98,11 +171,20 @@
         <tr>
            <td>　</td>
         </tr>
-   </tbody></table><br>
+   </tbody>
+</table>
+<br><br>
    
-ㆍ 24시간 AI 챗봇 서비스<br>
 <table>
-        <tbody><tr>
+        <tbody>
+		<tr>
+			<td colspan=3>
+				<br>
+				<b>ㆍ 🤖 24시간 AI 챗봇 서비스</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_COM.jpg"><img src="/image/5_CHAT_COM_readme.jpg" width="57.7423%" height="%"></a><br><h6>데스크탑 버전</h6></div></td>
             <td rowspan="4"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/5_CHAT_MOB_readme.jpg"><img src="/image/5_CHAT_MOB_readme.jpg" width="60%" height="60%"></a><br><h6>모바일 버전</h6></div></td>
             <td width="33%"> 헬프데스크 지원 </td>
@@ -116,12 +198,97 @@
         <tr>
            <td> 기타 문의사항 24시간 접수 </td>
         </tr>
-   </tbody></table><br>
+   </tbody>
+</table>
+<br><br>
+
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 📱 모바일/앱 완벽 지원</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
+			<td><div align="center"><img src="/image/mobile_full.gif"></div></td>
+		</tr>
+	</tbody>
+</table><br>
+	
 
 <h3 align="center">
-	<img src="/image/kakao_channel_combine.jpg"><br><br>
-	<img src="/image/mobile.jpg"><br>
+	<img src="/image/ADMIN.jpg"><br><br>
+	<img src="/image/kakao_channel_combine.jpg">
 </h3><br><br>
+
+## 국방프렌즈 기대효과
+
+### 🔐 보안이 강화된 비대면 상담 서비스 제공
+- 기존 국방헬프콜의 문제 보완
+- 최신 보안 시스템 및 암호화 인증 적용
+- 전문상담관 선택 기능 추가
+- 편리한 상담내역 조회 및 관리
+- 오픈소스 jitsi를 연동한 화상 상담 기대
+  
+### 🌐 국방 SNS를 통한 소통 매개채 형성
+- 전군 통합 온라인 소셜 네트워크 서비스
+- 비대면 동아리 활동 가능
+- 스터디, 고민 상담, 중고물품 거래 가능
+- 무분별한 국방망 체계 피해 해소
+
+### 🖥 AI챗봇을 통한 강력한 업무 지원
+- 챗봇시스템을 통한 24시간 헬프데스크 지원
+- 머신러닝을 통한 인공지능 서비스
+- 지원 업무에 맞게 쉽게 API 설정 가능
+- 체계지원 시스템과 연동하여 질문 접수
+
+### 🎙 카드뉴스를 통한 장병들의 정보 격차 해소
+- 국방부 인포그래픽 제공
+- 장병의 보직에 따른 정보 격차 해소
+- 국방의 소식 제공 등
+<br>
+
+## 국방프렌즈가 가진 경쟁력
+
+### 📘 개발문서의 구체성
+구체적인 개발문서의 양호도 및 구체적 표현성
+
+- Gitbook을 이용한 개발문서 정리
+- Database ERD 제공
+- OPEN API 제공
+  
+### 🌟 독창성
+뚜렷한 독창성 유무 정도
+
+- 자율과제 및 지정과제를 포함한 추가 기능 구현 
+- SNS 서비스를 통한 국방 소셜 네트워크 구축
+- 카카오톡과 연동하여 새로운 플랫폼 활용도 기대
+- 웹/모바일 완벽 지원 및 PWA를 이용한 앱 활용 가능
+
+### 🌱 발전 가능성
+커뮤니티, 비즈니스 등에 대한 발전 가능성
+
+- 비대면 상담 서비스, 국방 SNS 기능을 통한 커뮤니티 구축
+- 누구나 쉽게 서비스를 관리할 수 있도록 데이터 관리 페이지 구축
+- 오픈소스로 이루어진 프로그램으로 플랫폼 구축 비용 절감
+- 구체적인 개발문서 정리로 개발 관련 커뮤니티 발전도 가능
+
+### 🚀 완성도(작품데모)
+데모 결과에 대한 시현 능숙도 및 원활한 작동
+
+- 즉시 서비스를 시행할 수 있도록 완성도 있게 제작
+- 모든 기능들은 사용자별 권한 설정이 완료 되고 원활하게 구현되어짐
+- 관리자 페이지를 제공하여 보다 체계적인 관리가 가능
+
+### ⌨ 軍 공개SW 기여도
+軍의 공개SW 기술내재화 가능성 정도
+
+- 국방부의 소식을 오픈 API화 하여 다양한 이용가능
+- 국방 SNS의 데이터는 빅데이터로 활용 가능
+- AI 챗봇의 API 설계로 쉽게 기능 분리 및 타 군 체계에 활용 가능
+<br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
 
@@ -132,7 +299,7 @@
 ## 기술 스택 (Technique Used)
 <h3 align="center"><img src="/image/skill.jpg"></h3>
 
-### Basic
+### Infra
 <table><tbody>
  <tr>
   <td>
@@ -219,14 +386,47 @@
   </td></tr>
  </tbody></table>
  
- ### Skillsget back
- - 반응형 웹 (Responsive Web)
- - 크로스 브라우징 (Cross Browsing)
- - 웹 표준 (Web Standards)
- - SEO 검색엔진최적화 (Search Engine Optimization)
- - SSR (Server Side Rendering)
- - CSR (Client Side Rendering)
- - PWA (Progressive Web Apps)
+ ### Web Skills
+<table>
+	<tbody>
+		<tr>
+	  		<td width="200" align="center">
+				반응형 웹<br>
+				(Responsive Web)
+	  		</td>
+			<td width="200" align="center">
+				크로스 브라우징<br>
+				(Cross Browsing)
+	  		</td>
+			<td width="200" align="center">
+				웹 표준<br>
+				(Web Standards)
+	  		</td>
+			<td width="200" align="center">
+				SEO 검색엔진최적화<br>
+				(Search Engine Optimization)
+	  		</td>
+		</tr>
+	 </tbody>
+</table>
+<table>
+	<tbody>
+		<tr>
+			<td width="200" align="center">
+				SSR<br>
+				(Server Side Rendering)
+	  		</td>
+			<td width="200" align="center">
+				CSR<br>
+				(Client Side Rendering)
+	  		</td>
+			<td width="200" align="center">
+				PWA<br>
+				(Progressive Web Apps)
+	  		</td>
+		</tr>
+	 </tbody>
+</table>
  <br>
  
 ## 프로젝트 사용법 (Getting Started)
@@ -237,18 +437,18 @@
 git clone https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan
 ```
 <br>
-<p>step2. 저장한 폴더로 이동하고 패키지를 설치합니다.</p>
+<p>step2. 클론한 폴더로 이동하고 패키지를 설치합니다.</p>
 
 
 ```bash
 // 클라이언트 패키지 설치
-cd WEB_KookbangFriends_Woowahan/web/client
-yarn install
-yarn add next
+$ cd WEB_KookbangFriends_Woowahan/web/client
+$ yarn install
+$ yarn add next
 
 // 서버 패키지 설치
-cd ../api
-yarn install
+$ cd ../api
+$ yarn install
 ```
 <br>
 <p>step3. docker-compose 설정을 진행합니다.</p>
@@ -262,8 +462,8 @@ yarn install
 
 ```bash
 // web 폴더로 이동 후 docker-compose 빌드
-cd ../
-docker-compose build
+$ cd ../
+$ docker-compose build
 ```
 
 <br>
@@ -271,13 +471,61 @@ docker-compose build
 
 ```bash
 // docker-compose 실행
-docker-compose up
+$ docker-compose up
 ```
 <br>
-(기본적인 데이터베이스 및 리소스 파일이 같이 업로드 되어 있어서 api 및 db 폴더는 초기화 후 진행하시는 것을 추천드립니다.)
+(현재 GitHub repository에는 기본적인 DB와 리소스 파일이 같이 업로드가 되어있어 API 및 DB 폴더는 초기화 후에 진행하는 것을 권장드립니다.)
 <br><br><br>
 
 ## 팀 정보 (Team Information)
- * 이무열 (팀장) / muyeol95@gmail.com<br><a href="https://github.com/dsvp"><img src="https://img.shields.io/badge/Github-dsvp-green?style=flat&logo=github" alt="dsvp"></a>
- * 김정훈 (팀원) / kjeonghoon065@gmail.com<br><a href="https://github.com/LiiNen"><img src="https://img.shields.io/badge/Github-LiiNen-green?style=flat&logo=github" alt="LiiNen"></a>
+<table width="788">
+<thead>
+<tr>
+<th width="100" align="center">사진</th>
+<th width="100" align="center">성명</th>
+<th width="150" align="left">담당</th>
+<th width="110" align="center">기타 활동</th>
+<th width="100" align="center">깃허브</th>
+</tr> 
+</thead>
+<tbody>
+<tr>
+<td width="100" align="center"><img src="/image/PROFILE1.png" width="60" height="60"></td>
+<td width="100" align="center">이무열</td>
+<td width="150">프론트엔드 개발<br>서버 환경 구축<br>영상 작업 등</td>
+<td width="110" align="center">
+	<a href="https://kookbang.dema.mil.kr/newsWeb/20200324/1/BBSMSTR_000000100108/view.do">
+		<img src="/image/dema.png" width="30" height="30"/>
+	</a>&nbsp;
+	<a href="https://news.joins.com/article/23733563">
+		<img src="/image/joongang.png" width="30" height="30"/></td>
+	</a>
+<td width="100" align="center">
+	<a href="https://github.com/dsvp">
+		<img src="http://img.shields.io/badge/dsvp-655ced?style=social&logo=github"/>
+	</a>
+</td>
+</tr>
+<tr>
+<td width="100" align="center"><img src="/image/PROFILE2.png" width="60" height="60"></td>
+<td width="100" align="center">김정훈</td>
+<td width="150">백엔드 개발<br>API 설계<br>문서화 작업 등</td>
+<td width="110" align="center">
+	<a href="https://youtu.be/eZX5dip7ai0?t=574">
+		<img src="/image/youtube.png" width="30" height="30"/>
+	</a>
+</td>
+<td width="100" align="center">
+	<a href="https://github.com/LiiNen">
+		<img src="http://img.shields.io/badge/LiiNen-655ced?style=social&logo=github"/>
+	</a>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+이무열 / muyeol95@gmail.com<br>
+김정훈 / kjeonghoon065@gmail.com
+</p>
+<br>
 <h3 align="center"><img src="/image/LOGO_README.jpg"></h3>
