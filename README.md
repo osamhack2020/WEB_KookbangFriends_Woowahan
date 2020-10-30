@@ -52,7 +52,11 @@
 
 ## 프로젝트 설명  
 <p><b>국방프렌즈</b>는 군 생활을 하는 용사 및 군무원분들을 대상으로 온라인 비대면 상담 서비스를 제공하고 자유롭게 소통을 할 수 있는 커뮤니티 웹/앱 플랫폼입니다. 또한 병영생활에 도움이 되는 정보를 다양한 방법으로 제공하여 하나의 커뮤니티 체계를 이루는 것을 목표로 한 프로젝트입니다.</p>
+<br>
+<p><img src="/image/GOAL.png"></p>
+<p><b>국방프렌즈</b>는 <b>자율과제</b>와 <b>지정과제</b>에 대한 내용을 모두 포함하고 있고 추가적으로 다양한 기능들을 완벽하게 구현하여 군 장병 및 군무원 여러분의 소통을 위한 커뮤니티 체계와 정보 격차 해소를 위한 플랫폼입니다.</p>
 <br><br>
+
 <p align="center"><img src="/image/Introduce.jpg"></p>
    <table><tbody><tr>
    <td width="50%"><h4 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/0_HOME.jpg"><img src="/image/0_HOME.jpg" width="72.3307%" height="72.3307%"></a><br><br>국방프렌즈 메인화면</h4></td>
