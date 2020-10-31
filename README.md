@@ -501,7 +501,7 @@ https://friends.kookbang.kr/
 <p>step1. 국방프렌즈 저장소를 클론합니다.</p>
 
 ```bash
-git clone https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan
+$ git clone https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan
 ```
 <br>
 <p>step2. 클론한 폴더로 이동하고 패키지를 설치합니다.</p>
