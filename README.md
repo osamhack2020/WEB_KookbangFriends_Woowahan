@@ -553,7 +553,7 @@ $ docker-compose up
 <th width="150" align="left">담당</th>
 <th width="110" align="center">기타 활동</th>
 <th width="100" align="center">깃허브</th>
-<th width="200" align="center">이메일</th>
+<th width="175" align="center">이메일</th>
 </tr> 
 </thead>
 <tbody>
@@ -573,8 +573,8 @@ $ docker-compose up
 		<img src="http://img.shields.io/badge/dsvp-655ced?style=social&logo=github"/>
 	</a>
 </td>
-<td width="200" align="center">
-	<a href="mailto:muyeol95@gmail.com"><img src="https://img.shields.io/static/v1?label=E-mail&message=muyeol95@gmail.com&color=red&link=mailto:muyeol95@gmail.com"></a>
+<td width="175" align="center">
+	<a href="mailto:muyeol95@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=muyeol95@gmail.com&color=orange&style=flat-square&logo=gmail"></a>
 	</td>
 </tr>
 <tr>
@@ -591,8 +591,8 @@ $ docker-compose up
 		<img src="http://img.shields.io/badge/LiiNen-655ced?style=social&logo=github"/>
 	</a>
 </td>
-<td width="200" align="center">
-	<a href="mailto:kjeonghoon065@gmail.com"><img src="https://img.shields.io/static/v1?label=E-mail&message=kjeonghoon065@gmail.com&color=blue&link=mailto:kjeonghoon065@gmail.com"></a>
+<td width="175" align="center">
+	<a href="mailto:kjeonghoon065@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=kjeonghoon065@gmail.com&color=green&style=flat-square&logo=gmail"></a>
 	</td>
 </tr>
 </tr>
