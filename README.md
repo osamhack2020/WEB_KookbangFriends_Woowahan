@@ -274,6 +274,11 @@
 	<img src="/image/kakao_channel_combine.jpg">
 </h3><br><br>
 
+## 서비스 플로우
+<img src="/image/serviceflow.png">
+
+<br><br>
+
 ## 국방프렌즈 기대효과
 
 ### 🔐 보안이 강화된 비대면 상담 서비스 제공
@@ -478,11 +483,6 @@
 		</tr>
 	 </tbody>
 </table>
-<br><br>
-
-## 서비스 플로우
-<img src="/image/serviceflow.png">
-
 <br><br>
 
 ## 서비스 이용법
