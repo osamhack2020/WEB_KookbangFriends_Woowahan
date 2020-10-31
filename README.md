@@ -44,7 +44,7 @@
 <br>
 
 ## 팀 소개  
-<p align="center"><img src="/image/TEAM_INFO.png"></p>
+<p align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/TEAM_INFO.png"><img src="/image/TEAM_INFO.png"></a></p>
 <br><br>
 
 ## 프로젝트 설명  
@@ -270,12 +270,12 @@
 	
 
 <h3 align="center">
-	<img src="/image/ADMIN.jpg"><br><br>
-	<img src="/image/kakao_channel_combine.jpg">
+	<a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/ADMIN.jpg"><img src="/image/ADMIN.jpg"></a><br><br>
+	<a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/kakao_channel_combine.jpg"><img src="/image/kakao_channel_combine.jpg"></a>
 </h3><br><br>
 
 ## 서비스 플로우
-<img src="/image/serviceflow.png">
+<h3 align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/serviceflow.png"><img src="/image/serviceflow.png"></a></div>
 
 <br><br>
 
