@@ -343,7 +343,8 @@
 
 - 국방부의 소식을 오픈 API화 하여 다양한 이용가능
 - 국방 SNS의 데이터는 빅데이터로 활용 가능
-- AI 챗봇의 API 설계로 쉽게 기능 분리 및 타 군 체계에 활용 가능
+- AI 챗봇의 API 설계로 쉽게 기능 분리 및 타 군 체계에 활용 가능<br><br>
+<a href='https://app.gitbook.com/@kjeonghoon065/s/kookbangfriends/project-end/api-document'>오픈 API 도큐먼트 바로가기</a>
 <br>
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
