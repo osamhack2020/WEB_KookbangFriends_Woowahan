@@ -18,6 +18,8 @@
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 	<a href="https://github.com/osamhack2020/WEB_KookbangFriends_Woowahan/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/osamhack2020/WEB_KookbangFriends_Woowahan"></a>
 </p>
+<br>
+<div align="center"><img src="https://raw.githubusercontent.com/LiiNen/LiiNen/main/images/github-blog/osam2020.jpg", width="40%"></div>
 <br><br><br>
 <h2 align="center">프로젝트 설명 영상</h2>
 
